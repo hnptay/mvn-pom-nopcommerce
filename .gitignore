@@ -1,0 +1,6 @@
+#mvn
+target
+
+#ide
+mvn-pom-nopcommerce.iml
+.idea

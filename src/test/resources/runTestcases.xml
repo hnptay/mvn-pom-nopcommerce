@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="NopCommerce" parallel="false" thread-count="3">
+    <listeners>
+        <listener class-name="commons.MethodListener"/>
+<!--                <listener class-name="commons.ReportNGListener"/>-->
+<!--                <listener class-name="org.uncommons.reportng.HTMLReporter"/>-->
+<!--                <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>-->
+        <listener class-name="commons.ExtentReportListener"/>
+    </listeners>
+    <test name="Run on CHROME">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="url" value="https://demo.nopcommerce.com/"/>
+        <classes>
+            <class name="com_register_login.Register_Login_01_RegisterAccount"/>
+            <class name="com_register_login.Register_Login_02_LoginAccount"/>
+            <class name="com_myAccount.MyAccount_01_CustomerInfo"/>
+            <class name="com_search_advanceSearch.Search_01_NormalAndAdvanceSearch"/>
+            <class name="com_sort_display_paging.Sort_01_BasicSort"/>
+            <class name="com_wishList_compare_recentView.Wishlist_01_BasicWishList"/>
+            <class name="com_order.Order_01_Checkout"/>
+        </classes>
+    </test>
+
+    <!--        <test name="Run on EDGE">-->
+    <!--            <parameter name="browser" value="edge"/>-->
+    <!--            <parameter name="url" value="https://demo.nopcommerce.com/"/>-->
+    <!--            <classes>-->
+    <!--                <class name="testcases.com_saucelab_sort.Sort_01_ASC_And_DESC"/>-->
+    <!--            </classes>-->
+    <!--        </test>-->
+
+    <!--        <test name="Run on FIREFOX">-->
+    <!--            <parameter name="browser" value="firefox"/>-->
+    <!--            <parameter name="url" value="https://demo.nopcommerce.com/"/>-->
+    <!--            <classes>-->
+    <!--                <class name="testcases.com_saucelab_sort.Sort_01_ASC_And_DESC"/>-->
+    <!--            </classes>-->
+    <!--        </test>-->
+
+</suite>

@@ -1,0 +1,2214 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<link href='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>Nopcommerce E2E Testing</title>
+
+	<style type='text/css'>
+		/* json-tree */
+		.jstBracket,.jstComma,.jstValue{white-space:pre-wrap}.jstValue{font-size:10px;font-weight:400;font-family:"Lucida Console",Monaco,monospace}.jstProperty{color:#666;word-wrap:break-word}.jstBool{color:#2525CC}.jstNum{color:#D036D0}.jstNull{color:gray}.jstStr{color:#2DB669}.jstFold:after{content:' -';cursor:pointer}.jstExpand{white-space:normal}.jstExpand:after{content:' +';cursor:pointer}.jstFolded{white-space:normal!important}.jstHiddenBlock{display:none}
+	</style>
+	
+	<script type="text/javascript">
+		/*! json-tree - v0.2.2 - 2017-09-25, MIT LICENSE */
+		var JSONTree=function(){var n={"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#x27;","/":"&#x2F;"},t=0,r=0;this.create=function(n,t){return r+=1,N(u(n,0,!1),{class:"jstValue"})};var e=function(t){return t.replace(/[&<>'"]/g,function(t){return n[t]})},s=function(){return r+"_"+t++},u=function(n,t,r){if(null===n)return f(r?t:0);switch(typeof n){case"boolean":return l(n,r?t:0);case"number":return i(n,r?t:0);case"string":return o(n,r?t:0);default:return n instanceof Array?a(n,t,r):c(n,t,r)}},c=function(n,t,r){var e=s(),u=Object.keys(n).map(function(r){return j(r,n[r],t+1,!0)}).join(m()),c=[g("{",r?t:0,e),N(u,{id:e}),p("}",t)].join("\n");return N(c,{})},a=function(n,t,r){var e=s(),c=n.map(function(n){return u(n,t+1,!0)}).join(m());return[g("[",r?t:0,e),N(c,{id:e}),p("]",t)].join("\n")},o=function(n,t){var r=e(JSON.stringify(n));return N(v(r,t),{class:"jstStr"})},i=function(n,t){return N(v(n,t),{class:"jstNum"})},l=function(n,t){return N(v(n,t),{class:"jstBool"})},f=function(n){return N(v("null",n),{class:"jstNull"})},j=function(n,t,r){var s=v(e(JSON.stringify(n))+": ",r),c=N(u(t,r,!1),{});return N(s+c,{class:"jstProperty"})},m=function(){return N(",\n",{class:"jstComma"})},N=function(n,t){return d("span",t,n)},d=function(n,t,r){return"<"+n+Object.keys(t).map(function(n){return" "+n+'="'+t[n]+'"'}).join("")+">"+r+"</"+n+">"},g=function(n,t,r){return N(v(n,t),{class:"jstBracket"})+N("",{class:"jstFold",onclick:"JSONTree.toggle('"+r+"')"})};this.toggle=function(n){var t=document.getElementById(n),r=t.parentNode,e=t.previousElementSibling;""===t.className?(t.className="jstHiddenBlock",r.className="jstFolded",e.className="jstExpand"):(t.className="",r.className="",e.className="jstFold")};var p=function(n,t){return N(v(n,t),{})},v=function(n,t){return Array(2*t+1).join(" ")+n};return this}();
+	</script>
+</head>
+	<body class='extent dark default hide-overflow '>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo black"><img src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png"></a>
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1)" view='testrunner-logs-view'><i class='material-icons'>note</i></a></li>
+		</ul>
+		<!-- report name -->
+		<span class='report-name'>Functional UI</span>
+		<!-- report headline -->
+		<span class='report-headline'></span>
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<a href='#!'>
+			<span class='label blue darken-3 suite-start-time'>Dec 31, 2020 12:05:58 PM</span>
+			</a>
+		</ul>
+	</div>
+</nav>		<!-- container -->
+		<div class='container'>
+<div id='test-view' class='view'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+				<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+			<!-- category toggle -->
+			<!-- category toggle -->
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+				<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+				<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+<div id='test-view-charts' class='subview-full'>
+    <div id='charts-row' class='row nm-v nm-h'>
+        <div class='col s12 m12 l12 np-h'>
+            <div class='card-panel nm-v'>
+                <div class='left panel-name'>Tests</div>
+                <div class='chart-box' style="max-height:94px;">
+                    <canvas id='parent-analysis' width='90' height='70'></canvas>
+                </div>
+                <div class='block text-small'>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>37</span> test(s) passed</span>
+                </div>
+                <div class='block text-small'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="timeline-chart" class="row nm-v nm-h">
+        <div class="col s12 m12 l12 np-h">
+            <div class="card-panel">
+                <div class='left panel-name'>Timeline (seconds)</div>
+                <div class="chart-box" style="width:98%;max-height:145px;">
+                    <canvas id="timeline" height="120"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='test-collection' class='test-collection'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_02_addNewAddress</span>
+						<span class='test-time'>Dec 31, 2020 12:02:50 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 31, 2020 12:02:50 PM</span>
+	<span class='label end-time'>Dec 31, 2020 12:05:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 3m 8s+484ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:05:58 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_03_searchRelative</span>
+						<span class='test-time'>Dec 31, 2020 12:03:31 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 31, 2020 12:03:31 PM</span>
+	<span class='label end-time'>Dec 31, 2020 12:05:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 2m 26s+935ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:05:58 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_07_displayProduct</span>
+						<span class='test-time'>Dec 31, 2020 12:04:17 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 31, 2020 12:04:17 PM</span>
+	<span class='label end-time'>Dec 31, 2020 12:05:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 40s+843ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:05:58 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_04_myProductReview</span>
+						<span class='test-time'>Dec 31, 2020 12:03:07 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 31, 2020 12:03:07 PM</span>
+	<span class='label end-time'>Dec 31, 2020 12:05:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 2m 50s+636ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:05:58 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_02_removeProductInWishlist</span>
+						<span class='test-time'>Dec 31, 2020 12:04:51 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 31, 2020 12:04:51 PM</span>
+	<span class='label end-time'>Dec 31, 2020 12:05:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 6s+850ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:05:58 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_04_registerWithInvalidPassword</span>
+						<span class='test-time'>Dec 31, 2020 12:01:57 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 31, 2020 12:01:57 PM</span>
+	<span class='label end-time'>Dec 31, 2020 12:05:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 4m 0s+640ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:05:58 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_03_LoginWithEmailNotRegistered</span>
+						<span class='test-time'>Dec 31, 2020 12:02:18 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 31, 2020 12:02:18 PM</span>
+	<span class='label end-time'>Dec 31, 2020 12:05:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 3m 40s+334ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:05:58 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_01_searchWithEmptyData</span>
+						<span class='test-time'>Dec 31, 2020 12:03:27 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 31, 2020 12:03:27 PM</span>
+	<span class='label end-time'>Dec 31, 2020 12:05:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 2m 31s+141ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:05:58 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_02_sortWithNameZtoA</span>
+						<span class='test-time'>Dec 31, 2020 12:04:07 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 31, 2020 12:04:07 PM</span>
+	<span class='label end-time'>Dec 31, 2020 12:05:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 51s+6ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:05:58 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_04_searchAbsolute</span>
+						<span class='test-time'>Dec 31, 2020 12:03:33 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 31, 2020 12:03:33 PM</span>
+	<span class='label end-time'>Dec 31, 2020 12:05:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 2m 24s+728ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:05:58 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_06_displayProduct</span>
+						<span class='test-time'>Dec 31, 2020 12:04:13 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 31, 2020 12:04:13 PM</span>
+	<span class='label end-time'>Dec 31, 2020 12:05:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 44s+795ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:05:58 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='12'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_06_registerWithValidInfo</span>
+						<span class='test-time'>Dec 31, 2020 12:02:01 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 31, 2020 12:02:01 PM</span>
+	<span class='label end-time'>Dec 31, 2020 12:05:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 3m 56s+760ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:05:58 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='13'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_04_loginWithEmptyPassword</span>
+						<span class='test-time'>Dec 31, 2020 12:02:20 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 31, 2020 12:02:20 PM</span>
+	<span class='label end-time'>Dec 31, 2020 12:05:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 3m 37s+808ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:05:58 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='14'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_06_searchWithSubCategories</span>
+						<span class='test-time'>Dec 31, 2020 12:03:37 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 31, 2020 12:03:37 PM</span>
+	<span class='label end-time'>Dec 31, 2020 12:05:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 2m 20s+974ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:05:58 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='15'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_10_searchOutPriceRange</span>
+						<span class='test-time'>Dec 31, 2020 12:03:48 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 31, 2020 12:03:48 PM</span>
+	<span class='label end-time'>Dec 31, 2020 12:05:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 2m 10s+283ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:05:58 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='16'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_03_addProductToCompare</span>
+						<span class='test-time'>Dec 31, 2020 12:04:53 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 31, 2020 12:04:53 PM</span>
+	<span class='label end-time'>Dec 31, 2020 12:05:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 5s+104ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:05:58 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='17'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_01_updateCustomerInfo</span>
+						<span class='test-time'>Dec 31, 2020 12:02:46 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 31, 2020 12:02:46 PM</span>
+	<span class='label end-time'>Dec 31, 2020 12:05:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 3m 11s+736ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:05:58 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='18'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_01_addToWishlist</span>
+						<span class='test-time'>Dec 31, 2020 12:04:46 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 31, 2020 12:04:46 PM</span>
+	<span class='label end-time'>Dec 31, 2020 12:05:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 11s+786ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:05:58 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='19'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_04_sortWithPriceZtoA</span>
+						<span class='test-time'>Dec 31, 2020 12:04:09 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 31, 2020 12:04:09 PM</span>
+	<span class='label end-time'>Dec 31, 2020 12:05:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 48s+571ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:05:58 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='20'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_05_displayProduct</span>
+						<span class='test-time'>Dec 31, 2020 12:04:11 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 31, 2020 12:04:11 PM</span>
+	<span class='label end-time'>Dec 31, 2020 12:05:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 47s+369ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:05:58 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='21'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_06_loginWithValidEmailAndPassword</span>
+						<span class='test-time'>Dec 31, 2020 12:02:25 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 31, 2020 12:02:25 PM</span>
+	<span class='label end-time'>Dec 31, 2020 12:05:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 3m 33s+420ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:05:58 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='22'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_02_loginWithInvalidEmail</span>
+						<span class='test-time'>Dec 31, 2020 12:02:16 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 31, 2020 12:02:16 PM</span>
+	<span class='label end-time'>Dec 31, 2020 12:05:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 3m 42s+390ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:05:58 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='23'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_05_searchWithParentCategories</span>
+						<span class='test-time'>Dec 31, 2020 12:03:35 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 31, 2020 12:03:35 PM</span>
+	<span class='label end-time'>Dec 31, 2020 12:05:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 2m 22s+593ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:05:58 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='24'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_08_searchWithCorrectManufacturer</span>
+						<span class='test-time'>Dec 31, 2020 12:03:42 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 31, 2020 12:03:42 PM</span>
+	<span class='label end-time'>Dec 31, 2020 12:05:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 2m 16s+169ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:05:58 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='25'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_01_sortWithNameAtoZ</span>
+						<span class='test-time'>Dec 31, 2020 12:04:05 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 31, 2020 12:04:05 PM</span>
+	<span class='label end-time'>Dec 31, 2020 12:05:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 53s+148ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:05:58 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='26'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_11_searchOutPriceRange</span>
+						<span class='test-time'>Dec 31, 2020 12:03:50 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 31, 2020 12:03:50 PM</span>
+	<span class='label end-time'>Dec 31, 2020 12:05:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 2m 7s+595ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:05:58 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='27'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_02_registerWithInvalidEmail</span>
+						<span class='test-time'>Dec 31, 2020 12:01:56 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 31, 2020 12:01:56 PM</span>
+	<span class='label end-time'>Dec 31, 2020 12:05:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 4m 2s+109ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:05:58 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='28'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_07_searchWithIncorrectManufacturer</span>
+						<span class='test-time'>Dec 31, 2020 12:03:39 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 31, 2020 12:03:39 PM</span>
+	<span class='label end-time'>Dec 31, 2020 12:05:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 2m 18s+536ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:05:58 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='29'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_05_loginWithInvalidPassword</span>
+						<span class='test-time'>Dec 31, 2020 12:02:23 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 31, 2020 12:02:23 PM</span>
+	<span class='label end-time'>Dec 31, 2020 12:05:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 3m 35s+327ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:05:58 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='30'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_03_sortWithPriceAtoZ</span>
+						<span class='test-time'>Dec 31, 2020 12:04:08 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 31, 2020 12:04:08 PM</span>
+	<span class='label end-time'>Dec 31, 2020 12:05:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 49s+813ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:05:58 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='31'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_05_registerWithInvalidConfirmPassword</span>
+						<span class='test-time'>Dec 31, 2020 12:02:00 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 31, 2020 12:02:00 PM</span>
+	<span class='label end-time'>Dec 31, 2020 12:05:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 3m 58s+430ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:05:58 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='32'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_01_loginWithEmptyData</span>
+						<span class='test-time'>Dec 31, 2020 12:02:15 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 31, 2020 12:02:15 PM</span>
+	<span class='label end-time'>Dec 31, 2020 12:05:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 3m 43s+94ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:05:58 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='33'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_01_registerWithEmptyData</span>
+						<span class='test-time'>Dec 31, 2020 12:01:55 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 31, 2020 12:01:55 PM</span>
+	<span class='label end-time'>Dec 31, 2020 12:05:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 4m 3s+183ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:05:58 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='34'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_03_changePassword</span>
+						<span class='test-time'>Dec 31, 2020 12:02:58 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 31, 2020 12:02:58 PM</span>
+	<span class='label end-time'>Dec 31, 2020 12:05:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 2m 59s+566ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:05:58 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='35'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_02_searchWithDataNotExist</span>
+						<span class='test-time'>Dec 31, 2020 12:03:29 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 31, 2020 12:03:29 PM</span>
+	<span class='label end-time'>Dec 31, 2020 12:05:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 2m 29s+115ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:05:58 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='36'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_09_searchInPriceRange</span>
+						<span class='test-time'>Dec 31, 2020 12:03:45 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 31, 2020 12:03:45 PM</span>
+	<span class='label end-time'>Dec 31, 2020 12:05:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 2m 13s+40ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:05:58 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='37'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_01_checkOut</span>
+						<span class='test-time'>Dec 31, 2020 12:05:25 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 31, 2020 12:05:25 PM</span>
+	<span class='label end-time'>Dec 31, 2020 12:05:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 32s+899ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:05:58 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<div id='step-filters' class="right sr-filters">
+				<a class="btn-floating waves-effect waves-light green" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></a>
+				<a class="btn-floating waves-effect waves-light red" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></a>
+				<a class="btn-floating waves-effect waves-light red darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></a>
+				<a class="btn-floating waves-effect waves-light pink text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></a>
+				<a class="btn-floating waves-effect waves-light orange" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></a>
+				<a class="btn-floating waves-effect waves-light teal" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></a>
+				<a class="btn-floating waves-effect waves-light grey" status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></a>
+			</div>
+			<h5 class='test-name'></h5>
+		</div>
+	</div>
+	<!-- subview right -->
+</div>
+<!-- test view --><!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Tests
+					<div class='panel-lead'>37</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>0</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Dec 31, 2020 12:05:58 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Dec 31, 2020 12:05:58 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>0h 0m 0s+109ms</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<div id='testrunner-logs-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>TestRunner Logs</h5>
+		
+		<div class='card-panel'>
+				[INFO ] [2020-12-31 12:01:46,053] Pre-condition - STEP 01: Open browser
+<br><br>
+				[INFO ] [2020-12-31 12:01:52,866] Pre-condition - STEP 02: Open home Page
+<br><br>
+				[INFO ] [2020-12-31 12:01:52,872] Pre-condition - STEP 03: Open register page
+<br><br>
+				[INFO ] [2020-12-31 12:01:55,340] TC_01_registerWithEmptyData - STEP 01: Click to register button
+<br><br>
+				[INFO ] [2020-12-31 12:01:56,031] TC_01_registerWithEmptyData - STEP 02: Verify error message displayed
+<br><br>
+				[INFO ] [2020-12-31 12:01:56,413]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:01:56,413] TC_02_registerWithInvalidEmail - STEP 01: Refresh page
+<br><br>
+				[INFO ] [2020-12-31 12:01:56,943] TC_02_registerWithInvalidEmail - STEP 02: SendKey to email text box
+<br><br>
+				[INFO ] [2020-12-31 12:01:57,147] TC_02_registerWithInvalidEmail - STEP 03: Click to register button
+<br><br>
+				[INFO ] [2020-12-31 12:01:57,762] TC_02_registerWithInvalidEmail - STEP 04: Verify error message displayed
+<br><br>
+				[INFO ] [2020-12-31 12:01:57,866]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:01:57,866] TC_04_registerWithInvalidPassword - STEP 01: Refresh page
+<br><br>
+				[INFO ] [2020-12-31 12:01:59,129] TC_04_registerWithInvalidPassword - STEP 02: SendKey to password text box
+<br><br>
+				[INFO ] [2020-12-31 12:01:59,437] TC_04_registerWithInvalidPassword - STEP 03: Click to register button
+<br><br>
+				[INFO ] [2020-12-31 12:01:59,986] TC_04_registerWithInvalidPassword - STEP 04: Verify Error message displayed
+<br><br>
+				[INFO ] [2020-12-31 12:02:00,092]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:02:00,092] TC_05_registerWithInvalidConfirmPassword - STEP 01: Refresh page
+<br><br>
+				[INFO ] [2020-12-31 12:02:00,108] TC_05_registerWithInvalidConfirmPassword - STEP 02: SendKey to  password text box
+<br><br>
+				[INFO ] [2020-12-31 12:02:00,883] TC_05_registerWithInvalidConfirmPassword - STEP 03: SendKey to confirm password test box
+<br><br>
+				[INFO ] [2020-12-31 12:02:01,112] TC_05_registerWithInvalidConfirmPassword - STEP 04: Click to register button
+<br><br>
+				[INFO ] [2020-12-31 12:02:01,678] TC_05_registerWithInvalidConfirmPassword - STEP 05: Verify error message displayed
+<br><br>
+				[INFO ] [2020-12-31 12:02:01,761]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:02:01,762] TC_06_registerWithValidInfo - STEP 01: Refresh page
+<br><br>
+				[INFO ] [2020-12-31 12:02:03,057] TC_06_registerWithValidInfo - STEP 02: Select gender
+<br><br>
+				[INFO ] [2020-12-31 12:02:03,251] TC_06_registerWithValidInfo - STEP 03: Input to first name
+<br><br>
+				[INFO ] [2020-12-31 12:02:03,771] TC_06_registerWithValidInfo - STEP 04: Input to last name
+<br><br>
+				[INFO ] [2020-12-31 12:02:03,959] TC_06_registerWithValidInfo - STEP 05: select date
+<br><br>
+				[INFO ] [2020-12-31 12:02:04,085] TC_06_registerWithValidInfo - STEP 06: Select month
+<br><br>
+				[INFO ] [2020-12-31 12:02:04,199] TC_06_registerWithValidInfo - STEP 07: Select year
+<br><br>
+				[INFO ] [2020-12-31 12:02:04,313] TC_06_registerWithValidInfo - STEP 08: Input to email text box
+<br><br>
+				[INFO ] [2020-12-31 12:02:04,475] TC_06_registerWithValidInfo - STEP 09: Input to company text box
+<br><br>
+				[INFO ] [2020-12-31 12:02:04,618] TC_06_registerWithValidInfo - STEP 10: Input to password text box
+<br><br>
+				[INFO ] [2020-12-31 12:02:04,772] TC_06_registerWithValidInfo - STEP 11: Input to comfirm password text box
+<br><br>
+				[INFO ] [2020-12-31 12:02:04,915] TC_06_registerWithValidInfo - STEP 12: Click to register button
+<br><br>
+				[INFO ] [2020-12-31 12:02:06,310] TC_06_registerWithValidInfo - STEP 13: Verify register success
+<br><br>
+				[INFO ] [2020-12-31 12:02:06,376]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:02:06,377] Post-condition - Close browser and driver
+<br><br>
+				[INFO ] [2020-12-31 12:02:06,377] OS name = windows 10
+<br><br>
+				[INFO ] [2020-12-31 12:02:07,694] ---------- QUIT BROWSER SUCCESS ----------
+<br><br>
+				[INFO ] [2020-12-31 12:02:07,710] Pre-condition - STEP 01: Open browser
+<br><br>
+				[INFO ] [2020-12-31 12:02:13,282] Pre-condition - STEP 02: Init Home page
+<br><br>
+				[INFO ] [2020-12-31 12:02:13,283] Pre-condition - STEP 03: Get home page title
+<br><br>
+				[INFO ] [2020-12-31 12:02:13,302] Pre-condition - STEP 02: Open login page
+<br><br>
+				[INFO ] [2020-12-31 12:02:15,429] TC_01_loginWithEmptyData - STEP 01: Click to Login button
+<br><br>
+				[INFO ] [2020-12-31 12:02:16,045] TC_01_loginWithEmptyData - STEP 02: Verify error message displayed
+<br><br>
+				[INFO ] [2020-12-31 12:02:16,132]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:02:16,132] TC_02_loginWithInvalidEmail - STEP 01: Refresh page
+<br><br>
+				[INFO ] [2020-12-31 12:02:16,143] TC_02_loginWithInvalidEmail - STEP 02: Input invalid email to email text box
+<br><br>
+				[INFO ] [2020-12-31 12:02:17,567] TC_02_loginWithInvalidEmail - STEP 03: Click to Login button
+<br><br>
+				[INFO ] [2020-12-31 12:02:18,107] TC_02_loginWithInvalidEmail - STEP 04: Verify error message displayed
+<br><br>
+				[INFO ] [2020-12-31 12:02:18,188]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:02:18,189] TC_03_LoginWithEmailNotRegistered - STEP 01: Refresh page
+<br><br>
+				[INFO ] [2020-12-31 12:02:19,382] TC_03_LoginWithEmailNotRegistered - STEP 02: Input invalid email to email text box
+<br><br>
+				[INFO ] [2020-12-31 12:02:19,605] TC_03_LoginWithEmailNotRegistered - STEP 03: Click to login button
+<br><br>
+				[INFO ] [2020-12-31 12:02:20,612] TC_03_LoginWithEmailNotRegistered - STEP 04: Verify error message displayed
+<br><br>
+				[INFO ] [2020-12-31 12:02:20,712]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:02:20,714] TC_04_loginWithEmptyPassword - STEP 01: Refresh page
+<br><br>
+				[INFO ] [2020-12-31 12:02:21,952] TC_04_loginWithEmptyPassword - STEP 02: Input valid email to email text box
+<br><br>
+				[INFO ] [2020-12-31 12:02:22,143] TC_04_loginWithEmptyPassword - STEP 03: Click to login button
+<br><br>
+				[INFO ] [2020-12-31 12:02:23,129] TC_04_loginWithEmptyPassword - STEP 04: Verify error message displayed
+<br><br>
+				[INFO ] [2020-12-31 12:02:23,195]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:02:23,195] TC_05_loginWithInvalidPassword - STEP 01: Refresh page
+<br><br>
+				[INFO ] [2020-12-31 12:02:23,204] TC_05_loginWithInvalidPassword - STEP 02: Input valid email to email text box
+<br><br>
+				[INFO ] [2020-12-31 12:02:23,846] TC_05_loginWithInvalidPassword - STEP 03: Input invalid password to password text box
+<br><br>
+				[INFO ] [2020-12-31 12:02:24,000] TC_05_loginWithInvalidPassword - STEP 04: Click to login button
+<br><br>
+				[INFO ] [2020-12-31 12:02:25,024] TC_05_loginWithInvalidPassword - STEP 05: Verify error message displayed
+<br><br>
+				[INFO ] [2020-12-31 12:02:25,102]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:02:25,102] TC_06_loginWithValidEmailAndPassword - STEP 01: Refresh page
+<br><br>
+				[INFO ] [2020-12-31 12:02:25,109] TC_06_loginWithValidEmailAndPassword - STEP 02: Input valid email to email text box
+<br><br>
+				[INFO ] [2020-12-31 12:02:26,482] TC_06_loginWithValidEmailAndPassword - STEP 03: Input valid password to password textbox
+<br><br>
+				[INFO ] [2020-12-31 12:02:26,675] TC_06_loginWithValidEmailAndPassword - STEP 04: Click to login button
+<br><br>
+				[INFO ] [2020-12-31 12:02:28,168] TC_06_loginWithValidEmailAndPassword - STEP 05: Verify success message displayed
+<br><br>
+				[INFO ] [2020-12-31 12:02:28,179]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:02:28,181] Post-condition - Close browser and driver
+<br><br>
+				[INFO ] [2020-12-31 12:02:28,181] OS name = windows 10
+<br><br>
+				[INFO ] [2020-12-31 12:02:29,444] ---------- QUIT BROWSER SUCCESS ----------
+<br><br>
+				[INFO ] [2020-12-31 12:02:29,460] Pre-condition - STEP 01: Open browser
+<br><br>
+				[INFO ] [2020-12-31 12:02:35,952] Pre-condition - STEP 02: Init home page
+<br><br>
+				[INFO ] [2020-12-31 12:02:35,952] Pre-condition - STEP 03: Get home page title
+<br><br>
+				[INFO ] [2020-12-31 12:02:35,966] Pre-condition - STEP 04: Open and Init register page
+<br><br>
+				[INFO ] [2020-12-31 12:02:38,254] Pre-condition - STEP 05: Select Gender
+<br><br>
+				[INFO ] [2020-12-31 12:02:38,400] Pre-condition - STEP 06: Input to first name
+<br><br>
+				[INFO ] [2020-12-31 12:02:38,913] Pre-condition - STEP 07: Input to last name
+<br><br>
+				[INFO ] [2020-12-31 12:02:39,056] Pre-condition - STEP 08: Select day
+<br><br>
+				[INFO ] [2020-12-31 12:02:39,195] Pre-condition - STEP 09: Select month
+<br><br>
+				[INFO ] [2020-12-31 12:02:39,336] Pre-condition - STEP 10: Select year
+<br><br>
+				[INFO ] [2020-12-31 12:02:39,473] Pre-condition - STEP 11: input to email textbox
+<br><br>
+				[INFO ] [2020-12-31 12:02:39,680] Pre-condition - STEP 12: Input company textbox
+<br><br>
+				[INFO ] [2020-12-31 12:02:39,835] Pre-condition - STEP 13: Input to password texbox
+<br><br>
+				[INFO ] [2020-12-31 12:02:40,022] Pre-condition - STEP 14: Input to confim password textbox
+<br><br>
+				[INFO ] [2020-12-31 12:02:40,210] Pre-condition - STEP 15: Click to register button
+<br><br>
+				[INFO ] [2020-12-31 12:02:43,124] Pre-condition - STEP 16: Verify register success message displayed
+<br><br>
+				[INFO ] [2020-12-31 12:02:43,202]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:02:43,203] Pre-condition - STEP 17: CLick to continue button
+<br><br>
+				[INFO ] [2020-12-31 12:02:45,511] Pre-condition - STEP 18: Verify return to Home page success
+<br><br>
+				[INFO ] [2020-12-31 12:02:45,516]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:02:45,517] Pre-condition - STEP 19: Init home page
+<br><br>
+				[INFO ] [2020-12-31 12:02:45,517] Pre-condition - STEP 20: Init my account page
+<br><br>
+				[INFO ] [2020-12-31 12:02:46,787] TC_01_updateCustomerInfo - STEP 01: Select gender
+<br><br>
+				[INFO ] [2020-12-31 12:02:47,357] TC_01_updateCustomerInfo - STEP 02: Input to first name
+<br><br>
+				[INFO ] [2020-12-31 12:02:47,663] TC_01_updateCustomerInfo - STEP 03: Input to last name textbox
+<br><br>
+				[INFO ] [2020-12-31 12:02:47,830] TC_01_updateCustomerInfo - STEP 04: Select date
+<br><br>
+				[INFO ] [2020-12-31 12:02:47,952] TC_01_updateCustomerInfo - STEP 06: Select month
+<br><br>
+				[INFO ] [2020-12-31 12:02:48,070] TC_01_updateCustomerInfo - STEP 07: Select year
+<br><br>
+				[INFO ] [2020-12-31 12:02:48,193] TC_01_updateCustomerInfo - STEP 08: Input to email textbox
+<br><br>
+				[INFO ] [2020-12-31 12:02:48,435] TC_01_updateCustomerInfo - STEP 09: Input to company textbox
+<br><br>
+				[INFO ] [2020-12-31 12:02:48,581] TC_01_updateCustomerInfo - STEP 10: Verify first name
+<br><br>
+				[INFO ] [2020-12-31 12:02:48,626]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:02:48,626] TC_01_updateCustomerInfo - STEP 11: Verify last name 
+<br><br>
+				[INFO ] [2020-12-31 12:02:48,667]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:02:48,667] TC_01_updateCustomerInfo - STEP 12: Verify Date
+<br><br>
+				[INFO ] [2020-12-31 12:02:48,788]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:02:48,788] TC_01_updateCustomerInfo - STEP 13: Verify month
+<br><br>
+				[INFO ] [2020-12-31 12:02:48,928]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:02:48,928] TC_01_updateCustomerInfo - STEP 14: Verify year
+<br><br>
+				[INFO ] [2020-12-31 12:02:49,928]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:02:49,928] TC_01_updateCustomerInfo - STEP 15: Verify email
+<br><br>
+				[INFO ] [2020-12-31 12:02:49,976]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:02:49,976] TC_01_updateCustomerInfo - STEP 16: Verify company name
+<br><br>
+				[INFO ] [2020-12-31 12:02:50,022]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:02:50,022] TC_02_addNewAddress - STEP 01: Click to Address link
+<br><br>
+				[INFO ] [2020-12-31 12:02:51,782] TC_02_addNewAddress - STEP 02: Click to Add new button
+<br><br>
+				[INFO ] [2020-12-31 12:02:52,976] TC_02_addNewAddress - STEP 03: Input to first name
+<br><br>
+				[INFO ] [2020-12-31 12:02:53,217] TC_02_addNewAddress - STEP 04: Input to last name
+<br><br>
+				[INFO ] [2020-12-31 12:02:53,369] TC_02_addNewAddress - STEP 05: Input to Email
+<br><br>
+				[INFO ] [2020-12-31 12:02:53,553] TC_02_addNewAddress - STEP 06: Input to company
+<br><br>
+				[INFO ] [2020-12-31 12:02:53,714] TC_02_addNewAddress - STEP 07: Select Country
+<br><br>
+				[INFO ] [2020-12-31 12:02:53,843] TC_02_addNewAddress - STEP 08: Select State
+<br><br>
+				[INFO ] [2020-12-31 12:02:54,216] TC_02_addNewAddress - STEP 09: input to City texbox
+<br><br>
+				[INFO ] [2020-12-31 12:02:54,404] TC_02_addNewAddress - STEP 10: Input to address 1 textbox
+<br><br>
+				[INFO ] [2020-12-31 12:02:54,588] TC_02_addNewAddress - STEP 11: Input to address 2 textbox
+<br><br>
+				[INFO ] [2020-12-31 12:02:54,741] TC_02_addNewAddress - STEP 12: Inout to Zip code
+<br><br>
+				[INFO ] [2020-12-31 12:02:54,909] TC_02_addNewAddress - STEP 13: Input to phone textbox
+<br><br>
+				[INFO ] [2020-12-31 12:02:55,069] TC_02_addNewAddress - STEP 14: Input to fax number textbox
+<br><br>
+				[INFO ] [2020-12-31 12:02:55,211] TC_02_addNewAddress - STEP 15: Click to SAVE button
+<br><br>
+				[INFO ] [2020-12-31 12:02:58,297] TC_02_addNewAddress - STEP 16: Verify name
+<br><br>
+				[INFO ] [2020-12-31 12:02:58,364]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:02:58,364] TC_02_addNewAddress - STEP 17: Verify email
+<br><br>
+				[INFO ] [2020-12-31 12:02:58,431]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:02:58,431] TC_02_addNewAddress - STEP 18: Verify phone number
+<br><br>
+				[INFO ] [2020-12-31 12:02:58,493]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:02:58,493] TC_02_addNewAddress - STEP 19: Verify fax number
+<br><br>
+				[INFO ] [2020-12-31 12:02:58,569]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:02:58,569] TC_02_addNewAddress - STEP 20: Verify company name
+<br><br>
+				[INFO ] [2020-12-31 12:02:58,632]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:02:58,632] TC_02_addNewAddress - STEP 21: Verify address 1
+<br><br>
+				[INFO ] [2020-12-31 12:02:58,713]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:02:58,713] TC_02_addNewAddress - STEP 22: Verify address 2
+<br><br>
+				[INFO ] [2020-12-31 12:02:58,782]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:02:58,782] TC_02_addNewAddress - STEP 23: Verify zip code
+<br><br>
+				[INFO ] [2020-12-31 12:02:58,850]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:02:58,850] TC_02_addNewAddress - STEP 24: Verify country
+<br><br>
+				[INFO ] [2020-12-31 12:02:58,955]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:02:58,956] TC_03_changePassword - STEP 01: Click to change password link
+<br><br>
+				[INFO ] [2020-12-31 12:02:59,957] TC_03_changePassword - STEP 02: Input to password textbox
+<br><br>
+				[INFO ] [2020-12-31 12:03:00,158] TC_03_changePassword - STEP 03: Input to new password textbox
+<br><br>
+				[INFO ] [2020-12-31 12:03:00,381] TC_03_changePassword - STEP 04: Input to confirm new password
+<br><br>
+				[INFO ] [2020-12-31 12:03:00,533] TC_03_changePassword - STEP 05: Click to change password button
+<br><br>
+				[INFO ] [2020-12-31 12:03:01,545] TC_03_changePassword - STEP 06: Verify password chang success
+<br><br>
+				[INFO ] [2020-12-31 12:03:01,610]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:03:01,611] TC_03_changePassword - STEP 07: click to Logout link
+<br><br>
+				[INFO ] [2020-12-31 12:03:03,788] TC_03_changePassword - STEP 08: Click to login link
+<br><br>
+				[INFO ] [2020-12-31 12:03:04,800] TC_03_changePassword - STEP 09: Open and Init login page
+<br><br>
+				[INFO ] [2020-12-31 12:03:04,800] TC_03_changePassword - STEP 10: Input to Email textbox
+<br><br>
+				[INFO ] [2020-12-31 12:03:05,063] TC_03_changePassword - STEP 11: Input invalid password to password textbox
+<br><br>
+				[INFO ] [2020-12-31 12:03:05,265] TC_03_changePassword - STEP 12: Click to Login button
+<br><br>
+				[INFO ] [2020-12-31 12:03:06,249] TC_03_changePassword - STEP 13: Verify login false
+<br><br>
+				[INFO ] [2020-12-31 12:03:06,334]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:03:06,334] TC_03_changePassword - STEP 14: Input valid password to password textbox
+<br><br>
+				[INFO ] [2020-12-31 12:03:06,465] TC_03_changePassword - STEP 15: Click to login button
+<br><br>
+				[INFO ] [2020-12-31 12:03:07,863] TC_03_changePassword - STEP 16: Verify login success
+<br><br>
+				[INFO ] [2020-12-31 12:03:07,870]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:03:07,870] TC_04_myProductReview - STEP 01: Open and Init computer page
+<br><br>
+				[INFO ] [2020-12-31 12:03:08,997] TC_04_myProductReview - STEP 02: Click to Desktop link
+<br><br>
+				[INFO ] [2020-12-31 12:03:10,237] TC_04_myProductReview - STEP 03: CLick to Build your own computer product link
+<br><br>
+				[INFO ] [2020-12-31 12:03:12,653] TC_04_myProductReview - STEP 04: Click to Add your review link
+<br><br>
+				[INFO ] [2020-12-31 12:03:13,750] TC_04_myProductReview - STEP 05: Input to review textbox
+<br><br>
+				[INFO ] [2020-12-31 12:03:13,967] TC_04_myProductReview - STEP 06: Input text to textarea
+<br><br>
+				[INFO ] [2020-12-31 12:03:14,124] TC_04_myProductReview - STEP 07: Select rating
+<br><br>
+				[INFO ] [2020-12-31 12:03:14,244] TC_04_myProductReview - STEP 08: Click to submit button
+<br><br>
+				[INFO ] [2020-12-31 12:03:15,350] TC_04_myProductReview - STEP 09: Verify success message displayed
+<br><br>
+				[INFO ] [2020-12-31 12:03:15,474]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:03:15,474] TC_04_myProductReview - STEP 10: Click to My account link
+<br><br>
+				[INFO ] [2020-12-31 12:03:16,640] TC_04_myProductReview - STEP 11: Click to My product reviews link
+<br><br>
+				[INFO ] [2020-12-31 12:03:17,708] TC_04_myProductReview - STEP 12: Verify review text displayed
+<br><br>
+				[INFO ] [2020-12-31 12:03:17,772]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:03:17,772] Post-condition - Close browser and driver
+<br><br>
+				[INFO ] [2020-12-31 12:03:17,772] OS name = windows 10
+<br><br>
+				[INFO ] [2020-12-31 12:03:19,054] ---------- QUIT BROWSER SUCCESS ----------
+<br><br>
+				[INFO ] [2020-12-31 12:03:19,054] Pre-condition - STEP 01: Open browser
+<br><br>
+				[INFO ] [2020-12-31 12:03:25,166] Pre-condition - STEP 02: Open and Init home page
+<br><br>
+				[INFO ] [2020-12-31 12:03:25,166] Pre-condition - STEP 03: Open and Init search page
+<br><br>
+				[INFO ] [2020-12-31 12:03:27,381] TC_01_searchWithEmptyData - STEP 01: Click to Search button
+<br><br>
+				[INFO ] [2020-12-31 12:03:29,331] TC_01_searchWithEmptyData - STEP 02: verify error message diplayed
+<br><br>
+				[INFO ] [2020-12-31 12:03:29,406]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:03:29,407] TC_02_searchWithDataNotExist - STEP 01: Input to search textbox
+<br><br>
+				[INFO ] [2020-12-31 12:03:29,640] TC_02_searchWithDataNotExist - STEP 02: CLick to search button
+<br><br>
+				[INFO ] [2020-12-31 12:03:31,492] TC_02_searchWithDataNotExist - STEP 03: Verify message displayed
+<br><br>
+				[INFO ] [2020-12-31 12:03:31,570]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:03:31,571] TC_03_searchRelative - STEP 01: Input to search textbox
+<br><br>
+				[INFO ] [2020-12-31 12:03:31,723] TC_03_searchRelative - STEP 02: Click to search button
+<br><br>
+				[INFO ] [2020-12-31 12:03:33,673] TC_03_searchRelative - STEP 03: Verify product displayed
+<br><br>
+				[INFO ] [2020-12-31 12:03:33,794]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:03:33,795] TC_04_searchAbsolute - STEP 01: Input to search textbox
+<br><br>
+				[INFO ] [2020-12-31 12:03:34,011] TC_04_searchAbsolute - STEP 02: Click to search button
+<br><br>
+				[INFO ] [2020-12-31 12:03:35,859] TC_04_searchAbsolute - STEP 03: Verify result displayed
+<br><br>
+				[INFO ] [2020-12-31 12:03:35,928]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:03:35,929] TC_05_searchWithParentCategories - STEP 01: Input to search textbox
+<br><br>
+				[INFO ] [2020-12-31 12:03:36,100] TC_05_searchWithParentCategories - STEP 02: Select advance search
+<br><br>
+				[INFO ] [2020-12-31 12:03:36,261] TC_05_searchWithParentCategories - STEP 03: Select computer
+<br><br>
+				[INFO ] [2020-12-31 12:03:36,382] TC_05_searchWithParentCategories - STEP 04: Click to search button
+<br><br>
+				[INFO ] [2020-12-31 12:03:37,476] TC_05_searchWithParentCategories - STEP 05: Verify error message displayed
+<br><br>
+				[INFO ] [2020-12-31 12:03:37,548]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:03:37,548] TC_06_searchWithSubCategories - STEP 01: Open Url search
+<br><br>
+				[INFO ] [2020-12-31 12:03:38,116] TC_06_searchWithSubCategories - STEP 02: Input to search textbox
+<br><br>
+				[INFO ] [2020-12-31 12:03:38,352] TC_06_searchWithSubCategories - STEP 03: Select advance search
+<br><br>
+				[INFO ] [2020-12-31 12:03:38,469] TC_06_searchWithSubCategories - STEP 04: Select Computer
+<br><br>
+				[INFO ] [2020-12-31 12:03:38,646] TC_06_searchWithSubCategories - STEP 05: Select Auto search sub category
+<br><br>
+				[INFO ] [2020-12-31 12:03:38,741] TC_06_searchWithSubCategories - STEP 06: Click to search button
+<br><br>
+				[INFO ] [2020-12-31 12:03:39,920] TC_06_searchWithSubCategories - STEP 07: Verify result
+<br><br>
+				[INFO ] [2020-12-31 12:03:39,985]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:03:39,986] TC_07_searchWithIncorrectManufacturer - STEP 01: Open search URL
+<br><br>
+				[INFO ] [2020-12-31 12:03:40,517] TC_07_searchWithIncorrectManufacturer - STEP 02: Input to search textbox
+<br><br>
+				[INFO ] [2020-12-31 12:03:40,769] TC_07_searchWithIncorrectManufacturer - STEP 03: Select advance search
+<br><br>
+				[INFO ] [2020-12-31 12:03:40,908] TC_07_searchWithIncorrectManufacturer - STEP 04: Select Computer
+<br><br>
+				[INFO ] [2020-12-31 12:03:41,038] TC_07_searchWithIncorrectManufacturer - STEP 05: Select auto search sub categoryes
+<br><br>
+				[INFO ] [2020-12-31 12:03:41,125] TC_07_searchWithIncorrectManufacturer - STEP 06: Select HP
+<br><br>
+				[INFO ] [2020-12-31 12:03:41,225] TC_07_searchWithIncorrectManufacturer - STEP 07: Click search button
+<br><br>
+				[INFO ] [2020-12-31 12:03:42,289] TC_07_searchWithIncorrectManufacturer - STEP 08: Verify result
+<br><br>
+				[INFO ] [2020-12-31 12:03:42,352]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:03:42,353] TC_08_searchWithCorrectManufacturer - STEP 01: Open search URL
+<br><br>
+				[INFO ] [2020-12-31 12:03:42,867] TC_08_searchWithCorrectManufacturer - STEP 02: Input to search textbox
+<br><br>
+				[INFO ] [2020-12-31 12:03:43,036] TC_08_searchWithCorrectManufacturer - STEP 03: Select advance search
+<br><br>
+				[INFO ] [2020-12-31 12:03:43,170] TC_08_searchWithCorrectManufacturer - STEP 04: Select Computer
+<br><br>
+				[INFO ] [2020-12-31 12:03:43,324] TC_08_searchWithCorrectManufacturer - STEP 05: Select auto search sub categoryes
+<br><br>
+				[INFO ] [2020-12-31 12:03:43,429] TC_08_searchWithCorrectManufacturer - STEP 06: Select Apple
+<br><br>
+				[INFO ] [2020-12-31 12:03:43,554] TC_08_searchWithCorrectManufacturer - STEP 07: Click search button
+<br><br>
+				[INFO ] [2020-12-31 12:03:45,420] TC_08_searchWithCorrectManufacturer - STEP 08: Verify result
+<br><br>
+				[INFO ] [2020-12-31 12:03:45,481]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:03:45,482] TC_09_searchInPriceRange - STEP 01: Open search URL
+<br><br>
+				[INFO ] [2020-12-31 12:03:46,030] TC_09_searchInPriceRange - STEP 02: Input to search textbox
+<br><br>
+				[INFO ] [2020-12-31 12:03:46,189] TC_09_searchInPriceRange - STEP 03: Select advance search
+<br><br>
+				[INFO ] [2020-12-31 12:03:46,301] TC_09_searchInPriceRange - STEP 04: Select Computer
+<br><br>
+				[INFO ] [2020-12-31 12:03:46,438] TC_09_searchInPriceRange - STEP 05: Select auto search sub categoryes
+<br><br>
+				[INFO ] [2020-12-31 12:03:46,554] TC_09_searchInPriceRange - STEP 06: Select Apple
+<br><br>
+				[INFO ] [2020-12-31 12:03:46,647] TC_09_searchInPriceRange - STEP 07: Input range
+<br><br>
+				[INFO ] [2020-12-31 12:03:46,851] TC_09_searchInPriceRange - STEP 08: Input range
+<br><br>
+				[INFO ] [2020-12-31 12:03:47,022] TC_09_searchInPriceRange - STEP 09: Click search button
+<br><br>
+				[INFO ] [2020-12-31 12:03:48,155] TC_09_searchInPriceRange - STEP 10: Verify result
+<br><br>
+				[INFO ] [2020-12-31 12:03:48,238]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:03:48,239] TC_10_searchOutPriceRange - STEP 01: Open search URL
+<br><br>
+				[INFO ] [2020-12-31 12:03:48,729] TC_10_searchOutPriceRange - STEP 02: Input to search textbox
+<br><br>
+				[INFO ] [2020-12-31 12:03:48,894] TC_10_searchOutPriceRange - STEP 03: Select advance search
+<br><br>
+				[INFO ] [2020-12-31 12:03:49,033] TC_10_searchOutPriceRange - STEP 04: Select Computer
+<br><br>
+				[INFO ] [2020-12-31 12:03:49,229] TC_10_searchOutPriceRange - STEP 05: Select auto search sub categoryes
+<br><br>
+				[INFO ] [2020-12-31 12:03:49,350] TC_10_searchOutPriceRange - STEP 06: Select Apple
+<br><br>
+				[INFO ] [2020-12-31 12:03:49,501] TC_10_searchOutPriceRange - STEP 07: Input range
+<br><br>
+				[INFO ] [2020-12-31 12:03:49,633] TC_10_searchOutPriceRange - STEP 08: Input range
+<br><br>
+				[INFO ] [2020-12-31 12:03:49,766] TC_10_searchOutPriceRange - STEP 09: Click search button
+<br><br>
+				[INFO ] [2020-12-31 12:03:50,860] TC_10_searchOutPriceRange - STEP 10: Verify result
+<br><br>
+				[INFO ] [2020-12-31 12:03:50,927]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:03:50,927] TC_11_searchOutPriceRange - STEP 01: Open search URL
+<br><br>
+				[INFO ] [2020-12-31 12:03:51,430] TC_11_searchOutPriceRange - STEP 02: Input to search textbox
+<br><br>
+				[INFO ] [2020-12-31 12:03:51,584] TC_11_searchOutPriceRange - STEP 03: Select advance search
+<br><br>
+				[INFO ] [2020-12-31 12:03:51,690] TC_11_searchOutPriceRange - STEP 04: Select Computer
+<br><br>
+				[INFO ] [2020-12-31 12:03:51,871] TC_11_searchOutPriceRange - STEP 05: Select auto search sub categoryes
+<br><br>
+				[INFO ] [2020-12-31 12:03:51,961] TC_11_searchOutPriceRange - STEP 06: Select Apple
+<br><br>
+				[INFO ] [2020-12-31 12:03:52,087] TC_11_searchOutPriceRange - STEP 07: Input range
+<br><br>
+				[INFO ] [2020-12-31 12:03:52,231] TC_11_searchOutPriceRange - STEP 08: Input range
+<br><br>
+				[INFO ] [2020-12-31 12:03:52,355] TC_11_searchOutPriceRange - STEP 09: Click search button
+<br><br>
+				[INFO ] [2020-12-31 12:03:53,423] TC_11_searchOutPriceRange - STEP 10: Verify result
+<br><br>
+				[INFO ] [2020-12-31 12:03:53,469]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:03:53,470] Post-condition - STEP 01: Close browser
+<br><br>
+				[INFO ] [2020-12-31 12:03:53,470] OS name = windows 10
+<br><br>
+				[INFO ] [2020-12-31 12:03:54,756] ---------- QUIT BROWSER SUCCESS ----------
+<br><br>
+				[INFO ] [2020-12-31 12:03:54,772] Pre-condition - STEP 01: Open browser
+<br><br>
+				[INFO ] [2020-12-31 12:04:00,606] Pre-condition - STEP 02: Open and Init home page
+<br><br>
+				[INFO ] [2020-12-31 12:04:00,606] Pre-condition - STEP 03: Open and Init Computer page
+<br><br>
+				[INFO ] [2020-12-31 12:04:03,136] Pre-condition - STEP 04: Click to notebooks link
+<br><br>
+				[INFO ] [2020-12-31 12:04:05,375] Pre-TC_01_sortWithNameAtoZ - STEP 01: Select sort name A to Z
+<br><br>
+				[INFO ] [2020-12-31 12:04:07,214] Pre-TC_01_sortWithNameAtoZ - STEP 02: Verify name sorted ascending
+<br><br>
+				[INFO ] [2020-12-31 12:04:07,516]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:04:07,516] Pre-TC_02_sortWithNameZtoA - STEP 01: Select sort name Z to A
+<br><br>
+				[INFO ] [2020-12-31 12:04:08,342] Pre-TC_02_sortWithNameZtoA - STEP 02: Verify name sorted descending
+<br><br>
+				[INFO ] [2020-12-31 12:04:08,708]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:04:08,709] Pre-TC_03_sortWithPriceAtoZ - STEP 01: Select price A to Z
+<br><br>
+				[INFO ] [2020-12-31 12:04:09,654] Pre-TC_03_sortWithPriceAtoZ - STEP 02: Verify price sorted ascending
+<br><br>
+				[INFO ] [2020-12-31 12:04:09,950]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:04:09,951] Pre-TC_04_sortWithPriceZtoA - STEP 01: Select price Z to A
+<br><br>
+				[INFO ] [2020-12-31 12:04:10,860] Pre-TC_04_sortWithPriceZtoA - STEP 02: Verify price sorted descending
+<br><br>
+				[INFO ] [2020-12-31 12:04:11,153]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:04:11,153] Pre-TC_05_displayProduct - STEP 01: Select product display = 3
+<br><br>
+				[INFO ] [2020-12-31 12:04:11,983] Pre-TC_05_displayProduct - STEP 02: Verify number of item
+<br><br>
+				[INFO ] [2020-12-31 12:04:12,105]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:04:12,106] Pre-TC_05_displayProduct - STEP 03: Verify next icon displayed
+<br><br>
+				[INFO ] [2020-12-31 12:04:12,179]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:04:12,179] Pre-TC_05_displayProduct - STEP 04: Click to next icon
+<br><br>
+				[INFO ] [2020-12-31 12:04:13,642] Pre-TC_05_displayProduct - STEP 05: Verify previous displayed
+<br><br>
+				[INFO ] [2020-12-31 12:04:13,726]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:04:13,727] Pre-TC_06_displayProduct - STEP 01: Select product display = 6
+<br><br>
+				[INFO ] [2020-12-31 12:04:14,475] Pre-TC_06_displayProduct - STEP 02: Verify number of product displayed
+<br><br>
+				[INFO ] [2020-12-31 12:04:14,601]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:04:14,601] Pre-TC_06_displayProduct - STEP 04: Verify next icon undisplayed
+<br><br>
+				[INFO ] [2020-12-31 12:04:17,663]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:04:17,663] Pre-TC_07_displayProduct - STEP 01: Select product display = 9
+<br><br>
+				[INFO ] [2020-12-31 12:04:19,276] Pre-TC_07_displayProduct - STEP 02: Verify product number displayed
+<br><br>
+				[INFO ] [2020-12-31 12:04:19,466]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:04:19,466] Pre-TC_07_displayProduct - STEP 03: Verify next icon undisplayed
+<br><br>
+				[INFO ] [2020-12-31 12:04:22,505]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:04:22,505] Post-condition - STEP 01: Close browser 
+<br><br>
+				[INFO ] [2020-12-31 12:04:22,505] OS name = windows 10
+<br><br>
+				[INFO ] [2020-12-31 12:04:23,756] ---------- QUIT BROWSER SUCCESS ----------
+<br><br>
+				[INFO ] [2020-12-31 12:04:37,128]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:04:47,680]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:04:49,443]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:04:51,656]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:04:53,417]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:05:00,253]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:05:00,324]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:05:03,177]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:05:03,178] OS name = windows 10
+<br><br>
+				[INFO ] [2020-12-31 12:05:04,460] ---------- QUIT BROWSER SUCCESS ----------
+<br><br>
+				[INFO ] [2020-12-31 12:05:16,369]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:05:27,282]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:05:49,408]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:05:50,429]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:05:50,540]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:05:50,629]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:05:50,752]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:05:50,820]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:05:50,960]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:05:51,116]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:05:51,257]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:05:51,319]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:05:51,366]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:05:51,428]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:05:51,491]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:05:53,215]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:05:56,983]  -------------------------- VERIFY PASSED -------------------------- 
+<br><br>
+				[INFO ] [2020-12-31 12:05:56,983] OS name = windows 10
+<br><br>
+				[INFO ] [2020-12-31 12:05:58,303] ---------- QUIT BROWSER SUCCESS ----------
+<br><br>
+		</div>
+	</div>
+</div>
+<!-- testrunner-logs view -->		</div>
+		<!-- container -->
+		<script>
+			var statusGroup = {
+                parentCount: 37,
+				passParent: 37,
+				failParent: 0,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 0,
+				childCount: 0,
+				passChild: 0,
+				failChild: 0,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 0,
+				debugChild: 0,
+				exceptionsChild: 0,
+				grandChildCount: 0,
+				passGrandChild: 0,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				debugGrandChild: 0,
+				exceptionsGrandChild: 0,
+			};
+		</script>
+		<script>
+			var timeline = {
+			        "TC_02_addNewAddress":188.484,"TC_03_searchRelative":146.935,"TC_07_displayProduct":100.843,"TC_04_myProductReview":170.636,"TC_02_removeProductInWishlist":66.85,"TC_04_registerWithInvalidPassword":240.64,"TC_03_LoginWithEmailNotRegistered":220.334,"TC_01_searchWithEmptyData":151.141,"TC_02_sortWithNameZtoA":111.006,"TC_04_searchAbsolute":144.728,"TC_06_displayProduct":104.795,"TC_06_registerWithValidInfo":236.76,"TC_04_loginWithEmptyPassword":217.808,"TC_06_searchWithSubCategories":140.974,"TC_10_searchOutPriceRange":130.283,"TC_03_addProductToCompare":65.104,"TC_01_updateCustomerInfo":191.736,"TC_01_addToWishlist":71.786,"TC_04_sortWithPriceZtoA":108.571,"TC_05_displayProduct":107.369,"TC_06_loginWithValidEmailAndPassword":213.42,"TC_02_loginWithInvalidEmail":222.39,"TC_05_searchWithParentCategories":142.593,"TC_08_searchWithCorrectManufacturer":136.169,"TC_01_sortWithNameAtoZ":113.148,"TC_11_searchOutPriceRange":127.595,"TC_02_registerWithInvalidEmail":242.109,"TC_07_searchWithIncorrectManufacturer":138.536,"TC_05_loginWithInvalidPassword":215.327,"TC_03_sortWithPriceAtoZ":109.813,"TC_05_registerWithInvalidConfirmPassword":238.43,"TC_01_loginWithEmptyData":223.094,"TC_01_registerWithEmptyData":243.183,"TC_03_changePassword":179.566,"TC_02_searchWithDataNotExist":149.115,"TC_09_searchInPriceRange":133.04,"TC_01_checkOut":32.899
+			};
+		</script>
+		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/js/extent.js' type='text/javascript'></script>
+		<script type='text/javascript'>
+		</script>
+	</body>
+</html>
