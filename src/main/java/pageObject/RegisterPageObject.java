@@ -34,17 +34,19 @@ public class RegisterPageObject extends AbstractPage {
 
 
     public void sendKeyToDynamicTextBox(String value, String textBox) {
-        waitForElementsVisible(driver, RegisterPageUI.DYNAMIC_TEXBOX, textBox);
+        waitForElementVisible(driver, RegisterPageUI.DYNAMIC_TEXBOX, textBox);
         sendKeyToElement(driver, RegisterPageUI.DYNAMIC_TEXBOX, value, textBox);
     }
 
     public void selectGender(String gender) {
         waitForElementClickable(driver, RegisterPageUI.DYNAMIC_GENDER_RADIOBUTTON, gender);
+        waitForJavascriptReady(driver);
+        waitForJqueryReady(driver);
         clickToElement(driver, RegisterPageUI.DYNAMIC_GENDER_RADIOBUTTON, gender);
     }
 
     public String getErrorMessage(String email) {
-        waitForElementsVisible(driver, RegisterPageUI.DYNAMIC_MESSAGE_ERROR, email);
+        waitForElementVisible(driver, RegisterPageUI.DYNAMIC_MESSAGE_ERROR, email);
         return getElementText(driver, RegisterPageUI.DYNAMIC_MESSAGE_ERROR, email);
     }
 

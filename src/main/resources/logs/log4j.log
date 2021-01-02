@@ -3146,3 +3146,1595 @@
 [INFO ] [2020-12-31 12:05:56,983]  -------------------------- VERIFY PASSED -------------------------- 
 [INFO ] [2020-12-31 12:05:56,983] OS name = windows 10
 [INFO ] [2020-12-31 12:05:58,303] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-01-02 20:57:19,285] Pre-condition - STEP 01: Open browser
+[INFO ] [2021-01-02 20:57:30,103] Pre-condition - STEP 02: Open home Page
+[INFO ] [2021-01-02 20:57:30,111] Pre-condition - STEP 03: Open register page
+[INFO ] [2021-01-02 20:57:33,163] TC_01_registerWithEmptyData - STEP 01: Click to register button
+[INFO ] [2021-01-02 20:57:33,990] TC_01_registerWithEmptyData - STEP 02: Verify error message displayed
+[INFO ] [2021-01-02 20:57:34,472]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:57:34,472] TC_02_registerWithInvalidEmail - STEP 01: Refresh page
+[INFO ] [2021-01-02 20:57:34,997] TC_02_registerWithInvalidEmail - STEP 02: SendKey to email text box
+[INFO ] [2021-01-02 20:57:35,288] TC_02_registerWithInvalidEmail - STEP 03: Click to register button
+[INFO ] [2021-01-02 20:57:35,865] TC_02_registerWithInvalidEmail - STEP 04: Verify error message displayed
+[INFO ] [2021-01-02 20:57:35,941]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:57:35,941] TC_04_registerWithInvalidPassword - STEP 01: Refresh page
+[INFO ] [2021-01-02 20:57:36,451] TC_04_registerWithInvalidPassword - STEP 02: SendKey to password text box
+[INFO ] [2021-01-02 20:57:36,703] TC_04_registerWithInvalidPassword - STEP 03: Click to register button
+[INFO ] [2021-01-02 20:57:37,277] TC_04_registerWithInvalidPassword - STEP 04: Verify Error message displayed
+[INFO ] [2021-01-02 20:57:37,364]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:57:37,365] TC_05_registerWithInvalidConfirmPassword - STEP 01: Refresh page
+[INFO ] [2021-01-02 20:57:38,655] TC_05_registerWithInvalidConfirmPassword - STEP 02: SendKey to  password text box
+[INFO ] [2021-01-02 20:57:38,910] TC_05_registerWithInvalidConfirmPassword - STEP 03: SendKey to confirm password test box
+[INFO ] [2021-01-02 20:57:39,142] TC_05_registerWithInvalidConfirmPassword - STEP 04: Click to register button
+[INFO ] [2021-01-02 20:57:39,677] TC_05_registerWithInvalidConfirmPassword - STEP 05: Verify error message displayed
+[INFO ] [2021-01-02 20:57:39,724]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:57:39,740] TC_06_registerWithValidInfo - STEP 01: Refresh page
+[INFO ] [2021-01-02 20:57:40,352] TC_06_registerWithValidInfo - STEP 02: Select gender
+[INFO ] [2021-01-02 20:57:40,551] TC_06_registerWithValidInfo - STEP 03: Input to first name
+[INFO ] [2021-01-02 20:57:41,404] TC_06_registerWithValidInfo - STEP 04: Input to last name
+[INFO ] [2021-01-02 20:57:41,593] TC_06_registerWithValidInfo - STEP 05: select date
+[INFO ] [2021-01-02 20:57:41,785] TC_06_registerWithValidInfo - STEP 06: Select month
+[INFO ] [2021-01-02 20:57:41,910] TC_06_registerWithValidInfo - STEP 07: Select year
+[INFO ] [2021-01-02 20:57:42,026] TC_06_registerWithValidInfo - STEP 08: Input to email text box
+[INFO ] [2021-01-02 20:57:42,191] TC_06_registerWithValidInfo - STEP 09: Input to company text box
+[INFO ] [2021-01-02 20:57:42,333] TC_06_registerWithValidInfo - STEP 10: Input to password text box
+[INFO ] [2021-01-02 20:57:42,503] TC_06_registerWithValidInfo - STEP 11: Input to comfirm password text box
+[INFO ] [2021-01-02 20:57:42,728] TC_06_registerWithValidInfo - STEP 12: Click to register button
+[INFO ] [2021-01-02 20:57:45,074] TC_06_registerWithValidInfo - STEP 13: Verify register success
+[INFO ] [2021-01-02 20:57:45,144]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:57:45,145] Post-condition - Close browser and driver
+[INFO ] [2021-01-02 20:57:45,145] OS name = windows 10
+[INFO ] [2021-01-02 20:57:46,863] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-01-02 20:57:46,863] Pre-condition - STEP 01: Open browser
+[INFO ] [2021-01-02 20:57:52,979] Pre-condition - STEP 02: Init Home page
+[INFO ] [2021-01-02 20:57:52,979] Pre-condition - STEP 03: Get home page title
+[INFO ] [2021-01-02 20:57:53,042] Pre-condition - STEP 02: Open login page
+[INFO ] [2021-01-02 20:57:55,435] TC_01_loginWithEmptyData - STEP 01: Click to Login button
+[INFO ] [2021-01-02 20:57:56,042] TC_01_loginWithEmptyData - STEP 02: Verify error message displayed
+[INFO ] [2021-01-02 20:57:56,120]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:57:56,120] TC_02_loginWithInvalidEmail - STEP 01: Refresh page
+[INFO ] [2021-01-02 20:57:56,129] TC_02_loginWithInvalidEmail - STEP 02: Input invalid email to email text box
+[INFO ] [2021-01-02 20:57:57,684] TC_02_loginWithInvalidEmail - STEP 03: Click to Login button
+[INFO ] [2021-01-02 20:57:58,231] TC_02_loginWithInvalidEmail - STEP 04: Verify error message displayed
+[INFO ] [2021-01-02 20:57:58,300]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:57:58,300] TC_03_LoginWithEmailNotRegistered - STEP 01: Refresh page
+[INFO ] [2021-01-02 20:57:59,774] TC_03_LoginWithEmailNotRegistered - STEP 02: Input invalid email to email text box
+[INFO ] [2021-01-02 20:58:00,004] TC_03_LoginWithEmailNotRegistered - STEP 03: Click to login button
+[INFO ] [2021-01-02 20:58:01,816] TC_03_LoginWithEmailNotRegistered - STEP 04: Verify error message displayed
+[INFO ] [2021-01-02 20:58:01,910]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:58:01,910] TC_04_loginWithEmptyPassword - STEP 01: Refresh page
+[INFO ] [2021-01-02 20:58:02,543] TC_04_loginWithEmptyPassword - STEP 02: Input valid email to email text box
+[INFO ] [2021-01-02 20:58:02,784] TC_04_loginWithEmptyPassword - STEP 03: Click to login button
+[INFO ] [2021-01-02 20:58:03,874] TC_04_loginWithEmptyPassword - STEP 04: Verify error message displayed
+[INFO ] [2021-01-02 20:58:03,954]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:58:03,955] TC_05_loginWithInvalidPassword - STEP 01: Refresh page
+[INFO ] [2021-01-02 20:58:03,962] TC_05_loginWithInvalidPassword - STEP 02: Input valid email to email text box
+[INFO ] [2021-01-02 20:58:05,382] TC_05_loginWithInvalidPassword - STEP 03: Input invalid password to password text box
+[INFO ] [2021-01-02 20:58:05,536] TC_05_loginWithInvalidPassword - STEP 04: Click to login button
+[INFO ] [2021-01-02 20:58:06,655] TC_05_loginWithInvalidPassword - STEP 05: Verify error message displayed
+[INFO ] [2021-01-02 20:58:06,743]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:58:06,743] TC_06_loginWithValidEmailAndPassword - STEP 01: Refresh page
+[INFO ] [2021-01-02 20:58:08,085] TC_06_loginWithValidEmailAndPassword - STEP 02: Input valid email to email text box
+[INFO ] [2021-01-02 20:58:08,322] TC_06_loginWithValidEmailAndPassword - STEP 03: Input valid password to password textbox
+[INFO ] [2021-01-02 20:58:08,501] TC_06_loginWithValidEmailAndPassword - STEP 04: Click to login button
+[INFO ] [2021-01-02 20:58:10,133] TC_06_loginWithValidEmailAndPassword - STEP 05: Verify success message displayed
+[INFO ] [2021-01-02 20:58:10,146]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:58:10,147] Post-condition - Close browser and driver
+[INFO ] [2021-01-02 20:58:10,147] OS name = windows 10
+[INFO ] [2021-01-02 20:58:11,331] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-01-02 20:58:11,347] Pre-condition - STEP 01: Open browser
+[INFO ] [2021-01-02 20:58:17,810] Pre-condition - STEP 02: Init home page
+[INFO ] [2021-01-02 20:58:17,811] Pre-condition - STEP 03: Get home page title
+[INFO ] [2021-01-02 20:58:17,841] Pre-condition - STEP 04: Open and Init register page
+[INFO ] [2021-01-02 20:58:20,235] Pre-condition - STEP 05: Select Gender
+[INFO ] [2021-01-02 20:58:20,399] Pre-condition - STEP 06: Input to first name
+[INFO ] [2021-01-02 20:58:20,778] Pre-condition - STEP 07: Input to last name
+[INFO ] [2021-01-02 20:58:20,999] Pre-condition - STEP 08: Select day
+[INFO ] [2021-01-02 20:58:21,128] Pre-condition - STEP 09: Select month
+[INFO ] [2021-01-02 20:58:21,321] Pre-condition - STEP 10: Select year
+[INFO ] [2021-01-02 20:58:21,489] Pre-condition - STEP 11: input to email textbox
+[INFO ] [2021-01-02 20:58:21,717] Pre-condition - STEP 12: Input company textbox
+[INFO ] [2021-01-02 20:58:21,912] Pre-condition - STEP 13: Input to password texbox
+[INFO ] [2021-01-02 20:58:22,082] Pre-condition - STEP 14: Input to confim password textbox
+[INFO ] [2021-01-02 20:58:22,264] Pre-condition - STEP 15: Click to register button
+[INFO ] [2021-01-02 20:58:24,534] Pre-condition - STEP 16: Verify register success message displayed
+[INFO ] [2021-01-02 20:58:24,617]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:58:24,617] Pre-condition - STEP 17: CLick to continue button
+[INFO ] [2021-01-02 20:58:27,915] Pre-condition - STEP 18: Verify return to Home page success
+[INFO ] [2021-01-02 20:58:27,923]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:58:27,923] Pre-condition - STEP 19: Init home page
+[INFO ] [2021-01-02 20:58:27,923] Pre-condition - STEP 20: Init my account page
+[INFO ] [2021-01-02 20:58:30,369] TC_01_updateCustomerInfo - STEP 01: Select gender
+[INFO ] [2021-01-02 20:58:30,913] TC_01_updateCustomerInfo - STEP 02: Input to first name
+[INFO ] [2021-01-02 20:58:31,312] TC_01_updateCustomerInfo - STEP 03: Input to last name textbox
+[INFO ] [2021-01-02 20:58:31,537] TC_01_updateCustomerInfo - STEP 04: Select date
+[INFO ] [2021-01-02 20:58:31,680] TC_01_updateCustomerInfo - STEP 06: Select month
+[INFO ] [2021-01-02 20:58:31,793] TC_01_updateCustomerInfo - STEP 07: Select year
+[INFO ] [2021-01-02 20:58:31,909] TC_01_updateCustomerInfo - STEP 08: Input to email textbox
+[INFO ] [2021-01-02 20:58:32,083] TC_01_updateCustomerInfo - STEP 09: Input to company textbox
+[INFO ] [2021-01-02 20:58:32,217] TC_01_updateCustomerInfo - STEP 10: Verify first name
+[INFO ] [2021-01-02 20:58:32,256]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:58:32,256] TC_01_updateCustomerInfo - STEP 11: Verify last name 
+[INFO ] [2021-01-02 20:58:32,303]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:58:32,303] TC_01_updateCustomerInfo - STEP 12: Verify Date
+[INFO ] [2021-01-02 20:58:32,410]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:58:32,410] TC_01_updateCustomerInfo - STEP 13: Verify month
+[INFO ] [2021-01-02 20:58:32,550]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:58:32,550] TC_01_updateCustomerInfo - STEP 14: Verify year
+[INFO ] [2021-01-02 20:58:33,519]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:58:33,519] TC_01_updateCustomerInfo - STEP 15: Verify email
+[INFO ] [2021-01-02 20:58:33,550]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:58:33,550] TC_01_updateCustomerInfo - STEP 16: Verify company name
+[INFO ] [2021-01-02 20:58:33,597]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:58:33,597] TC_02_addNewAddress - STEP 01: Click to Address link
+[INFO ] [2021-01-02 20:58:35,440] TC_02_addNewAddress - STEP 02: Click to Add new button
+[INFO ] [2021-01-02 20:58:36,665] TC_02_addNewAddress - STEP 03: Input to first name
+[INFO ] [2021-01-02 20:58:36,842] TC_02_addNewAddress - STEP 04: Input to last name
+[INFO ] [2021-01-02 20:58:36,984] TC_02_addNewAddress - STEP 05: Input to Email
+[INFO ] [2021-01-02 20:58:37,205] TC_02_addNewAddress - STEP 06: Input to company
+[INFO ] [2021-01-02 20:58:37,335] TC_02_addNewAddress - STEP 07: Select Country
+[INFO ] [2021-01-02 20:58:37,441] TC_02_addNewAddress - STEP 08: Select State
+[INFO ] [2021-01-02 20:58:38,052] TC_02_addNewAddress - STEP 09: input to City texbox
+[INFO ] [2021-01-02 20:58:38,207] TC_02_addNewAddress - STEP 10: Input to address 1 textbox
+[INFO ] [2021-01-02 20:58:38,396] TC_02_addNewAddress - STEP 11: Input to address 2 textbox
+[INFO ] [2021-01-02 20:58:38,536] TC_02_addNewAddress - STEP 12: Inout to Zip code
+[INFO ] [2021-01-02 20:58:38,691] TC_02_addNewAddress - STEP 13: Input to phone textbox
+[INFO ] [2021-01-02 20:58:38,839] TC_02_addNewAddress - STEP 14: Input to fax number textbox
+[INFO ] [2021-01-02 20:58:38,972] TC_02_addNewAddress - STEP 15: Click to SAVE button
+[INFO ] [2021-01-02 20:58:40,934] TC_02_addNewAddress - STEP 16: Verify name
+[INFO ] [2021-01-02 20:58:41,013]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:58:41,013] TC_02_addNewAddress - STEP 17: Verify email
+[INFO ] [2021-01-02 20:58:41,094]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:58:41,095] TC_02_addNewAddress - STEP 18: Verify phone number
+[INFO ] [2021-01-02 20:58:41,186]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:58:41,186] TC_02_addNewAddress - STEP 19: Verify fax number
+[INFO ] [2021-01-02 20:58:41,258]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:58:41,258] TC_02_addNewAddress - STEP 20: Verify company name
+[INFO ] [2021-01-02 20:58:41,318]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:58:41,319] TC_02_addNewAddress - STEP 21: Verify address 1
+[INFO ] [2021-01-02 20:58:41,379]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:58:41,379] TC_02_addNewAddress - STEP 22: Verify address 2
+[INFO ] [2021-01-02 20:58:41,436]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:58:41,436] TC_02_addNewAddress - STEP 23: Verify zip code
+[INFO ] [2021-01-02 20:58:41,472]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:58:41,472] TC_02_addNewAddress - STEP 24: Verify country
+[INFO ] [2021-01-02 20:58:41,519]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:58:41,519] TC_03_changePassword - STEP 01: Click to change password link
+[INFO ] [2021-01-02 20:58:43,214] TC_03_changePassword - STEP 02: Input to password textbox
+[INFO ] [2021-01-02 20:58:43,379] TC_03_changePassword - STEP 03: Input to new password textbox
+[INFO ] [2021-01-02 20:58:43,508] TC_03_changePassword - STEP 04: Input to confirm new password
+[INFO ] [2021-01-02 20:58:43,642] TC_03_changePassword - STEP 05: Click to change password button
+[INFO ] [2021-01-02 20:58:44,812] TC_03_changePassword - STEP 06: Verify password chang success
+[INFO ] [2021-01-02 20:58:44,935]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:58:44,935] TC_03_changePassword - STEP 07: click to Logout link
+[INFO ] [2021-01-02 20:58:47,363] TC_03_changePassword - STEP 08: Click to login link
+[INFO ] [2021-01-02 20:58:48,501] TC_03_changePassword - STEP 09: Open and Init login page
+[INFO ] [2021-01-02 20:58:48,501] TC_03_changePassword - STEP 10: Input to Email textbox
+[INFO ] [2021-01-02 20:58:48,756] TC_03_changePassword - STEP 11: Input invalid password to password textbox
+[INFO ] [2021-01-02 20:58:48,915] TC_03_changePassword - STEP 12: Click to Login button
+[INFO ] [2021-01-02 20:58:50,210] TC_03_changePassword - STEP 13: Verify login false
+[INFO ] [2021-01-02 20:58:50,270]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:58:50,270] TC_03_changePassword - STEP 14: Input valid password to password textbox
+[INFO ] [2021-01-02 20:58:50,480] TC_03_changePassword - STEP 15: Click to login button
+[INFO ] [2021-01-02 20:58:52,797] TC_03_changePassword - STEP 16: Verify login success
+[INFO ] [2021-01-02 20:58:52,804]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:58:52,804] TC_04_myProductReview - STEP 01: Open and Init computer page
+[INFO ] [2021-01-02 20:58:54,225] TC_04_myProductReview - STEP 02: Click to Desktop link
+[INFO ] [2021-01-02 20:58:55,484] TC_04_myProductReview - STEP 03: CLick to Build your own computer product link
+[INFO ] [2021-01-02 20:58:57,546] TC_04_myProductReview - STEP 04: Click to Add your review link
+[INFO ] [2021-01-02 20:58:58,652] TC_04_myProductReview - STEP 05: Input to review textbox
+[INFO ] [2021-01-02 20:58:58,844] TC_04_myProductReview - STEP 06: Input text to textarea
+[INFO ] [2021-01-02 20:58:59,056] TC_04_myProductReview - STEP 07: Select rating
+[INFO ] [2021-01-02 20:58:59,183] TC_04_myProductReview - STEP 08: Click to submit button
+[INFO ] [2021-01-02 20:59:01,675] TC_04_myProductReview - STEP 09: Verify success message displayed
+[INFO ] [2021-01-02 20:59:01,791]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:59:01,791] TC_04_myProductReview - STEP 10: Click to My account link
+[INFO ] [2021-01-02 20:59:02,957] TC_04_myProductReview - STEP 11: Click to My product reviews link
+[INFO ] [2021-01-02 20:59:04,506] TC_04_myProductReview - STEP 12: Verify review text displayed
+[INFO ] [2021-01-02 20:59:04,581]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:59:04,581] Post-condition - Close browser and driver
+[INFO ] [2021-01-02 20:59:04,581] OS name = windows 10
+[INFO ] [2021-01-02 20:59:05,691] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-01-02 20:59:05,707] Pre-condition - STEP 01: Open browser
+[INFO ] [2021-01-02 20:59:11,879] Pre-condition - STEP 02: Open and Init home page
+[INFO ] [2021-01-02 20:59:11,880] Pre-condition - STEP 03: Open and Init search page
+[INFO ] [2021-01-02 20:59:14,103] TC_01_searchWithEmptyData - STEP 01: Click to Search button
+[INFO ] [2021-01-02 20:59:16,148] TC_01_searchWithEmptyData - STEP 02: verify error message diplayed
+[INFO ] [2021-01-02 20:59:16,226]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:59:16,226] TC_02_searchWithDataNotExist - STEP 01: Input to search textbox
+[INFO ] [2021-01-02 20:59:16,417] TC_02_searchWithDataNotExist - STEP 02: CLick to search button
+[INFO ] [2021-01-02 20:59:18,651] TC_02_searchWithDataNotExist - STEP 03: Verify message displayed
+[INFO ] [2021-01-02 20:59:18,767]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:59:18,769] TC_03_searchRelative - STEP 01: Input to search textbox
+[INFO ] [2021-01-02 20:59:19,012] TC_03_searchRelative - STEP 02: Click to search button
+[INFO ] [2021-01-02 20:59:20,486] TC_03_searchRelative - STEP 03: Verify product displayed
+[INFO ] [2021-01-02 20:59:20,660]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:59:20,661] TC_04_searchAbsolute - STEP 01: Input to search textbox
+[INFO ] [2021-01-02 20:59:20,821] TC_04_searchAbsolute - STEP 02: Click to search button
+[INFO ] [2021-01-02 20:59:23,061] TC_04_searchAbsolute - STEP 03: Verify result displayed
+[INFO ] [2021-01-02 20:59:23,165]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:59:23,166] TC_05_searchWithParentCategories - STEP 01: Input to search textbox
+[INFO ] [2021-01-02 20:59:23,350] TC_05_searchWithParentCategories - STEP 02: Select advance search
+[INFO ] [2021-01-02 20:59:23,466] TC_05_searchWithParentCategories - STEP 03: Select computer
+[INFO ] [2021-01-02 20:59:23,625] TC_05_searchWithParentCategories - STEP 04: Click to search button
+[INFO ] [2021-01-02 20:59:25,570] TC_05_searchWithParentCategories - STEP 05: Verify error message displayed
+[INFO ] [2021-01-02 20:59:25,621]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:59:25,622] TC_06_searchWithSubCategories - STEP 01: Open Url search
+[INFO ] [2021-01-02 20:59:27,167] TC_06_searchWithSubCategories - STEP 02: Input to search textbox
+[INFO ] [2021-01-02 20:59:27,381] TC_06_searchWithSubCategories - STEP 03: Select advance search
+[INFO ] [2021-01-02 20:59:27,528] TC_06_searchWithSubCategories - STEP 04: Select Computer
+[INFO ] [2021-01-02 20:59:27,650] TC_06_searchWithSubCategories - STEP 05: Select Auto search sub category
+[INFO ] [2021-01-02 20:59:27,785] TC_06_searchWithSubCategories - STEP 06: Click to search button
+[INFO ] [2021-01-02 20:59:29,213] TC_06_searchWithSubCategories - STEP 07: Verify result
+[INFO ] [2021-01-02 20:59:29,281]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:59:29,283] TC_07_searchWithIncorrectManufacturer - STEP 01: Open search URL
+[INFO ] [2021-01-02 20:59:29,847] TC_07_searchWithIncorrectManufacturer - STEP 02: Input to search textbox
+[INFO ] [2021-01-02 20:59:30,088] TC_07_searchWithIncorrectManufacturer - STEP 03: Select advance search
+[INFO ] [2021-01-02 20:59:30,261] TC_07_searchWithIncorrectManufacturer - STEP 04: Select Computer
+[INFO ] [2021-01-02 20:59:30,413] TC_07_searchWithIncorrectManufacturer - STEP 05: Select auto search sub categoryes
+[INFO ] [2021-01-02 20:59:30,497] TC_07_searchWithIncorrectManufacturer - STEP 06: Select HP
+[INFO ] [2021-01-02 20:59:30,598] TC_07_searchWithIncorrectManufacturer - STEP 07: Click search button
+[INFO ] [2021-01-02 20:59:31,919] TC_07_searchWithIncorrectManufacturer - STEP 08: Verify result
+[INFO ] [2021-01-02 20:59:31,990]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:59:31,990] TC_08_searchWithCorrectManufacturer - STEP 01: Open search URL
+[INFO ] [2021-01-02 20:59:32,665] TC_08_searchWithCorrectManufacturer - STEP 02: Input to search textbox
+[INFO ] [2021-01-02 20:59:32,848] TC_08_searchWithCorrectManufacturer - STEP 03: Select advance search
+[INFO ] [2021-01-02 20:59:33,022] TC_08_searchWithCorrectManufacturer - STEP 04: Select Computer
+[INFO ] [2021-01-02 20:59:33,240] TC_08_searchWithCorrectManufacturer - STEP 05: Select auto search sub categoryes
+[INFO ] [2021-01-02 20:59:33,332] TC_08_searchWithCorrectManufacturer - STEP 06: Select Apple
+[INFO ] [2021-01-02 20:59:33,427] TC_08_searchWithCorrectManufacturer - STEP 07: Click search button
+[INFO ] [2021-01-02 20:59:34,592] TC_08_searchWithCorrectManufacturer - STEP 08: Verify result
+[INFO ] [2021-01-02 20:59:34,652]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:59:34,654] TC_09_searchInPriceRange - STEP 01: Open search URL
+[INFO ] [2021-01-02 20:59:35,221] TC_09_searchInPriceRange - STEP 02: Input to search textbox
+[INFO ] [2021-01-02 20:59:35,399] TC_09_searchInPriceRange - STEP 03: Select advance search
+[INFO ] [2021-01-02 20:59:35,543] TC_09_searchInPriceRange - STEP 04: Select Computer
+[INFO ] [2021-01-02 20:59:35,682] TC_09_searchInPriceRange - STEP 05: Select auto search sub categoryes
+[INFO ] [2021-01-02 20:59:35,785] TC_09_searchInPriceRange - STEP 06: Select Apple
+[INFO ] [2021-01-02 20:59:35,883] TC_09_searchInPriceRange - STEP 07: Input range
+[INFO ] [2021-01-02 20:59:36,014] TC_09_searchInPriceRange - STEP 08: Input range
+[INFO ] [2021-01-02 20:59:36,130] TC_09_searchInPriceRange - STEP 09: Click search button
+[INFO ] [2021-01-02 20:59:37,521] TC_09_searchInPriceRange - STEP 10: Verify result
+[INFO ] [2021-01-02 20:59:37,584]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:59:37,585] TC_10_searchOutPriceRange - STEP 01: Open search URL
+[INFO ] [2021-01-02 20:59:38,175] TC_10_searchOutPriceRange - STEP 02: Input to search textbox
+[INFO ] [2021-01-02 20:59:38,340] TC_10_searchOutPriceRange - STEP 03: Select advance search
+[INFO ] [2021-01-02 20:59:38,446] TC_10_searchOutPriceRange - STEP 04: Select Computer
+[INFO ] [2021-01-02 20:59:38,551] TC_10_searchOutPriceRange - STEP 05: Select auto search sub categoryes
+[INFO ] [2021-01-02 20:59:38,663] TC_10_searchOutPriceRange - STEP 06: Select Apple
+[INFO ] [2021-01-02 20:59:38,781] TC_10_searchOutPriceRange - STEP 07: Input range
+[INFO ] [2021-01-02 20:59:38,928] TC_10_searchOutPriceRange - STEP 08: Input range
+[INFO ] [2021-01-02 20:59:39,069] TC_10_searchOutPriceRange - STEP 09: Click search button
+[INFO ] [2021-01-02 20:59:40,296] TC_10_searchOutPriceRange - STEP 10: Verify result
+[INFO ] [2021-01-02 20:59:40,363]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:59:40,364] TC_11_searchOutPriceRange - STEP 01: Open search URL
+[INFO ] [2021-01-02 20:59:40,906] TC_11_searchOutPriceRange - STEP 02: Input to search textbox
+[INFO ] [2021-01-02 20:59:41,077] TC_11_searchOutPriceRange - STEP 03: Select advance search
+[INFO ] [2021-01-02 20:59:41,190] TC_11_searchOutPriceRange - STEP 04: Select Computer
+[INFO ] [2021-01-02 20:59:41,377] TC_11_searchOutPriceRange - STEP 05: Select auto search sub categoryes
+[INFO ] [2021-01-02 20:59:41,472] TC_11_searchOutPriceRange - STEP 06: Select Apple
+[INFO ] [2021-01-02 20:59:41,593] TC_11_searchOutPriceRange - STEP 07: Input range
+[INFO ] [2021-01-02 20:59:41,705] TC_11_searchOutPriceRange - STEP 08: Input range
+[INFO ] [2021-01-02 20:59:41,822] TC_11_searchOutPriceRange - STEP 09: Click search button
+[INFO ] [2021-01-02 20:59:43,109] TC_11_searchOutPriceRange - STEP 10: Verify result
+[INFO ] [2021-01-02 20:59:43,170]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:59:43,171] Post-condition - STEP 01: Close browser
+[INFO ] [2021-01-02 20:59:43,171] OS name = windows 10
+[INFO ] [2021-01-02 20:59:43,972] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-01-02 20:59:43,972] Pre-condition - STEP 01: Open browser
+[INFO ] [2021-01-02 20:59:50,134] Pre-condition - STEP 02: Open and Init home page
+[INFO ] [2021-01-02 20:59:50,134] Pre-condition - STEP 03: Open and Init Computer page
+[INFO ] [2021-01-02 20:59:51,494] Pre-condition - STEP 04: Click to notebooks link
+[INFO ] [2021-01-02 20:59:53,701] Pre-TC_01_sortWithNameAtoZ - STEP 01: Select sort name A to Z
+[INFO ] [2021-01-02 20:59:54,517] Pre-TC_01_sortWithNameAtoZ - STEP 02: Verify name sorted ascending
+[INFO ] [2021-01-02 20:59:54,744]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:59:54,744] Pre-TC_02_sortWithNameZtoA - STEP 01: Select sort name Z to A
+[INFO ] [2021-01-02 20:59:55,519] Pre-TC_02_sortWithNameZtoA - STEP 02: Verify name sorted descending
+[INFO ] [2021-01-02 20:59:55,738]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:59:55,738] Pre-TC_03_sortWithPriceAtoZ - STEP 01: Select price A to Z
+[INFO ] [2021-01-02 20:59:57,579] Pre-TC_03_sortWithPriceAtoZ - STEP 02: Verify price sorted ascending
+[INFO ] [2021-01-02 20:59:57,753]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:59:57,753] Pre-TC_04_sortWithPriceZtoA - STEP 01: Select price Z to A
+[INFO ] [2021-01-02 20:59:59,433] Pre-TC_04_sortWithPriceZtoA - STEP 02: Verify price sorted descending
+[INFO ] [2021-01-02 20:59:59,613]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 20:59:59,613] Pre-TC_05_displayProduct - STEP 01: Select product display = 3
+[INFO ] [2021-01-02 21:00:00,418] Pre-TC_05_displayProduct - STEP 02: Verify number of item
+[INFO ] [2021-01-02 21:00:00,493]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:00:00,493] Pre-TC_05_displayProduct - STEP 03: Verify next icon displayed
+[INFO ] [2021-01-02 21:00:00,535]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:00:00,535] Pre-TC_05_displayProduct - STEP 04: Click to next icon
+[INFO ] [2021-01-02 21:00:02,044] Pre-TC_05_displayProduct - STEP 05: Verify previous displayed
+[INFO ] [2021-01-02 21:00:02,111]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:00:02,112] Pre-TC_06_displayProduct - STEP 01: Select product display = 6
+[INFO ] [2021-01-02 21:00:02,881] Pre-TC_06_displayProduct - STEP 02: Verify number of product displayed
+[INFO ] [2021-01-02 21:00:03,003]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:00:03,003] Pre-TC_06_displayProduct - STEP 04: Verify next icon undisplayed
+[INFO ] [2021-01-02 21:00:06,051]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:00:06,051] Pre-TC_07_displayProduct - STEP 01: Select product display = 9
+[INFO ] [2021-01-02 21:00:06,862] Pre-TC_07_displayProduct - STEP 02: Verify product number displayed
+[INFO ] [2021-01-02 21:00:06,957]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:00:06,957] Pre-TC_07_displayProduct - STEP 03: Verify next icon undisplayed
+[INFO ] [2021-01-02 21:00:10,003]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:00:10,003] Post-condition - STEP 01: Close browser 
+[INFO ] [2021-01-02 21:00:10,003] OS name = windows 10
+[INFO ] [2021-01-02 21:00:10,785] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-01-02 21:00:34,242] OS name = windows 10
+[INFO ] [2021-01-02 21:00:35,066] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-01-02 21:01:00,425] OS name = windows 10
+[INFO ] [2021-01-02 21:01:01,175] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-01-02 21:02:40,254]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:02:49,677]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:02:52,476]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:02:55,045]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:02:56,898]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:03:05,782]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:03:05,843]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:03:07,422]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:03:07,423] OS name = windows 10
+[INFO ] [2021-01-02 21:03:08,347] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-01-02 21:03:20,587]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:03:31,022]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:03:57,385]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:03:58,869]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:03:58,957]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:03:59,052]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:03:59,126]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:03:59,215]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:03:59,332]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:03:59,410]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:03:59,519]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:03:59,566]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:03:59,628]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:03:59,691]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:03:59,753]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:04:03,926]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:04:08,445]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:04:08,447] OS name = windows 10
+[INFO ] [2021-01-02 21:04:09,332] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-01-02 21:06:19,050] Pre-condition - STEP 01: Open browser
+[INFO ] [2021-01-02 21:06:26,690] Pre-condition - STEP 02: Open home Page
+[INFO ] [2021-01-02 21:06:26,704] Pre-condition - STEP 03: Open register page
+[INFO ] [2021-01-02 21:06:29,481] TC_01_registerWithEmptyData - STEP 01: Click to register button
+[INFO ] [2021-01-02 21:06:30,125] TC_01_registerWithEmptyData - STEP 02: Verify error message displayed
+[INFO ] [2021-01-02 21:06:30,566]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:06:30,566] TC_02_registerWithInvalidEmail - STEP 01: Refresh page
+[INFO ] [2021-01-02 21:06:32,088] TC_02_registerWithInvalidEmail - STEP 02: SendKey to email text box
+[INFO ] [2021-01-02 21:06:32,344] TC_02_registerWithInvalidEmail - STEP 03: Click to register button
+[INFO ] [2021-01-02 21:06:32,892] TC_02_registerWithInvalidEmail - STEP 04: Verify error message displayed
+[INFO ] [2021-01-02 21:06:32,980]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:06:32,982] TC_04_registerWithInvalidPassword - STEP 01: Refresh page
+[INFO ] [2021-01-02 21:06:34,745] TC_04_registerWithInvalidPassword - STEP 02: SendKey to password text box
+[INFO ] [2021-01-02 21:06:35,010] TC_04_registerWithInvalidPassword - STEP 03: Click to register button
+[INFO ] [2021-01-02 21:06:35,581] TC_04_registerWithInvalidPassword - STEP 04: Verify Error message displayed
+[INFO ] [2021-01-02 21:06:35,659]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:06:35,660] TC_05_registerWithInvalidConfirmPassword - STEP 01: Refresh page
+[INFO ] [2021-01-02 21:06:37,102] TC_05_registerWithInvalidConfirmPassword - STEP 02: SendKey to  password text box
+[INFO ] [2021-01-02 21:06:37,335] TC_05_registerWithInvalidConfirmPassword - STEP 03: SendKey to confirm password test box
+[INFO ] [2021-01-02 21:06:37,585] TC_05_registerWithInvalidConfirmPassword - STEP 04: Click to register button
+[INFO ] [2021-01-02 21:06:38,130] TC_05_registerWithInvalidConfirmPassword - STEP 05: Verify error message displayed
+[INFO ] [2021-01-02 21:06:38,216]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:06:38,217] TC_06_registerWithValidInfo - STEP 01: Refresh page
+[INFO ] [2021-01-02 21:06:39,540] TC_06_registerWithValidInfo - STEP 02: Select gender
+[INFO ] [2021-01-02 21:06:40,085] TC_06_registerWithValidInfo - STEP 03: Input to first name
+[INFO ] [2021-01-02 21:06:40,441] TC_06_registerWithValidInfo - STEP 04: Input to last name
+[INFO ] [2021-01-02 21:06:40,617] TC_06_registerWithValidInfo - STEP 05: select date
+[INFO ] [2021-01-02 21:06:40,738] TC_06_registerWithValidInfo - STEP 06: Select month
+[INFO ] [2021-01-02 21:06:40,845] TC_06_registerWithValidInfo - STEP 07: Select year
+[INFO ] [2021-01-02 21:06:40,997] TC_06_registerWithValidInfo - STEP 08: Input to email text box
+[INFO ] [2021-01-02 21:06:41,207] TC_06_registerWithValidInfo - STEP 09: Input to company text box
+[INFO ] [2021-01-02 21:06:41,348] TC_06_registerWithValidInfo - STEP 10: Input to password text box
+[INFO ] [2021-01-02 21:06:41,491] TC_06_registerWithValidInfo - STEP 11: Input to comfirm password text box
+[INFO ] [2021-01-02 21:06:41,632] TC_06_registerWithValidInfo - STEP 12: Click to register button
+[INFO ] [2021-01-02 21:06:44,001] TC_06_registerWithValidInfo - STEP 13: Verify register success
+[INFO ] [2021-01-02 21:06:44,074]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:06:44,075] Post-condition - Close browser and driver
+[INFO ] [2021-01-02 21:06:44,075] OS name = windows 10
+[INFO ] [2021-01-02 21:06:44,972] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-01-02 21:06:44,972] Pre-condition - STEP 01: Open browser
+[INFO ] [2021-01-02 21:06:50,912] Pre-condition - STEP 02: Init Home page
+[INFO ] [2021-01-02 21:06:50,913] Pre-condition - STEP 03: Get home page title
+[INFO ] [2021-01-02 21:06:50,944] Pre-condition - STEP 02: Open login page
+[INFO ] [2021-01-02 21:06:53,121] TC_01_loginWithEmptyData - STEP 01: Click to Login button
+[INFO ] [2021-01-02 21:06:53,727] TC_01_loginWithEmptyData - STEP 02: Verify error message displayed
+[INFO ] [2021-01-02 21:06:53,845]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:06:53,846] TC_02_loginWithInvalidEmail - STEP 01: Refresh page
+[INFO ] [2021-01-02 21:06:54,432] TC_02_loginWithInvalidEmail - STEP 02: Input invalid email to email text box
+[INFO ] [2021-01-02 21:06:54,600] TC_02_loginWithInvalidEmail - STEP 03: Click to Login button
+[INFO ] [2021-01-02 21:06:55,137] TC_02_loginWithInvalidEmail - STEP 04: Verify error message displayed
+[INFO ] [2021-01-02 21:06:55,193]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:06:55,193] TC_03_LoginWithEmailNotRegistered - STEP 01: Refresh page
+[INFO ] [2021-01-02 21:06:55,704] TC_03_LoginWithEmailNotRegistered - STEP 02: Input invalid email to email text box
+[INFO ] [2021-01-02 21:06:55,927] TC_03_LoginWithEmailNotRegistered - STEP 03: Click to login button
+[INFO ] [2021-01-02 21:06:57,726] TC_03_LoginWithEmailNotRegistered - STEP 04: Verify error message displayed
+[INFO ] [2021-01-02 21:06:57,810]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:06:57,811] TC_04_loginWithEmptyPassword - STEP 01: Refresh page
+[INFO ] [2021-01-02 21:06:58,266] TC_04_loginWithEmptyPassword - STEP 02: Input valid email to email text box
+[INFO ] [2021-01-02 21:06:58,496] TC_04_loginWithEmptyPassword - STEP 03: Click to login button
+[INFO ] [2021-01-02 21:07:00,271] TC_04_loginWithEmptyPassword - STEP 04: Verify error message displayed
+[INFO ] [2021-01-02 21:07:00,335]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:07:00,335] TC_05_loginWithInvalidPassword - STEP 01: Refresh page
+[INFO ] [2021-01-02 21:07:00,342] TC_05_loginWithInvalidPassword - STEP 02: Input valid email to email text box
+[INFO ] [2021-01-02 21:07:01,824] TC_05_loginWithInvalidPassword - STEP 03: Input invalid password to password text box
+[INFO ] [2021-01-02 21:07:02,011] TC_05_loginWithInvalidPassword - STEP 04: Click to login button
+[INFO ] [2021-01-02 21:07:03,226] TC_05_loginWithInvalidPassword - STEP 05: Verify error message displayed
+[INFO ] [2021-01-02 21:07:03,296]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:07:03,297] TC_06_loginWithValidEmailAndPassword - STEP 01: Refresh page
+[INFO ] [2021-01-02 21:07:04,586] TC_06_loginWithValidEmailAndPassword - STEP 02: Input valid email to email text box
+[INFO ] [2021-01-02 21:07:04,792] TC_06_loginWithValidEmailAndPassword - STEP 03: Input valid password to password textbox
+[INFO ] [2021-01-02 21:07:04,934] TC_06_loginWithValidEmailAndPassword - STEP 04: Click to login button
+[INFO ] [2021-01-02 21:07:07,442] TC_06_loginWithValidEmailAndPassword - STEP 05: Verify success message displayed
+[INFO ] [2021-01-02 21:07:07,449]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:07:07,450] Post-condition - Close browser and driver
+[INFO ] [2021-01-02 21:07:07,451] OS name = windows 10
+[INFO ] [2021-01-02 21:07:08,300] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-01-02 21:07:08,300] Pre-condition - STEP 01: Open browser
+[INFO ] [2021-01-02 21:07:15,343] Pre-condition - STEP 02: Init home page
+[INFO ] [2021-01-02 21:07:15,365] Pre-condition - STEP 03: Get home page title
+[INFO ] [2021-01-02 21:07:15,388] Pre-condition - STEP 04: Open and Init register page
+[INFO ] [2021-01-02 21:07:18,169] Pre-condition - STEP 05: Select Gender
+[INFO ] [2021-01-02 21:07:18,874] Pre-condition - STEP 06: Input to first name
+[INFO ] [2021-01-02 21:07:19,165] Pre-condition - STEP 07: Input to last name
+[INFO ] [2021-01-02 21:07:19,356] Pre-condition - STEP 08: Select day
+[INFO ] [2021-01-02 21:07:19,506] Pre-condition - STEP 09: Select month
+[INFO ] [2021-01-02 21:07:19,650] Pre-condition - STEP 10: Select year
+[INFO ] [2021-01-02 21:07:19,784] Pre-condition - STEP 11: input to email textbox
+[INFO ] [2021-01-02 21:07:19,972] Pre-condition - STEP 12: Input company textbox
+[INFO ] [2021-01-02 21:07:20,130] Pre-condition - STEP 13: Input to password texbox
+[INFO ] [2021-01-02 21:07:20,282] Pre-condition - STEP 14: Input to confim password textbox
+[INFO ] [2021-01-02 21:07:20,449] Pre-condition - STEP 15: Click to register button
+[INFO ] [2021-01-02 21:07:23,716] Pre-condition - STEP 16: Verify register success message displayed
+[INFO ] [2021-01-02 21:07:23,773]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:07:23,773] Pre-condition - STEP 17: CLick to continue button
+[INFO ] [2021-01-02 21:07:26,465] Pre-condition - STEP 18: Verify return to Home page success
+[INFO ] [2021-01-02 21:07:26,487]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:07:26,487] Pre-condition - STEP 19: Init home page
+[INFO ] [2021-01-02 21:07:26,487] Pre-condition - STEP 20: Init my account page
+[INFO ] [2021-01-02 21:07:28,002] TC_01_updateCustomerInfo - STEP 01: Select gender
+[INFO ] [2021-01-02 21:07:28,550] TC_01_updateCustomerInfo - STEP 02: Input to first name
+[INFO ] [2021-01-02 21:07:28,800] TC_01_updateCustomerInfo - STEP 03: Input to last name textbox
+[INFO ] [2021-01-02 21:07:29,001] TC_01_updateCustomerInfo - STEP 04: Select date
+[INFO ] [2021-01-02 21:07:29,113] TC_01_updateCustomerInfo - STEP 06: Select month
+[INFO ] [2021-01-02 21:07:29,239] TC_01_updateCustomerInfo - STEP 07: Select year
+[INFO ] [2021-01-02 21:07:29,352] TC_01_updateCustomerInfo - STEP 08: Input to email textbox
+[INFO ] [2021-01-02 21:07:29,520] TC_01_updateCustomerInfo - STEP 09: Input to company textbox
+[INFO ] [2021-01-02 21:07:29,675] TC_01_updateCustomerInfo - STEP 10: Verify first name
+[INFO ] [2021-01-02 21:07:29,710]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:07:29,710] TC_01_updateCustomerInfo - STEP 11: Verify last name 
+[INFO ] [2021-01-02 21:07:29,758]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:07:29,758] TC_01_updateCustomerInfo - STEP 12: Verify Date
+[INFO ] [2021-01-02 21:07:29,863]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:07:29,863] TC_01_updateCustomerInfo - STEP 13: Verify month
+[INFO ] [2021-01-02 21:07:30,003]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:07:30,003] TC_01_updateCustomerInfo - STEP 14: Verify year
+[INFO ] [2021-01-02 21:07:30,990]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:07:30,990] TC_01_updateCustomerInfo - STEP 15: Verify email
+[INFO ] [2021-01-02 21:07:31,037]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:07:31,037] TC_01_updateCustomerInfo - STEP 16: Verify company name
+[INFO ] [2021-01-02 21:07:31,082]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:07:31,082] TC_02_addNewAddress - STEP 01: Click to Address link
+[INFO ] [2021-01-02 21:07:33,146] TC_02_addNewAddress - STEP 02: Click to Add new button
+[INFO ] [2021-01-02 21:07:35,522] TC_02_addNewAddress - STEP 03: Input to first name
+[INFO ] [2021-01-02 21:07:35,745] TC_02_addNewAddress - STEP 04: Input to last name
+[INFO ] [2021-01-02 21:07:35,920] TC_02_addNewAddress - STEP 05: Input to Email
+[INFO ] [2021-01-02 21:07:36,101] TC_02_addNewAddress - STEP 06: Input to company
+[INFO ] [2021-01-02 21:07:36,222] TC_02_addNewAddress - STEP 07: Select Country
+[INFO ] [2021-01-02 21:07:36,354] TC_02_addNewAddress - STEP 08: Select State
+[INFO ] [2021-01-02 21:07:37,238] TC_02_addNewAddress - STEP 09: input to City texbox
+[INFO ] [2021-01-02 21:07:37,397] TC_02_addNewAddress - STEP 10: Input to address 1 textbox
+[INFO ] [2021-01-02 21:07:37,558] TC_02_addNewAddress - STEP 11: Input to address 2 textbox
+[INFO ] [2021-01-02 21:07:37,707] TC_02_addNewAddress - STEP 12: Inout to Zip code
+[INFO ] [2021-01-02 21:07:37,841] TC_02_addNewAddress - STEP 13: Input to phone textbox
+[INFO ] [2021-01-02 21:07:37,972] TC_02_addNewAddress - STEP 14: Input to fax number textbox
+[INFO ] [2021-01-02 21:07:38,128] TC_02_addNewAddress - STEP 15: Click to SAVE button
+[INFO ] [2021-01-02 21:07:40,027] TC_02_addNewAddress - STEP 16: Verify name
+[INFO ] [2021-01-02 21:07:40,086]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:07:40,086] TC_02_addNewAddress - STEP 17: Verify email
+[INFO ] [2021-01-02 21:07:40,137]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:07:40,138] TC_02_addNewAddress - STEP 18: Verify phone number
+[INFO ] [2021-01-02 21:07:40,204]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:07:40,204] TC_02_addNewAddress - STEP 19: Verify fax number
+[INFO ] [2021-01-02 21:07:40,273]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:07:40,273] TC_02_addNewAddress - STEP 20: Verify company name
+[INFO ] [2021-01-02 21:07:40,338]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:07:40,338] TC_02_addNewAddress - STEP 21: Verify address 1
+[INFO ] [2021-01-02 21:07:40,431]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:07:40,431] TC_02_addNewAddress - STEP 22: Verify address 2
+[INFO ] [2021-01-02 21:07:40,510]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:07:40,510] TC_02_addNewAddress - STEP 23: Verify zip code
+[INFO ] [2021-01-02 21:07:40,567]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:07:40,567] TC_02_addNewAddress - STEP 24: Verify country
+[INFO ] [2021-01-02 21:07:40,644]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:07:40,644] TC_03_changePassword - STEP 01: Click to change password link
+[INFO ] [2021-01-02 21:07:41,949] TC_03_changePassword - STEP 02: Input to password textbox
+[INFO ] [2021-01-02 21:07:42,143] TC_03_changePassword - STEP 03: Input to new password textbox
+[INFO ] [2021-01-02 21:07:42,290] TC_03_changePassword - STEP 04: Input to confirm new password
+[INFO ] [2021-01-02 21:07:42,425] TC_03_changePassword - STEP 05: Click to change password button
+[INFO ] [2021-01-02 21:07:43,735] TC_03_changePassword - STEP 06: Verify password chang success
+[INFO ] [2021-01-02 21:07:43,847]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:07:43,847] TC_03_changePassword - STEP 07: click to Logout link
+[INFO ] [2021-01-02 21:07:46,692] TC_03_changePassword - STEP 08: Click to login link
+[INFO ] [2021-01-02 21:07:48,078] TC_03_changePassword - STEP 09: Open and Init login page
+[INFO ] [2021-01-02 21:07:48,079] TC_03_changePassword - STEP 10: Input to Email textbox
+[INFO ] [2021-01-02 21:07:48,298] TC_03_changePassword - STEP 11: Input invalid password to password textbox
+[INFO ] [2021-01-02 21:07:48,477] TC_03_changePassword - STEP 12: Click to Login button
+[INFO ] [2021-01-02 21:07:50,500] TC_03_changePassword - STEP 13: Verify login false
+[INFO ] [2021-01-02 21:07:50,586]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:07:50,587] TC_03_changePassword - STEP 14: Input valid password to password textbox
+[INFO ] [2021-01-02 21:07:50,769] TC_03_changePassword - STEP 15: Click to login button
+[INFO ] [2021-01-02 21:07:52,986] TC_03_changePassword - STEP 16: Verify login success
+[INFO ] [2021-01-02 21:07:53,004]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:07:53,005] TC_04_myProductReview - STEP 01: Open and Init computer page
+[INFO ] [2021-01-02 21:07:54,881] TC_04_myProductReview - STEP 02: Click to Desktop link
+[INFO ] [2021-01-02 21:07:57,100] TC_04_myProductReview - STEP 03: CLick to Build your own computer product link
+[INFO ] [2021-01-02 21:07:59,729] TC_04_myProductReview - STEP 04: Click to Add your review link
+[INFO ] [2021-01-02 21:08:00,857] TC_04_myProductReview - STEP 05: Input to review textbox
+[INFO ] [2021-01-02 21:08:01,032] TC_04_myProductReview - STEP 06: Input text to textarea
+[INFO ] [2021-01-02 21:08:01,196] TC_04_myProductReview - STEP 07: Select rating
+[INFO ] [2021-01-02 21:08:01,313] TC_04_myProductReview - STEP 08: Click to submit button
+[INFO ] [2021-01-02 21:08:02,436] TC_04_myProductReview - STEP 09: Verify success message displayed
+[INFO ] [2021-01-02 21:08:02,508]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:08:02,508] TC_04_myProductReview - STEP 10: Click to My account link
+[INFO ] [2021-01-02 21:08:03,589] TC_04_myProductReview - STEP 11: Click to My product reviews link
+[INFO ] [2021-01-02 21:08:04,819] TC_04_myProductReview - STEP 12: Verify review text displayed
+[INFO ] [2021-01-02 21:08:04,882]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:08:04,883] Post-condition - Close browser and driver
+[INFO ] [2021-01-02 21:08:04,883] OS name = windows 10
+[INFO ] [2021-01-02 21:08:05,753] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-01-02 21:08:05,753] Pre-condition - STEP 01: Open browser
+[INFO ] [2021-01-02 21:08:11,793] Pre-condition - STEP 02: Open and Init home page
+[INFO ] [2021-01-02 21:08:11,793] Pre-condition - STEP 03: Open and Init search page
+[INFO ] [2021-01-02 21:08:14,121] TC_01_searchWithEmptyData - STEP 01: Click to Search button
+[INFO ] [2021-01-02 21:08:16,063] TC_01_searchWithEmptyData - STEP 02: verify error message diplayed
+[INFO ] [2021-01-02 21:08:16,148]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:08:16,149] TC_02_searchWithDataNotExist - STEP 01: Input to search textbox
+[INFO ] [2021-01-02 21:08:16,426] TC_02_searchWithDataNotExist - STEP 02: CLick to search button
+[INFO ] [2021-01-02 21:08:17,665] TC_02_searchWithDataNotExist - STEP 03: Verify message displayed
+[INFO ] [2021-01-02 21:08:17,762]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:08:17,765] TC_03_searchRelative - STEP 01: Input to search textbox
+[INFO ] [2021-01-02 21:08:18,008] TC_03_searchRelative - STEP 02: Click to search button
+[INFO ] [2021-01-02 21:08:20,205] TC_03_searchRelative - STEP 03: Verify product displayed
+[INFO ] [2021-01-02 21:08:20,440]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:08:20,441] TC_04_searchAbsolute - STEP 01: Input to search textbox
+[INFO ] [2021-01-02 21:08:20,722] TC_04_searchAbsolute - STEP 02: Click to search button
+[INFO ] [2021-01-02 21:08:22,754] TC_04_searchAbsolute - STEP 03: Verify result displayed
+[INFO ] [2021-01-02 21:08:22,847]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:08:22,847] TC_05_searchWithParentCategories - STEP 01: Input to search textbox
+[INFO ] [2021-01-02 21:08:23,070] TC_05_searchWithParentCategories - STEP 02: Select advance search
+[INFO ] [2021-01-02 21:08:23,203] TC_05_searchWithParentCategories - STEP 03: Select computer
+[INFO ] [2021-01-02 21:08:23,332] TC_05_searchWithParentCategories - STEP 04: Click to search button
+[INFO ] [2021-01-02 21:08:24,496] TC_05_searchWithParentCategories - STEP 05: Verify error message displayed
+[INFO ] [2021-01-02 21:08:24,578]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:08:24,579] TC_06_searchWithSubCategories - STEP 01: Open Url search
+[INFO ] [2021-01-02 21:08:25,138] TC_06_searchWithSubCategories - STEP 02: Input to search textbox
+[INFO ] [2021-01-02 21:08:25,456] TC_06_searchWithSubCategories - STEP 03: Select advance search
+[INFO ] [2021-01-02 21:08:25,597] TC_06_searchWithSubCategories - STEP 04: Select Computer
+[INFO ] [2021-01-02 21:08:25,735] TC_06_searchWithSubCategories - STEP 05: Select Auto search sub category
+[INFO ] [2021-01-02 21:08:25,824] TC_06_searchWithSubCategories - STEP 06: Click to search button
+[INFO ] [2021-01-02 21:08:27,157] TC_06_searchWithSubCategories - STEP 07: Verify result
+[INFO ] [2021-01-02 21:08:27,220]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:08:27,222] TC_07_searchWithIncorrectManufacturer - STEP 01: Open search URL
+[INFO ] [2021-01-02 21:08:28,559] TC_07_searchWithIncorrectManufacturer - STEP 02: Input to search textbox
+[INFO ] [2021-01-02 21:08:28,785] TC_07_searchWithIncorrectManufacturer - STEP 03: Select advance search
+[INFO ] [2021-01-02 21:08:28,946] TC_07_searchWithIncorrectManufacturer - STEP 04: Select Computer
+[INFO ] [2021-01-02 21:08:29,067] TC_07_searchWithIncorrectManufacturer - STEP 05: Select auto search sub categoryes
+[INFO ] [2021-01-02 21:08:29,177] TC_07_searchWithIncorrectManufacturer - STEP 06: Select HP
+[INFO ] [2021-01-02 21:08:29,296] TC_07_searchWithIncorrectManufacturer - STEP 07: Click search button
+[INFO ] [2021-01-02 21:08:31,181] TC_07_searchWithIncorrectManufacturer - STEP 08: Verify result
+[INFO ] [2021-01-02 21:08:31,296]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:08:31,297] TC_08_searchWithCorrectManufacturer - STEP 01: Open search URL
+[INFO ] [2021-01-02 21:08:31,843] TC_08_searchWithCorrectManufacturer - STEP 02: Input to search textbox
+[INFO ] [2021-01-02 21:08:32,041] TC_08_searchWithCorrectManufacturer - STEP 03: Select advance search
+[INFO ] [2021-01-02 21:08:32,170] TC_08_searchWithCorrectManufacturer - STEP 04: Select Computer
+[INFO ] [2021-01-02 21:08:32,333] TC_08_searchWithCorrectManufacturer - STEP 05: Select auto search sub categoryes
+[INFO ] [2021-01-02 21:08:32,462] TC_08_searchWithCorrectManufacturer - STEP 06: Select Apple
+[INFO ] [2021-01-02 21:08:32,583] TC_08_searchWithCorrectManufacturer - STEP 07: Click search button
+[INFO ] [2021-01-02 21:08:33,787] TC_08_searchWithCorrectManufacturer - STEP 08: Verify result
+[INFO ] [2021-01-02 21:08:33,850]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:08:33,851] TC_09_searchInPriceRange - STEP 01: Open search URL
+[INFO ] [2021-01-02 21:08:35,175] TC_09_searchInPriceRange - STEP 02: Input to search textbox
+[INFO ] [2021-01-02 21:08:35,350] TC_09_searchInPriceRange - STEP 03: Select advance search
+[INFO ] [2021-01-02 21:08:35,490] TC_09_searchInPriceRange - STEP 04: Select Computer
+[INFO ] [2021-01-02 21:08:35,622] TC_09_searchInPriceRange - STEP 05: Select auto search sub categoryes
+[INFO ] [2021-01-02 21:08:35,719] TC_09_searchInPriceRange - STEP 06: Select Apple
+[INFO ] [2021-01-02 21:08:35,835] TC_09_searchInPriceRange - STEP 07: Input range
+[INFO ] [2021-01-02 21:08:36,005] TC_09_searchInPriceRange - STEP 08: Input range
+[INFO ] [2021-01-02 21:08:36,137] TC_09_searchInPriceRange - STEP 09: Click search button
+[INFO ] [2021-01-02 21:08:37,311] TC_09_searchInPriceRange - STEP 10: Verify result
+[INFO ] [2021-01-02 21:08:37,382]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:08:37,383] TC_10_searchOutPriceRange - STEP 01: Open search URL
+[INFO ] [2021-01-02 21:08:38,037] TC_10_searchOutPriceRange - STEP 02: Input to search textbox
+[INFO ] [2021-01-02 21:08:38,322] TC_10_searchOutPriceRange - STEP 03: Select advance search
+[INFO ] [2021-01-02 21:08:38,459] TC_10_searchOutPriceRange - STEP 04: Select Computer
+[INFO ] [2021-01-02 21:08:38,597] TC_10_searchOutPriceRange - STEP 05: Select auto search sub categoryes
+[INFO ] [2021-01-02 21:08:38,677] TC_10_searchOutPriceRange - STEP 06: Select Apple
+[INFO ] [2021-01-02 21:08:38,782] TC_10_searchOutPriceRange - STEP 07: Input range
+[INFO ] [2021-01-02 21:08:38,898] TC_10_searchOutPriceRange - STEP 08: Input range
+[INFO ] [2021-01-02 21:08:39,019] TC_10_searchOutPriceRange - STEP 09: Click search button
+[INFO ] [2021-01-02 21:08:40,258] TC_10_searchOutPriceRange - STEP 10: Verify result
+[INFO ] [2021-01-02 21:08:40,323]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:08:40,324] TC_11_searchOutPriceRange - STEP 01: Open search URL
+[INFO ] [2021-01-02 21:08:40,863] TC_11_searchOutPriceRange - STEP 02: Input to search textbox
+[INFO ] [2021-01-02 21:08:41,042] TC_11_searchOutPriceRange - STEP 03: Select advance search
+[INFO ] [2021-01-02 21:08:41,135] TC_11_searchOutPriceRange - STEP 04: Select Computer
+[INFO ] [2021-01-02 21:08:41,285] TC_11_searchOutPriceRange - STEP 05: Select auto search sub categoryes
+[INFO ] [2021-01-02 21:08:41,403] TC_11_searchOutPriceRange - STEP 06: Select Apple
+[INFO ] [2021-01-02 21:08:41,507] TC_11_searchOutPriceRange - STEP 07: Input range
+[INFO ] [2021-01-02 21:08:41,636] TC_11_searchOutPriceRange - STEP 08: Input range
+[INFO ] [2021-01-02 21:08:41,753] TC_11_searchOutPriceRange - STEP 09: Click search button
+[INFO ] [2021-01-02 21:08:42,914] TC_11_searchOutPriceRange - STEP 10: Verify result
+[INFO ] [2021-01-02 21:08:43,004]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:08:43,004] Post-condition - STEP 01: Close browser
+[INFO ] [2021-01-02 21:08:43,004] OS name = windows 10
+[INFO ] [2021-01-02 21:08:43,925] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-01-02 21:08:43,925] Pre-condition - STEP 01: Open browser
+[INFO ] [2021-01-02 21:08:50,313] Pre-condition - STEP 02: Open and Init home page
+[INFO ] [2021-01-02 21:08:50,313] Pre-condition - STEP 03: Open and Init Computer page
+[INFO ] [2021-01-02 21:08:52,807] Pre-condition - STEP 04: Click to notebooks link
+[INFO ] [2021-01-02 21:08:55,551] Pre-TC_01_sortWithNameAtoZ - STEP 01: Select sort name A to Z
+[INFO ] [2021-01-02 21:08:57,125] Pre-TC_01_sortWithNameAtoZ - STEP 02: Verify name sorted ascending
+[INFO ] [2021-01-02 21:08:57,458]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:08:57,458] Pre-TC_02_sortWithNameZtoA - STEP 01: Select sort name Z to A
+[INFO ] [2021-01-02 21:08:59,302] Pre-TC_02_sortWithNameZtoA - STEP 02: Verify name sorted descending
+[INFO ] [2021-01-02 21:08:59,641]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:08:59,642] Pre-TC_03_sortWithPriceAtoZ - STEP 01: Select price A to Z
+[INFO ] [2021-01-02 21:09:01,423] Pre-TC_03_sortWithPriceAtoZ - STEP 02: Verify price sorted ascending
+[INFO ] [2021-01-02 21:09:01,651]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:09:01,651] Pre-TC_04_sortWithPriceZtoA - STEP 01: Select price Z to A
+[INFO ] [2021-01-02 21:09:02,536] Pre-TC_04_sortWithPriceZtoA - STEP 02: Verify price sorted descending
+[INFO ] [2021-01-02 21:09:02,776]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:09:02,777] Pre-TC_05_displayProduct - STEP 01: Select product display = 3
+[INFO ] [2021-01-02 21:09:04,407] Pre-TC_05_displayProduct - STEP 02: Verify number of item
+[INFO ] [2021-01-02 21:09:04,501]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:09:04,501] Pre-TC_05_displayProduct - STEP 03: Verify next icon displayed
+[INFO ] [2021-01-02 21:09:04,556]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:09:04,556] Pre-TC_05_displayProduct - STEP 04: Click to next icon
+[INFO ] [2021-01-02 21:09:05,372] Pre-TC_05_displayProduct - STEP 05: Verify previous displayed
+[INFO ] [2021-01-02 21:09:05,450]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:09:05,450] Pre-TC_06_displayProduct - STEP 01: Select product display = 6
+[INFO ] [2021-01-02 21:09:06,790] Pre-TC_06_displayProduct - STEP 02: Verify number of product displayed
+[INFO ] [2021-01-02 21:09:06,964]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:09:06,964] Pre-TC_06_displayProduct - STEP 04: Verify next icon undisplayed
+[INFO ] [2021-01-02 21:09:10,025]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:09:10,025] Pre-TC_07_displayProduct - STEP 01: Select product display = 9
+[INFO ] [2021-01-02 21:09:11,831] Pre-TC_07_displayProduct - STEP 02: Verify product number displayed
+[INFO ] [2021-01-02 21:09:11,987]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:09:11,987] Pre-TC_07_displayProduct - STEP 03: Verify next icon undisplayed
+[INFO ] [2021-01-02 21:09:15,048]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:09:15,048] Post-condition - STEP 01: Close browser 
+[INFO ] [2021-01-02 21:09:15,048] OS name = windows 10
+[INFO ] [2021-01-02 21:09:15,894] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-01-02 21:09:29,332]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:09:38,019]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:09:40,175]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:09:42,267]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:09:44,123]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:09:51,627]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:09:51,691]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:09:53,970]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:09:53,970] OS name = windows 10
+[INFO ] [2021-01-02 21:09:54,941] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-01-02 21:10:19,330]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:10:29,857]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:10:57,226]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:10:58,385]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:10:58,472]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:10:58,557]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:10:58,623]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:10:58,684]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:10:58,800]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:10:58,894]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:10:58,972]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:10:59,035]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:10:59,082]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:10:59,128]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:10:59,191]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:11:01,983]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:11:06,901]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:11:06,902] OS name = windows 10
+[INFO ] [2021-01-02 21:11:07,785] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-01-02 21:20:03,129] Pre-condition - STEP 01: Open browser
+[INFO ] [2021-01-02 21:20:11,326] Pre-condition - STEP 02: Open home Page
+[INFO ] [2021-01-02 21:20:11,332] Pre-condition - STEP 03: Open register page
+[INFO ] [2021-01-02 21:20:13,574] TC_01_registerWithEmptyData - STEP 01: Click to register button
+[INFO ] [2021-01-02 21:20:14,228] TC_01_registerWithEmptyData - STEP 02: Verify error message displayed
+[INFO ] [2021-01-02 21:20:14,691]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:20:14,692] TC_02_registerWithInvalidEmail - STEP 01: Refresh page
+[INFO ] [2021-01-02 21:20:16,412] TC_02_registerWithInvalidEmail - STEP 02: SendKey to email text box
+[INFO ] [2021-01-02 21:20:16,679] TC_02_registerWithInvalidEmail - STEP 03: Click to register button
+[INFO ] [2021-01-02 21:20:17,287] TC_02_registerWithInvalidEmail - STEP 04: Verify error message displayed
+[INFO ] [2021-01-02 21:20:17,363]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:20:17,365] TC_04_registerWithInvalidPassword - STEP 01: Refresh page
+[INFO ] [2021-01-02 21:20:18,819] TC_04_registerWithInvalidPassword - STEP 02: SendKey to password text box
+[INFO ] [2021-01-02 21:20:19,100] TC_04_registerWithInvalidPassword - STEP 03: Click to register button
+[INFO ] [2021-01-02 21:20:19,690] TC_04_registerWithInvalidPassword - STEP 04: Verify Error message displayed
+[INFO ] [2021-01-02 21:20:19,753]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:20:19,753] TC_05_registerWithInvalidConfirmPassword - STEP 01: Refresh page
+[INFO ] [2021-01-02 21:20:21,059] TC_05_registerWithInvalidConfirmPassword - STEP 02: SendKey to  password text box
+[INFO ] [2021-01-02 21:20:21,287] TC_05_registerWithInvalidConfirmPassword - STEP 03: SendKey to confirm password test box
+[INFO ] [2021-01-02 21:20:21,483] TC_05_registerWithInvalidConfirmPassword - STEP 04: Click to register button
+[INFO ] [2021-01-02 21:20:22,034] TC_05_registerWithInvalidConfirmPassword - STEP 05: Verify error message displayed
+[INFO ] [2021-01-02 21:20:22,110]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:20:22,111] TC_06_registerWithValidInfo - STEP 01: Refresh page
+[INFO ] [2021-01-02 21:20:22,734] TC_06_registerWithValidInfo - STEP 02: Select gender
+[INFO ] [2021-01-02 21:20:23,338] TC_06_registerWithValidInfo - STEP 03: Input to first name
+[INFO ] [2021-01-02 21:20:23,709] TC_06_registerWithValidInfo - STEP 04: Input to last name
+[INFO ] [2021-01-02 21:20:23,895] TC_06_registerWithValidInfo - STEP 05: select date
+[INFO ] [2021-01-02 21:20:24,021] TC_06_registerWithValidInfo - STEP 06: Select month
+[INFO ] [2021-01-02 21:20:24,163] TC_06_registerWithValidInfo - STEP 07: Select year
+[INFO ] [2021-01-02 21:20:24,283] TC_06_registerWithValidInfo - STEP 08: Input to email text box
+[INFO ] [2021-01-02 21:20:24,460] TC_06_registerWithValidInfo - STEP 09: Input to company text box
+[INFO ] [2021-01-02 21:20:24,610] TC_06_registerWithValidInfo - STEP 10: Input to password text box
+[INFO ] [2021-01-02 21:20:24,740] TC_06_registerWithValidInfo - STEP 11: Input to comfirm password text box
+[INFO ] [2021-01-02 21:20:24,896] TC_06_registerWithValidInfo - STEP 12: Click to register button
+[INFO ] [2021-01-02 21:20:28,415] TC_06_registerWithValidInfo - STEP 13: Verify register success
+[INFO ] [2021-01-02 21:20:28,482]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:20:28,483] Post-condition - Close browser and driver
+[INFO ] [2021-01-02 21:20:28,485] OS name = windows 10
+[INFO ] [2021-01-02 21:20:29,405] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-01-02 21:22:09,894] Pre-condition - STEP 01: Open browser
+[INFO ] [2021-01-02 21:22:17,306] Pre-condition - STEP 02: Open home Page
+[INFO ] [2021-01-02 21:22:17,319] Pre-condition - STEP 03: Open register page
+[INFO ] [2021-01-02 21:22:20,064] TC_01_registerWithEmptyData - STEP 01: Click to register button
+[INFO ] [2021-01-02 21:22:20,711] TC_01_registerWithEmptyData - STEP 02: Verify error message displayed
+[INFO ] [2021-01-02 21:22:21,097]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:22:21,097] TC_02_registerWithInvalidEmail - STEP 01: Refresh page
+[INFO ] [2021-01-02 21:22:21,653] TC_02_registerWithInvalidEmail - STEP 02: SendKey to email text box
+[INFO ] [2021-01-02 21:22:21,827] TC_02_registerWithInvalidEmail - STEP 03: Click to register button
+[INFO ] [2021-01-02 21:22:22,361] TC_02_registerWithInvalidEmail - STEP 04: Verify error message displayed
+[INFO ] [2021-01-02 21:22:22,425]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:22:22,426] TC_04_registerWithInvalidPassword - STEP 01: Refresh page
+[INFO ] [2021-01-02 21:22:23,188] TC_04_registerWithInvalidPassword - STEP 02: SendKey to password text box
+[INFO ] [2021-01-02 21:22:23,418] TC_04_registerWithInvalidPassword - STEP 03: Click to register button
+[INFO ] [2021-01-02 21:22:23,970] TC_04_registerWithInvalidPassword - STEP 04: Verify Error message displayed
+[INFO ] [2021-01-02 21:22:24,042]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:22:24,044] TC_05_registerWithInvalidConfirmPassword - STEP 01: Refresh page
+[INFO ] [2021-01-02 21:22:25,382] TC_05_registerWithInvalidConfirmPassword - STEP 02: SendKey to  password text box
+[INFO ] [2021-01-02 21:22:25,598] TC_05_registerWithInvalidConfirmPassword - STEP 03: SendKey to confirm password test box
+[INFO ] [2021-01-02 21:22:25,831] TC_05_registerWithInvalidConfirmPassword - STEP 04: Click to register button
+[INFO ] [2021-01-02 21:22:26,388] TC_05_registerWithInvalidConfirmPassword - STEP 05: Verify error message displayed
+[INFO ] [2021-01-02 21:22:26,462]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:22:26,463] TC_06_registerWithValidInfo - STEP 01: Refresh page
+[INFO ] [2021-01-02 21:22:26,475] TC_06_registerWithValidInfo - STEP 02: Select gender
+[INFO ] [2021-01-02 21:22:28,251] TC_06_registerWithValidInfo - STEP 03: Input to first name
+[INFO ] [2021-01-02 21:22:28,788] TC_06_registerWithValidInfo - STEP 04: Input to last name
+[INFO ] [2021-01-02 21:22:28,981] TC_06_registerWithValidInfo - STEP 05: select date
+[INFO ] [2021-01-02 21:22:29,131] TC_06_registerWithValidInfo - STEP 06: Select month
+[INFO ] [2021-01-02 21:22:29,251] TC_06_registerWithValidInfo - STEP 07: Select year
+[INFO ] [2021-01-02 21:22:29,360] TC_06_registerWithValidInfo - STEP 08: Input to email text box
+[INFO ] [2021-01-02 21:22:29,543] TC_06_registerWithValidInfo - STEP 09: Input to company text box
+[INFO ] [2021-01-02 21:22:29,690] TC_06_registerWithValidInfo - STEP 10: Input to password text box
+[INFO ] [2021-01-02 21:22:29,839] TC_06_registerWithValidInfo - STEP 11: Input to comfirm password text box
+[INFO ] [2021-01-02 21:22:30,006] TC_06_registerWithValidInfo - STEP 12: Click to register button
+[INFO ] [2021-01-02 21:22:32,365] TC_06_registerWithValidInfo - STEP 13: Verify register success
+[INFO ] [2021-01-02 21:22:32,438]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:22:32,439] Post-condition - Close browser and driver
+[INFO ] [2021-01-02 21:22:32,439] OS name = windows 10
+[INFO ] [2021-01-02 21:22:33,316] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-01-02 21:22:33,316] Pre-condition - STEP 01: Open browser
+[INFO ] [2021-01-02 21:22:39,457] Pre-condition - STEP 02: Init Home page
+[INFO ] [2021-01-02 21:22:39,457] Pre-condition - STEP 03: Get home page title
+[INFO ] [2021-01-02 21:22:39,470] Pre-condition - STEP 02: Open login page
+[INFO ] [2021-01-02 21:22:41,704] TC_01_loginWithEmptyData - STEP 01: Click to Login button
+[INFO ] [2021-01-02 21:22:42,328] TC_01_loginWithEmptyData - STEP 02: Verify error message displayed
+[INFO ] [2021-01-02 21:22:42,417]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:22:42,417] TC_02_loginWithInvalidEmail - STEP 01: Refresh page
+[INFO ] [2021-01-02 21:22:43,671] TC_02_loginWithInvalidEmail - STEP 02: Input invalid email to email text box
+[INFO ] [2021-01-02 21:22:43,820] TC_02_loginWithInvalidEmail - STEP 03: Click to Login button
+[INFO ] [2021-01-02 21:22:44,367] TC_02_loginWithInvalidEmail - STEP 04: Verify error message displayed
+[INFO ] [2021-01-02 21:22:44,442]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:22:44,443] TC_03_LoginWithEmailNotRegistered - STEP 01: Refresh page
+[INFO ] [2021-01-02 21:22:44,959] TC_03_LoginWithEmailNotRegistered - STEP 02: Input invalid email to email text box
+[INFO ] [2021-01-02 21:22:45,244] TC_03_LoginWithEmailNotRegistered - STEP 03: Click to login button
+[INFO ] [2021-01-02 21:22:47,164] TC_03_LoginWithEmailNotRegistered - STEP 04: Verify error message displayed
+[INFO ] [2021-01-02 21:22:47,269]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:22:47,269] TC_04_loginWithEmptyPassword - STEP 01: Refresh page
+[INFO ] [2021-01-02 21:22:47,899] TC_04_loginWithEmptyPassword - STEP 02: Input valid email to email text box
+[INFO ] [2021-01-02 21:22:48,190] TC_04_loginWithEmptyPassword - STEP 03: Click to login button
+[INFO ] [2021-01-02 21:22:50,021] TC_04_loginWithEmptyPassword - STEP 04: Verify error message displayed
+[INFO ] [2021-01-02 21:22:50,121]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:22:50,122] TC_05_loginWithInvalidPassword - STEP 01: Refresh page
+[INFO ] [2021-01-02 21:22:50,616] TC_05_loginWithInvalidPassword - STEP 02: Input valid email to email text box
+[INFO ] [2021-01-02 21:22:50,816] TC_05_loginWithInvalidPassword - STEP 03: Input invalid password to password text box
+[INFO ] [2021-01-02 21:22:50,978] TC_05_loginWithInvalidPassword - STEP 04: Click to login button
+[INFO ] [2021-01-02 21:22:52,842] TC_05_loginWithInvalidPassword - STEP 05: Verify error message displayed
+[INFO ] [2021-01-02 21:22:52,989]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:22:52,990] TC_06_loginWithValidEmailAndPassword - STEP 01: Refresh page
+[INFO ] [2021-01-02 21:22:53,506] TC_06_loginWithValidEmailAndPassword - STEP 02: Input valid email to email text box
+[INFO ] [2021-01-02 21:22:53,872] TC_06_loginWithValidEmailAndPassword - STEP 03: Input valid password to password textbox
+[INFO ] [2021-01-02 21:22:54,067] TC_06_loginWithValidEmailAndPassword - STEP 04: Click to login button
+[INFO ] [2021-01-02 21:22:56,502] TC_06_loginWithValidEmailAndPassword - STEP 05: Verify success message displayed
+[INFO ] [2021-01-02 21:22:56,514]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:22:56,515] Post-condition - Close browser and driver
+[INFO ] [2021-01-02 21:22:56,516] OS name = windows 10
+[INFO ] [2021-01-02 21:22:57,410] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-01-02 21:22:57,410] Pre-condition - STEP 01: Open browser
+[INFO ] [2021-01-02 21:23:04,923] Pre-condition - STEP 02: Init home page
+[INFO ] [2021-01-02 21:23:04,924] Pre-condition - STEP 03: Get home page title
+[INFO ] [2021-01-02 21:23:04,947] Pre-condition - STEP 04: Open and Init register page
+[INFO ] [2021-01-02 21:23:06,727] Pre-condition - STEP 05: Select Gender
+[INFO ] [2021-01-02 21:23:07,326] Pre-condition - STEP 06: Input to first name
+[INFO ] [2021-01-02 21:23:07,520] Pre-condition - STEP 07: Input to last name
+[INFO ] [2021-01-02 21:23:07,705] Pre-condition - STEP 08: Select day
+[INFO ] [2021-01-02 21:23:07,901] Pre-condition - STEP 09: Select month
+[INFO ] [2021-01-02 21:23:08,029] Pre-condition - STEP 10: Select year
+[INFO ] [2021-01-02 21:23:08,179] Pre-condition - STEP 11: input to email textbox
+[INFO ] [2021-01-02 21:23:08,347] Pre-condition - STEP 12: Input company textbox
+[INFO ] [2021-01-02 21:23:08,506] Pre-condition - STEP 13: Input to password texbox
+[INFO ] [2021-01-02 21:23:08,687] Pre-condition - STEP 14: Input to confim password textbox
+[INFO ] [2021-01-02 21:23:08,850] Pre-condition - STEP 15: Click to register button
+[INFO ] [2021-01-02 21:23:12,038] Pre-condition - STEP 16: Verify register success message displayed
+[INFO ] [2021-01-02 21:23:12,170]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:23:12,171] Pre-condition - STEP 17: CLick to continue button
+[INFO ] [2021-01-02 21:23:14,828] Pre-condition - STEP 18: Verify return to Home page success
+[INFO ] [2021-01-02 21:23:14,857]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:23:14,858] Pre-condition - STEP 19: Init home page
+[INFO ] [2021-01-02 21:23:14,858] Pre-condition - STEP 20: Init my account page
+[INFO ] [2021-01-02 21:23:17,453] TC_01_updateCustomerInfo - STEP 01: Select gender
+[INFO ] [2021-01-02 21:23:17,978] TC_01_updateCustomerInfo - STEP 02: Input to first name
+[INFO ] [2021-01-02 21:23:18,229] TC_01_updateCustomerInfo - STEP 03: Input to last name textbox
+[INFO ] [2021-01-02 21:23:18,371] TC_01_updateCustomerInfo - STEP 04: Select date
+[INFO ] [2021-01-02 21:23:18,488] TC_01_updateCustomerInfo - STEP 06: Select month
+[INFO ] [2021-01-02 21:23:18,620] TC_01_updateCustomerInfo - STEP 07: Select year
+[INFO ] [2021-01-02 21:23:18,737] TC_01_updateCustomerInfo - STEP 08: Input to email textbox
+[INFO ] [2021-01-02 21:23:18,986] TC_01_updateCustomerInfo - STEP 09: Input to company textbox
+[INFO ] [2021-01-02 21:23:19,130] TC_01_updateCustomerInfo - STEP 10: Verify first name
+[INFO ] [2021-01-02 21:23:19,169]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:23:19,169] TC_01_updateCustomerInfo - STEP 11: Verify last name 
+[INFO ] [2021-01-02 21:23:19,223]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:23:19,223] TC_01_updateCustomerInfo - STEP 12: Verify Date
+[INFO ] [2021-01-02 21:23:19,321]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:23:19,321] TC_01_updateCustomerInfo - STEP 13: Verify month
+[INFO ] [2021-01-02 21:23:19,457]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:23:19,457] TC_01_updateCustomerInfo - STEP 14: Verify year
+[INFO ] [2021-01-02 21:23:20,453]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:23:20,453] TC_01_updateCustomerInfo - STEP 15: Verify email
+[INFO ] [2021-01-02 21:23:20,500]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:23:20,500] TC_01_updateCustomerInfo - STEP 16: Verify company name
+[INFO ] [2021-01-02 21:23:20,535]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:23:20,551] TC_02_addNewAddress - STEP 01: Click to Address link
+[INFO ] [2021-01-02 21:23:21,646] TC_02_addNewAddress - STEP 02: Click to Add new button
+[INFO ] [2021-01-02 21:23:23,343] TC_02_addNewAddress - STEP 03: Input to first name
+[INFO ] [2021-01-02 21:23:23,488] TC_02_addNewAddress - STEP 04: Input to last name
+[INFO ] [2021-01-02 21:23:23,658] TC_02_addNewAddress - STEP 05: Input to Email
+[INFO ] [2021-01-02 21:23:23,874] TC_02_addNewAddress - STEP 06: Input to company
+[INFO ] [2021-01-02 21:23:24,003] TC_02_addNewAddress - STEP 07: Select Country
+[INFO ] [2021-01-02 21:23:24,140] TC_02_addNewAddress - STEP 08: Select State
+[INFO ] [2021-01-02 21:23:24,604] TC_02_addNewAddress - STEP 09: input to City texbox
+[INFO ] [2021-01-02 21:23:24,777] TC_02_addNewAddress - STEP 10: Input to address 1 textbox
+[INFO ] [2021-01-02 21:23:24,930] TC_02_addNewAddress - STEP 11: Input to address 2 textbox
+[INFO ] [2021-01-02 21:23:25,100] TC_02_addNewAddress - STEP 12: Inout to Zip code
+[INFO ] [2021-01-02 21:23:25,238] TC_02_addNewAddress - STEP 13: Input to phone textbox
+[INFO ] [2021-01-02 21:23:25,405] TC_02_addNewAddress - STEP 14: Input to fax number textbox
+[INFO ] [2021-01-02 21:23:25,535] TC_02_addNewAddress - STEP 15: Click to SAVE button
+[INFO ] [2021-01-02 21:23:26,069] TC_02_addNewAddress - STEP 16: Verify name
+[INFO ] [2021-01-02 21:23:41,095] TC_03_changePassword - STEP 01: Click to change password link
+[INFO ] [2021-01-02 21:23:43,095] TC_03_changePassword - STEP 02: Input to password textbox
+[INFO ] [2021-01-02 21:23:43,236] TC_03_changePassword - STEP 03: Input to new password textbox
+[INFO ] [2021-01-02 21:23:43,446] TC_03_changePassword - STEP 04: Input to confirm new password
+[INFO ] [2021-01-02 21:23:43,635] TC_03_changePassword - STEP 05: Click to change password button
+[INFO ] [2021-01-02 21:23:45,736] TC_03_changePassword - STEP 06: Verify password chang success
+[INFO ] [2021-01-02 21:23:45,792]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:23:45,792] TC_03_changePassword - STEP 07: click to Logout link
+[INFO ] [2021-01-02 21:23:48,006] TC_03_changePassword - STEP 08: Click to login link
+[INFO ] [2021-01-02 21:23:49,080] TC_03_changePassword - STEP 09: Open and Init login page
+[INFO ] [2021-01-02 21:23:49,080] TC_03_changePassword - STEP 10: Input to Email textbox
+[INFO ] [2021-01-02 21:23:49,258] TC_03_changePassword - STEP 11: Input invalid password to password textbox
+[INFO ] [2021-01-02 21:23:49,397] TC_03_changePassword - STEP 12: Click to Login button
+[INFO ] [2021-01-02 21:23:51,235] TC_03_changePassword - STEP 13: Verify login false
+[INFO ] [2021-01-02 21:23:51,305]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:23:51,305] TC_03_changePassword - STEP 14: Input valid password to password textbox
+[INFO ] [2021-01-02 21:23:51,445] TC_03_changePassword - STEP 15: Click to login button
+[INFO ] [2021-01-02 21:23:53,023] TC_03_changePassword - STEP 16: Verify login success
+[INFO ] [2021-01-02 21:23:53,035]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:23:53,037] TC_04_myProductReview - STEP 01: Open and Init computer page
+[INFO ] [2021-01-02 21:23:54,503] TC_04_myProductReview - STEP 02: Click to Desktop link
+[INFO ] [2021-01-02 21:23:55,908] TC_04_myProductReview - STEP 03: CLick to Build your own computer product link
+[INFO ] [2021-01-02 21:23:58,238] TC_04_myProductReview - STEP 04: Click to Add your review link
+[INFO ] [2021-01-02 21:23:59,979] TC_04_myProductReview - STEP 05: Input to review textbox
+[INFO ] [2021-01-02 21:24:00,147] TC_04_myProductReview - STEP 06: Input text to textarea
+[INFO ] [2021-01-02 21:24:00,273] TC_04_myProductReview - STEP 07: Select rating
+[INFO ] [2021-01-02 21:24:00,420] TC_04_myProductReview - STEP 08: Click to submit button
+[INFO ] [2021-01-02 21:24:01,854] TC_04_myProductReview - STEP 09: Verify success message displayed
+[INFO ] [2021-01-02 21:24:16,894] Post-condition - Close browser and driver
+[INFO ] [2021-01-02 21:24:16,910] OS name = windows 10
+[INFO ] [2021-01-02 21:24:17,691] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-01-02 21:24:17,691] Pre-condition - STEP 01: Open browser
+[INFO ] [2021-01-02 21:24:21,723] Post-condition - STEP 01: Close browser
+[INFO ] [2021-01-02 21:24:21,725] OS name = windows 10
+[INFO ] [2021-01-02 21:24:22,503] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-01-02 21:24:22,503] Pre-condition - STEP 01: Open browser
+[INFO ] [2021-01-02 21:24:31,586] Pre-condition - STEP 02: Open and Init home page
+[INFO ] [2021-01-02 21:24:31,588] Pre-condition - STEP 03: Open and Init Computer page
+[INFO ] [2021-01-02 21:24:35,646] Pre-condition - STEP 04: Click to notebooks link
+[INFO ] [2021-01-02 21:24:39,508] Pre-TC_01_sortWithNameAtoZ - STEP 01: Select sort name A to Z
+[INFO ] [2021-01-02 21:24:41,139] Pre-TC_01_sortWithNameAtoZ - STEP 02: Verify name sorted ascending
+[INFO ] [2021-01-02 21:24:41,553]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:24:41,561] Pre-TC_02_sortWithNameZtoA - STEP 01: Select sort name Z to A
+[INFO ] [2021-01-02 21:24:43,828] Pre-TC_02_sortWithNameZtoA - STEP 02: Verify name sorted descending
+[INFO ] [2021-01-02 21:24:44,092]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:24:44,100] Pre-TC_03_sortWithPriceAtoZ - STEP 01: Select price A to Z
+[INFO ] [2021-01-02 21:24:45,283] Pre-TC_03_sortWithPriceAtoZ - STEP 02: Verify price sorted ascending
+[INFO ] [2021-01-02 21:24:45,539]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:24:45,543] Pre-TC_04_sortWithPriceZtoA - STEP 01: Select price Z to A
+[INFO ] [2021-01-02 21:24:49,699] Pre-TC_04_sortWithPriceZtoA - STEP 02: Verify price sorted descending
+[INFO ] [2021-01-02 21:24:50,005]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:24:50,007] Pre-TC_05_displayProduct - STEP 01: Select product display = 3
+[INFO ] [2021-01-02 21:24:51,825] Pre-TC_05_displayProduct - STEP 02: Verify number of item
+[INFO ] [2021-01-02 21:24:51,904]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:24:51,904] Pre-TC_05_displayProduct - STEP 03: Verify next icon displayed
+[INFO ] [2021-01-02 21:24:51,958]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:24:51,959] Pre-TC_05_displayProduct - STEP 04: Click to next icon
+[INFO ] [2021-01-02 21:24:54,031] Pre-TC_05_displayProduct - STEP 05: Verify previous displayed
+[INFO ] [2021-01-02 21:24:54,092]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:24:54,094] Pre-TC_06_displayProduct - STEP 01: Select product display = 6
+[INFO ] [2021-01-02 21:24:55,239] Pre-TC_06_displayProduct - STEP 02: Verify number of product displayed
+[INFO ] [2021-01-02 21:24:55,347]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:24:55,347] Pre-TC_06_displayProduct - STEP 04: Verify next icon undisplayed
+[INFO ] [2021-01-02 21:24:58,423]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:24:58,433] Pre-TC_07_displayProduct - STEP 01: Select product display = 9
+[INFO ] [2021-01-02 21:24:58,687] Pre-TC_07_displayProduct - STEP 02: Verify product number displayed
+[INFO ] [2021-01-02 21:26:46,035] Pre-condition - STEP 01: Open browser
+[INFO ] [2021-01-02 21:26:53,175] Pre-condition - STEP 02: Open home Page
+[INFO ] [2021-01-02 21:26:53,184] Pre-condition - STEP 03: Open register page
+[INFO ] [2021-01-02 21:26:55,734] TC_01_registerWithEmptyData - STEP 01: Click to register button
+[INFO ] [2021-01-02 21:26:56,436] TC_01_registerWithEmptyData - STEP 02: Verify error message displayed
+[INFO ] [2021-01-02 21:26:56,894]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:26:56,894] TC_02_registerWithInvalidEmail - STEP 01: Refresh page
+[INFO ] [2021-01-02 21:26:56,910] TC_02_registerWithInvalidEmail - STEP 02: SendKey to email text box
+[INFO ] [2021-01-02 21:26:58,495] TC_02_registerWithInvalidEmail - STEP 03: Click to register button
+[INFO ] [2021-01-02 21:26:59,108] TC_02_registerWithInvalidEmail - STEP 04: Verify error message displayed
+[INFO ] [2021-01-02 21:26:59,178]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:26:59,178] TC_04_registerWithInvalidPassword - STEP 01: Refresh page
+[INFO ] [2021-01-02 21:26:59,734] TC_04_registerWithInvalidPassword - STEP 02: SendKey to password text box
+[INFO ] [2021-01-02 21:26:59,965] TC_04_registerWithInvalidPassword - STEP 03: Click to register button
+[INFO ] [2021-01-02 21:27:00,566] TC_04_registerWithInvalidPassword - STEP 04: Verify Error message displayed
+[INFO ] [2021-01-02 21:27:00,644]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:27:00,645] TC_05_registerWithInvalidConfirmPassword - STEP 01: Refresh page
+[INFO ] [2021-01-02 21:27:01,244] TC_05_registerWithInvalidConfirmPassword - STEP 02: SendKey to  password text box
+[INFO ] [2021-01-02 21:27:01,532] TC_05_registerWithInvalidConfirmPassword - STEP 03: SendKey to confirm password test box
+[INFO ] [2021-01-02 21:27:01,732] TC_05_registerWithInvalidConfirmPassword - STEP 04: Click to register button
+[INFO ] [2021-01-02 21:27:02,275] TC_05_registerWithInvalidConfirmPassword - STEP 05: Verify error message displayed
+[INFO ] [2021-01-02 21:27:02,355]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:27:02,355] TC_06_registerWithValidInfo - STEP 01: Refresh page
+[INFO ] [2021-01-02 21:27:02,918] TC_06_registerWithValidInfo - STEP 02: Select gender
+[INFO ] [2021-01-02 21:27:03,460] TC_06_registerWithValidInfo - STEP 03: Input to first name
+[INFO ] [2021-01-02 21:27:03,896] TC_06_registerWithValidInfo - STEP 04: Input to last name
+[INFO ] [2021-01-02 21:27:04,053] TC_06_registerWithValidInfo - STEP 05: select date
+[INFO ] [2021-01-02 21:27:04,160] TC_06_registerWithValidInfo - STEP 06: Select month
+[INFO ] [2021-01-02 21:27:04,288] TC_06_registerWithValidInfo - STEP 07: Select year
+[INFO ] [2021-01-02 21:27:04,395] TC_06_registerWithValidInfo - STEP 08: Input to email text box
+[INFO ] [2021-01-02 21:27:04,587] TC_06_registerWithValidInfo - STEP 09: Input to company text box
+[INFO ] [2021-01-02 21:27:04,722] TC_06_registerWithValidInfo - STEP 10: Input to password text box
+[INFO ] [2021-01-02 21:27:04,860] TC_06_registerWithValidInfo - STEP 11: Input to comfirm password text box
+[INFO ] [2021-01-02 21:27:05,035] TC_06_registerWithValidInfo - STEP 12: Click to register button
+[INFO ] [2021-01-02 21:27:07,778] TC_06_registerWithValidInfo - STEP 13: Verify register success
+[INFO ] [2021-01-02 21:27:07,847]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:27:07,848] Post-condition - Close browser and driver
+[INFO ] [2021-01-02 21:27:07,849] OS name = windows 10
+[INFO ] [2021-01-02 21:27:08,915] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-01-02 21:27:08,915] Pre-condition - STEP 01: Open browser
+[INFO ] [2021-01-02 21:27:14,844] Pre-condition - STEP 02: Init Home page
+[INFO ] [2021-01-02 21:27:14,847] Pre-condition - STEP 03: Get home page title
+[INFO ] [2021-01-02 21:27:14,869] Pre-condition - STEP 02: Open login page
+[INFO ] [2021-01-02 21:27:17,205] TC_01_loginWithEmptyData - STEP 01: Click to Login button
+[INFO ] [2021-01-02 21:27:17,822] TC_01_loginWithEmptyData - STEP 02: Verify error message displayed
+[INFO ] [2021-01-02 21:27:17,889]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:27:17,890] TC_02_loginWithInvalidEmail - STEP 01: Refresh page
+[INFO ] [2021-01-02 21:27:17,907] TC_02_loginWithInvalidEmail - STEP 02: Input invalid email to email text box
+[INFO ] [2021-01-02 21:27:19,521] TC_02_loginWithInvalidEmail - STEP 03: Click to Login button
+[INFO ] [2021-01-02 21:27:20,096] TC_02_loginWithInvalidEmail - STEP 04: Verify error message displayed
+[INFO ] [2021-01-02 21:27:20,162]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:27:20,162] TC_03_LoginWithEmailNotRegistered - STEP 01: Refresh page
+[INFO ] [2021-01-02 21:27:21,038] TC_03_LoginWithEmailNotRegistered - STEP 02: Input invalid email to email text box
+[INFO ] [2021-01-02 21:27:21,222] TC_03_LoginWithEmailNotRegistered - STEP 03: Click to login button
+[INFO ] [2021-01-02 21:27:22,285] TC_03_LoginWithEmailNotRegistered - STEP 04: Verify error message displayed
+[INFO ] [2021-01-02 21:27:22,378]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:27:22,379] TC_04_loginWithEmptyPassword - STEP 01: Refresh page
+[INFO ] [2021-01-02 21:27:23,701] TC_04_loginWithEmptyPassword - STEP 02: Input valid email to email text box
+[INFO ] [2021-01-02 21:27:23,913] TC_04_loginWithEmptyPassword - STEP 03: Click to login button
+[INFO ] [2021-01-02 21:27:25,841] TC_04_loginWithEmptyPassword - STEP 04: Verify error message displayed
+[INFO ] [2021-01-02 21:27:25,911]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:27:25,913] TC_05_loginWithInvalidPassword - STEP 01: Refresh page
+[INFO ] [2021-01-02 21:27:26,720] TC_05_loginWithInvalidPassword - STEP 02: Input valid email to email text box
+[INFO ] [2021-01-02 21:27:26,911] TC_05_loginWithInvalidPassword - STEP 03: Input invalid password to password text box
+[INFO ] [2021-01-02 21:27:27,064] TC_05_loginWithInvalidPassword - STEP 04: Click to login button
+[INFO ] [2021-01-02 21:27:29,099] TC_05_loginWithInvalidPassword - STEP 05: Verify error message displayed
+[INFO ] [2021-01-02 21:27:29,167]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:27:29,168] TC_06_loginWithValidEmailAndPassword - STEP 01: Refresh page
+[INFO ] [2021-01-02 21:27:29,801] TC_06_loginWithValidEmailAndPassword - STEP 02: Input valid email to email text box
+[INFO ] [2021-01-02 21:27:29,980] TC_06_loginWithValidEmailAndPassword - STEP 03: Input valid password to password textbox
+[INFO ] [2021-01-02 21:27:30,133] TC_06_loginWithValidEmailAndPassword - STEP 04: Click to login button
+[INFO ] [2021-01-02 21:27:32,346] TC_06_loginWithValidEmailAndPassword - STEP 05: Verify success message displayed
+[INFO ] [2021-01-02 21:27:32,376]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:27:32,378] Post-condition - Close browser and driver
+[INFO ] [2021-01-02 21:27:32,378] OS name = windows 10
+[INFO ] [2021-01-02 21:27:33,426] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-01-02 21:27:33,426] Pre-condition - STEP 01: Open browser
+[INFO ] [2021-01-02 21:27:39,755] Pre-condition - STEP 02: Init home page
+[INFO ] [2021-01-02 21:27:39,755] Pre-condition - STEP 03: Get home page title
+[INFO ] [2021-01-02 21:27:39,785] Pre-condition - STEP 04: Open and Init register page
+[INFO ] [2021-01-02 21:27:42,198] Pre-condition - STEP 05: Select Gender
+[INFO ] [2021-01-02 21:27:42,830] Pre-condition - STEP 06: Input to first name
+[INFO ] [2021-01-02 21:27:43,139] Pre-condition - STEP 07: Input to last name
+[INFO ] [2021-01-02 21:27:43,382] Pre-condition - STEP 08: Select day
+[INFO ] [2021-01-02 21:27:43,549] Pre-condition - STEP 09: Select month
+[INFO ] [2021-01-02 21:27:43,698] Pre-condition - STEP 10: Select year
+[INFO ] [2021-01-02 21:27:43,838] Pre-condition - STEP 11: input to email textbox
+[INFO ] [2021-01-02 21:27:44,035] Pre-condition - STEP 12: Input company textbox
+[INFO ] [2021-01-02 21:27:44,191] Pre-condition - STEP 13: Input to password texbox
+[INFO ] [2021-01-02 21:27:44,363] Pre-condition - STEP 14: Input to confim password textbox
+[INFO ] [2021-01-02 21:27:44,566] Pre-condition - STEP 15: Click to register button
+[INFO ] [2021-01-02 21:27:46,716] Pre-condition - STEP 16: Verify register success message displayed
+[INFO ] [2021-01-02 21:27:46,821]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:27:46,821] Pre-condition - STEP 17: CLick to continue button
+[INFO ] [2021-01-02 21:27:50,071] Pre-condition - STEP 18: Verify return to Home page success
+[INFO ] [2021-01-02 21:27:50,081]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:27:50,082] Pre-condition - STEP 19: Init home page
+[INFO ] [2021-01-02 21:27:50,082] Pre-condition - STEP 20: Init my account page
+[INFO ] [2021-01-02 21:27:52,102] TC_01_updateCustomerInfo - STEP 01: Select gender
+[INFO ] [2021-01-02 21:27:52,644] TC_01_updateCustomerInfo - STEP 02: Input to first name
+[INFO ] [2021-01-02 21:27:52,895] TC_01_updateCustomerInfo - STEP 03: Input to last name textbox
+[INFO ] [2021-01-02 21:27:53,050] TC_01_updateCustomerInfo - STEP 04: Select date
+[INFO ] [2021-01-02 21:27:53,205] TC_01_updateCustomerInfo - STEP 06: Select month
+[INFO ] [2021-01-02 21:27:53,320] TC_01_updateCustomerInfo - STEP 07: Select year
+[INFO ] [2021-01-02 21:27:53,441] TC_01_updateCustomerInfo - STEP 08: Input to email textbox
+[INFO ] [2021-01-02 21:27:53,622] TC_01_updateCustomerInfo - STEP 09: Input to company textbox
+[INFO ] [2021-01-02 21:27:53,785] TC_01_updateCustomerInfo - STEP 10: Verify first name
+[INFO ] [2021-01-02 21:27:53,839]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:27:53,839] TC_01_updateCustomerInfo - STEP 11: Verify last name 
+[INFO ] [2021-01-02 21:27:53,881]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:27:53,881] TC_01_updateCustomerInfo - STEP 12: Verify Date
+[INFO ] [2021-01-02 21:27:53,988]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:27:53,988] TC_01_updateCustomerInfo - STEP 13: Verify month
+[INFO ] [2021-01-02 21:27:54,153]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:27:54,153] TC_01_updateCustomerInfo - STEP 14: Verify year
+[INFO ] [2021-01-02 21:27:55,170]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:27:55,170] TC_01_updateCustomerInfo - STEP 15: Verify email
+[INFO ] [2021-01-02 21:27:55,201]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:27:55,201] TC_01_updateCustomerInfo - STEP 16: Verify company name
+[INFO ] [2021-01-02 21:27:55,254]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:27:55,254] TC_02_addNewAddress - STEP 01: Click to Address link
+[INFO ] [2021-01-02 21:27:56,509] TC_02_addNewAddress - STEP 02: Click to Add new button
+[INFO ] [2021-01-02 21:27:57,795] TC_02_addNewAddress - STEP 03: Input to first name
+[INFO ] [2021-01-02 21:27:57,972] TC_02_addNewAddress - STEP 04: Input to last name
+[INFO ] [2021-01-02 21:27:58,150] TC_02_addNewAddress - STEP 05: Input to Email
+[INFO ] [2021-01-02 21:27:58,339] TC_02_addNewAddress - STEP 06: Input to company
+[INFO ] [2021-01-02 21:27:58,472] TC_02_addNewAddress - STEP 07: Select Country
+[INFO ] [2021-01-02 21:27:58,613] TC_02_addNewAddress - STEP 08: Select State
+[INFO ] [2021-01-02 21:27:59,128] TC_02_addNewAddress - STEP 09: input to City texbox
+[INFO ] [2021-01-02 21:27:59,284] TC_02_addNewAddress - STEP 10: Input to address 1 textbox
+[INFO ] [2021-01-02 21:27:59,425] TC_02_addNewAddress - STEP 11: Input to address 2 textbox
+[INFO ] [2021-01-02 21:27:59,613] TC_02_addNewAddress - STEP 12: Inout to Zip code
+[INFO ] [2021-01-02 21:27:59,758] TC_02_addNewAddress - STEP 13: Input to phone textbox
+[INFO ] [2021-01-02 21:27:59,901] TC_02_addNewAddress - STEP 14: Input to fax number textbox
+[INFO ] [2021-01-02 21:28:00,050] TC_02_addNewAddress - STEP 15: Click to SAVE button
+[INFO ] [2021-01-02 21:28:01,959] TC_02_addNewAddress - STEP 16: Verify name
+[INFO ] [2021-01-02 21:28:02,023]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:28:02,023] TC_02_addNewAddress - STEP 17: Verify email
+[INFO ] [2021-01-02 21:28:02,080]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:28:02,080] TC_02_addNewAddress - STEP 18: Verify phone number
+[INFO ] [2021-01-02 21:28:02,131]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:28:02,131] TC_02_addNewAddress - STEP 19: Verify fax number
+[INFO ] [2021-01-02 21:28:02,209]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:28:02,209] TC_02_addNewAddress - STEP 20: Verify company name
+[INFO ] [2021-01-02 21:28:02,265]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:28:02,266] TC_02_addNewAddress - STEP 21: Verify address 1
+[INFO ] [2021-01-02 21:28:02,324]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:28:02,324] TC_02_addNewAddress - STEP 22: Verify address 2
+[INFO ] [2021-01-02 21:28:02,411]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:28:02,412] TC_02_addNewAddress - STEP 23: Verify zip code
+[INFO ] [2021-01-02 21:28:02,472]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:28:02,472] TC_02_addNewAddress - STEP 24: Verify country
+[INFO ] [2021-01-02 21:28:02,519]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:28:02,519] TC_03_changePassword - STEP 01: Click to change password link
+[INFO ] [2021-01-02 21:28:04,336] TC_03_changePassword - STEP 02: Input to password textbox
+[INFO ] [2021-01-02 21:28:04,491] TC_03_changePassword - STEP 03: Input to new password textbox
+[INFO ] [2021-01-02 21:28:04,639] TC_03_changePassword - STEP 04: Input to confirm new password
+[INFO ] [2021-01-02 21:28:04,814] TC_03_changePassword - STEP 05: Click to change password button
+[INFO ] [2021-01-02 21:28:05,930] TC_03_changePassword - STEP 06: Verify password chang success
+[INFO ] [2021-01-02 21:28:06,009]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:28:06,009] TC_03_changePassword - STEP 07: click to Logout link
+[INFO ] [2021-01-02 21:28:07,556] TC_03_changePassword - STEP 08: Click to login link
+[INFO ] [2021-01-02 21:28:08,630] TC_03_changePassword - STEP 09: Open and Init login page
+[INFO ] [2021-01-02 21:28:08,630] TC_03_changePassword - STEP 10: Input to Email textbox
+[INFO ] [2021-01-02 21:28:08,846] TC_03_changePassword - STEP 11: Input invalid password to password textbox
+[INFO ] [2021-01-02 21:28:09,076] TC_03_changePassword - STEP 12: Click to Login button
+[INFO ] [2021-01-02 21:28:10,855] TC_03_changePassword - STEP 13: Verify login false
+[INFO ] [2021-01-02 21:28:10,940]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:28:10,940] TC_03_changePassword - STEP 14: Input valid password to password textbox
+[INFO ] [2021-01-02 21:28:11,069] TC_03_changePassword - STEP 15: Click to login button
+[INFO ] [2021-01-02 21:28:12,892] TC_03_changePassword - STEP 16: Verify login success
+[INFO ] [2021-01-02 21:28:12,914]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:28:12,916] TC_04_myProductReview - STEP 01: Open and Init computer page
+[INFO ] [2021-01-02 21:28:14,147] TC_04_myProductReview - STEP 02: Click to Desktop link
+[INFO ] [2021-01-02 21:28:15,577] TC_04_myProductReview - STEP 03: CLick to Build your own computer product link
+[INFO ] [2021-01-02 21:28:17,856] TC_04_myProductReview - STEP 04: Click to Add your review link
+[INFO ] [2021-01-02 21:28:19,062] TC_04_myProductReview - STEP 05: Input to review textbox
+[INFO ] [2021-01-02 21:28:19,210] TC_04_myProductReview - STEP 06: Input text to textarea
+[INFO ] [2021-01-02 21:28:19,449] TC_04_myProductReview - STEP 07: Select rating
+[INFO ] [2021-01-02 21:28:19,592] TC_04_myProductReview - STEP 08: Click to submit button
+[INFO ] [2021-01-02 21:28:20,771] TC_04_myProductReview - STEP 09: Verify success message displayed
+[INFO ] [2021-01-02 21:28:20,837]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:28:20,837] TC_04_myProductReview - STEP 10: Click to My account link
+[INFO ] [2021-01-02 21:28:22,109] TC_04_myProductReview - STEP 11: Click to My product reviews link
+[INFO ] [2021-01-02 21:28:23,246] TC_04_myProductReview - STEP 12: Verify review text displayed
+[INFO ] [2021-01-02 21:28:23,325]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:28:23,325] Post-condition - Close browser and driver
+[INFO ] [2021-01-02 21:28:23,326] OS name = windows 10
+[INFO ] [2021-01-02 21:28:24,446] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-01-02 21:28:24,456] Pre-condition - STEP 01: Open browser
+[INFO ] [2021-01-02 21:28:31,489] Pre-condition - STEP 02: Open and Init home page
+[INFO ] [2021-01-02 21:28:31,503] Pre-condition - STEP 03: Open and Init search page
+[INFO ] [2021-01-02 21:28:33,922] TC_01_searchWithEmptyData - STEP 01: Click to Search button
+[INFO ] [2021-01-02 21:28:35,227] TC_01_searchWithEmptyData - STEP 02: verify error message diplayed
+[INFO ] [2021-01-02 21:28:35,365]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:28:35,365] TC_02_searchWithDataNotExist - STEP 01: Input to search textbox
+[INFO ] [2021-01-02 21:28:35,625] TC_02_searchWithDataNotExist - STEP 02: CLick to search button
+[INFO ] [2021-01-02 21:28:37,654] TC_02_searchWithDataNotExist - STEP 03: Verify message displayed
+[INFO ] [2021-01-02 21:28:37,730]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:28:37,733] TC_03_searchRelative - STEP 01: Input to search textbox
+[INFO ] [2021-01-02 21:28:37,947] TC_03_searchRelative - STEP 02: Click to search button
+[INFO ] [2021-01-02 21:28:39,301] TC_03_searchRelative - STEP 03: Verify product displayed
+[INFO ] [2021-01-02 21:28:39,519]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:28:39,519] TC_04_searchAbsolute - STEP 01: Input to search textbox
+[INFO ] [2021-01-02 21:28:39,760] TC_04_searchAbsolute - STEP 02: Click to search button
+[INFO ] [2021-01-02 21:28:41,960] TC_04_searchAbsolute - STEP 03: Verify result displayed
+[INFO ] [2021-01-02 21:28:42,039]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:28:42,041] TC_05_searchWithParentCategories - STEP 01: Input to search textbox
+[INFO ] [2021-01-02 21:28:42,287] TC_05_searchWithParentCategories - STEP 02: Select advance search
+[INFO ] [2021-01-02 21:28:42,395] TC_05_searchWithParentCategories - STEP 03: Select computer
+[INFO ] [2021-01-02 21:28:42,538] TC_05_searchWithParentCategories - STEP 04: Click to search button
+[INFO ] [2021-01-02 21:28:44,487] TC_05_searchWithParentCategories - STEP 05: Verify error message displayed
+[INFO ] [2021-01-02 21:28:44,597]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:28:44,597] TC_06_searchWithSubCategories - STEP 01: Open Url search
+[INFO ] [2021-01-02 21:28:45,379] TC_06_searchWithSubCategories - STEP 02: Input to search textbox
+[INFO ] [2021-01-02 21:28:45,590] TC_06_searchWithSubCategories - STEP 03: Select advance search
+[INFO ] [2021-01-02 21:28:45,716] TC_06_searchWithSubCategories - STEP 04: Select Computer
+[INFO ] [2021-01-02 21:28:45,872] TC_06_searchWithSubCategories - STEP 05: Select Auto search sub category
+[INFO ] [2021-01-02 21:28:45,991] TC_06_searchWithSubCategories - STEP 06: Click to search button
+[INFO ] [2021-01-02 21:28:47,961] TC_06_searchWithSubCategories - STEP 07: Verify result
+[INFO ] [2021-01-02 21:28:48,028]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:28:48,028] TC_07_searchWithIncorrectManufacturer - STEP 01: Open search URL
+[INFO ] [2021-01-02 21:28:48,655] TC_07_searchWithIncorrectManufacturer - STEP 02: Input to search textbox
+[INFO ] [2021-01-02 21:28:48,834] TC_07_searchWithIncorrectManufacturer - STEP 03: Select advance search
+[INFO ] [2021-01-02 21:28:48,936] TC_07_searchWithIncorrectManufacturer - STEP 04: Select Computer
+[INFO ] [2021-01-02 21:28:49,074] TC_07_searchWithIncorrectManufacturer - STEP 05: Select auto search sub categoryes
+[INFO ] [2021-01-02 21:28:49,191] TC_07_searchWithIncorrectManufacturer - STEP 06: Select HP
+[INFO ] [2021-01-02 21:28:49,331] TC_07_searchWithIncorrectManufacturer - STEP 07: Click search button
+[INFO ] [2021-01-02 21:28:50,512] TC_07_searchWithIncorrectManufacturer - STEP 08: Verify result
+[INFO ] [2021-01-02 21:28:50,630]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:28:50,630] TC_08_searchWithCorrectManufacturer - STEP 01: Open search URL
+[INFO ] [2021-01-02 21:28:51,274] TC_08_searchWithCorrectManufacturer - STEP 02: Input to search textbox
+[INFO ] [2021-01-02 21:28:51,596] TC_08_searchWithCorrectManufacturer - STEP 03: Select advance search
+[INFO ] [2021-01-02 21:28:51,749] TC_08_searchWithCorrectManufacturer - STEP 04: Select Computer
+[INFO ] [2021-01-02 21:28:51,910] TC_08_searchWithCorrectManufacturer - STEP 05: Select auto search sub categoryes
+[INFO ] [2021-01-02 21:28:52,030] TC_08_searchWithCorrectManufacturer - STEP 06: Select Apple
+[INFO ] [2021-01-02 21:28:52,130] TC_08_searchWithCorrectManufacturer - STEP 07: Click search button
+[INFO ] [2021-01-02 21:28:54,198] TC_08_searchWithCorrectManufacturer - STEP 08: Verify result
+[INFO ] [2021-01-02 21:28:54,286]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:28:54,287] TC_09_searchInPriceRange - STEP 01: Open search URL
+[INFO ] [2021-01-02 21:28:54,912] TC_09_searchInPriceRange - STEP 02: Input to search textbox
+[INFO ] [2021-01-02 21:28:55,088] TC_09_searchInPriceRange - STEP 03: Select advance search
+[INFO ] [2021-01-02 21:28:55,200] TC_09_searchInPriceRange - STEP 04: Select Computer
+[INFO ] [2021-01-02 21:28:55,375] TC_09_searchInPriceRange - STEP 05: Select auto search sub categoryes
+[INFO ] [2021-01-02 21:28:55,503] TC_09_searchInPriceRange - STEP 06: Select Apple
+[INFO ] [2021-01-02 21:28:55,646] TC_09_searchInPriceRange - STEP 07: Input range
+[INFO ] [2021-01-02 21:28:55,779] TC_09_searchInPriceRange - STEP 08: Input range
+[INFO ] [2021-01-02 21:28:55,908] TC_09_searchInPriceRange - STEP 09: Click search button
+[INFO ] [2021-01-02 21:28:57,186] TC_09_searchInPriceRange - STEP 10: Verify result
+[INFO ] [2021-01-02 21:28:57,263]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:28:57,266] TC_10_searchOutPriceRange - STEP 01: Open search URL
+[INFO ] [2021-01-02 21:28:58,041] TC_10_searchOutPriceRange - STEP 02: Input to search textbox
+[INFO ] [2021-01-02 21:28:58,254] TC_10_searchOutPriceRange - STEP 03: Select advance search
+[INFO ] [2021-01-02 21:28:58,390] TC_10_searchOutPriceRange - STEP 04: Select Computer
+[INFO ] [2021-01-02 21:28:58,488] TC_10_searchOutPriceRange - STEP 05: Select auto search sub categoryes
+[INFO ] [2021-01-02 21:28:58,586] TC_10_searchOutPriceRange - STEP 06: Select Apple
+[INFO ] [2021-01-02 21:28:58,680] TC_10_searchOutPriceRange - STEP 07: Input range
+[INFO ] [2021-01-02 21:28:58,802] TC_10_searchOutPriceRange - STEP 08: Input range
+[INFO ] [2021-01-02 21:28:58,914] TC_10_searchOutPriceRange - STEP 09: Click search button
+[INFO ] [2021-01-02 21:29:00,264] TC_10_searchOutPriceRange - STEP 10: Verify result
+[INFO ] [2021-01-02 21:29:00,379]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:29:00,379] TC_11_searchOutPriceRange - STEP 01: Open search URL
+[INFO ] [2021-01-02 21:29:01,029] TC_11_searchOutPriceRange - STEP 02: Input to search textbox
+[INFO ] [2021-01-02 21:29:01,280] TC_11_searchOutPriceRange - STEP 03: Select advance search
+[INFO ] [2021-01-02 21:29:01,390] TC_11_searchOutPriceRange - STEP 04: Select Computer
+[INFO ] [2021-01-02 21:29:01,523] TC_11_searchOutPriceRange - STEP 05: Select auto search sub categoryes
+[INFO ] [2021-01-02 21:29:01,637] TC_11_searchOutPriceRange - STEP 06: Select Apple
+[INFO ] [2021-01-02 21:29:01,732] TC_11_searchOutPriceRange - STEP 07: Input range
+[INFO ] [2021-01-02 21:29:01,847] TC_11_searchOutPriceRange - STEP 08: Input range
+[INFO ] [2021-01-02 21:29:01,977] TC_11_searchOutPriceRange - STEP 09: Click search button
+[INFO ] [2021-01-02 21:29:03,116] TC_11_searchOutPriceRange - STEP 10: Verify result
+[INFO ] [2021-01-02 21:29:03,188]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:29:03,189] Post-condition - STEP 01: Close browser
+[INFO ] [2021-01-02 21:29:03,190] OS name = windows 10
+[INFO ] [2021-01-02 21:29:04,128] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-01-02 21:29:04,128] Pre-condition - STEP 01: Open browser
+[INFO ] [2021-01-02 21:29:10,849] Pre-condition - STEP 02: Open and Init home page
+[INFO ] [2021-01-02 21:29:10,850] Pre-condition - STEP 03: Open and Init Computer page
+[INFO ] [2021-01-02 21:29:13,329] Pre-condition - STEP 04: Click to notebooks link
+[INFO ] [2021-01-02 21:29:15,858] Pre-TC_01_sortWithNameAtoZ - STEP 01: Select sort name A to Z
+[INFO ] [2021-01-02 21:29:17,759] Pre-TC_01_sortWithNameAtoZ - STEP 02: Verify name sorted ascending
+[INFO ] [2021-01-02 21:29:18,051]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:29:18,052] Pre-TC_02_sortWithNameZtoA - STEP 01: Select sort name Z to A
+[INFO ] [2021-01-02 21:29:18,980] Pre-TC_02_sortWithNameZtoA - STEP 02: Verify name sorted descending
+[INFO ] [2021-01-02 21:29:19,330]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:29:19,331] Pre-TC_03_sortWithPriceAtoZ - STEP 01: Select price A to Z
+[INFO ] [2021-01-02 21:29:21,095] Pre-TC_03_sortWithPriceAtoZ - STEP 02: Verify price sorted ascending
+[INFO ] [2021-01-02 21:29:21,399]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:29:21,399] Pre-TC_04_sortWithPriceZtoA - STEP 01: Select price Z to A
+[INFO ] [2021-01-02 21:29:23,052] Pre-TC_04_sortWithPriceZtoA - STEP 02: Verify price sorted descending
+[INFO ] [2021-01-02 21:29:23,351]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:29:23,352] Pre-TC_05_displayProduct - STEP 01: Select product display = 3
+[INFO ] [2021-01-02 21:29:24,800] Pre-TC_05_displayProduct - STEP 02: Verify number of item
+[INFO ] [2021-01-02 21:29:24,876]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:29:24,876] Pre-TC_05_displayProduct - STEP 03: Verify next icon displayed
+[INFO ] [2021-01-02 21:29:24,931]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:29:24,931] Pre-TC_05_displayProduct - STEP 04: Click to next icon
+[INFO ] [2021-01-02 21:29:26,432] Pre-TC_05_displayProduct - STEP 05: Verify previous displayed
+[INFO ] [2021-01-02 21:29:26,496]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:29:26,497] Pre-TC_06_displayProduct - STEP 01: Select product display = 6
+[INFO ] [2021-01-02 21:29:28,272] Pre-TC_06_displayProduct - STEP 02: Verify number of product displayed
+[INFO ] [2021-01-02 21:29:28,404]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:29:28,404] Pre-TC_06_displayProduct - STEP 04: Verify next icon undisplayed
+[INFO ] [2021-01-02 21:29:31,428]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:29:31,428] Pre-TC_07_displayProduct - STEP 01: Select product display = 9
+[INFO ] [2021-01-02 21:29:32,211] Pre-TC_07_displayProduct - STEP 02: Verify product number displayed
+[INFO ] [2021-01-02 21:29:32,355]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:29:32,355] Pre-TC_07_displayProduct - STEP 03: Verify next icon undisplayed
+[INFO ] [2021-01-02 21:29:35,408]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:29:35,408] Post-condition - STEP 01: Close browser 
+[INFO ] [2021-01-02 21:29:35,408] OS name = windows 10
+[INFO ] [2021-01-02 21:29:36,410] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-01-02 21:29:50,053]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:30:00,281]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:30:02,451]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:30:04,603]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:30:06,533]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:30:14,563]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:30:14,658]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:30:16,233]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:30:16,235] OS name = windows 10
+[INFO ] [2021-01-02 21:30:17,278] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-01-02 21:30:44,431] OS name = windows 10
+[INFO ] [2021-01-02 21:30:45,546] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-01-02 21:35:29,222] Pre-condition - STEP 01: Open browser
+[INFO ] [2021-01-02 21:35:36,411] Pre-condition - STEP 02: Open home Page
+[INFO ] [2021-01-02 21:35:36,419] Pre-condition - STEP 03: Open register page
+[INFO ] [2021-01-02 21:35:38,928] TC_01_registerWithEmptyData - STEP 01: Click to register button
+[INFO ] [2021-01-02 21:35:39,566] TC_01_registerWithEmptyData - STEP 02: Verify error message displayed
+[INFO ] [2021-01-02 21:35:39,972]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:35:39,972] TC_02_registerWithInvalidEmail - STEP 01: Refresh page
+[INFO ] [2021-01-02 21:35:39,996] TC_02_registerWithInvalidEmail - STEP 02: SendKey to email text box
+[INFO ] [2021-01-02 21:35:41,639] TC_02_registerWithInvalidEmail - STEP 03: Click to register button
+[INFO ] [2021-01-02 21:35:42,206] TC_02_registerWithInvalidEmail - STEP 04: Verify error message displayed
+[INFO ] [2021-01-02 21:35:42,273]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:35:42,285] TC_04_registerWithInvalidPassword - STEP 01: Refresh page
+[INFO ] [2021-01-02 21:35:42,887] TC_04_registerWithInvalidPassword - STEP 02: SendKey to password text box
+[INFO ] [2021-01-02 21:35:43,057] TC_04_registerWithInvalidPassword - STEP 03: Click to register button
+[INFO ] [2021-01-02 21:35:43,614] TC_04_registerWithInvalidPassword - STEP 04: Verify Error message displayed
+[INFO ] [2021-01-02 21:35:43,681]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:35:43,682] TC_05_registerWithInvalidConfirmPassword - STEP 01: Refresh page
+[INFO ] [2021-01-02 21:35:44,961] TC_05_registerWithInvalidConfirmPassword - STEP 02: SendKey to  password text box
+[INFO ] [2021-01-02 21:35:45,225] TC_05_registerWithInvalidConfirmPassword - STEP 03: SendKey to confirm password test box
+[INFO ] [2021-01-02 21:35:45,423] TC_05_registerWithInvalidConfirmPassword - STEP 04: Click to register button
+[INFO ] [2021-01-02 21:35:45,951] TC_05_registerWithInvalidConfirmPassword - STEP 05: Verify error message displayed
+[INFO ] [2021-01-02 21:35:45,998]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:35:45,998] TC_06_registerWithValidInfo - STEP 01: Refresh page
+[INFO ] [2021-01-02 21:35:47,253] TC_06_registerWithValidInfo - STEP 02: Select gender
+[INFO ] [2021-01-02 21:35:47,807] TC_06_registerWithValidInfo - STEP 03: Input to first name
+[INFO ] [2021-01-02 21:35:48,160] TC_06_registerWithValidInfo - STEP 04: Input to last name
+[INFO ] [2021-01-02 21:35:48,302] TC_06_registerWithValidInfo - STEP 05: select date
+[INFO ] [2021-01-02 21:35:48,442] TC_06_registerWithValidInfo - STEP 06: Select month
+[INFO ] [2021-01-02 21:35:48,554] TC_06_registerWithValidInfo - STEP 07: Select year
+[INFO ] [2021-01-02 21:35:48,689] TC_06_registerWithValidInfo - STEP 08: Input to email text box
+[INFO ] [2021-01-02 21:35:48,851] TC_06_registerWithValidInfo - STEP 09: Input to company text box
+[INFO ] [2021-01-02 21:35:49,025] TC_06_registerWithValidInfo - STEP 10: Input to password text box
+[INFO ] [2021-01-02 21:35:49,151] TC_06_registerWithValidInfo - STEP 11: Input to comfirm password text box
+[INFO ] [2021-01-02 21:35:49,286] TC_06_registerWithValidInfo - STEP 12: Click to register button
+[INFO ] [2021-01-02 21:35:51,878] TC_06_registerWithValidInfo - STEP 13: Verify register success
+[INFO ] [2021-01-02 21:35:51,971]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:35:51,973] Post-condition - Close browser and driver
+[INFO ] [2021-01-02 21:35:51,973] OS name = windows 10
+[INFO ] [2021-01-02 21:35:52,956] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-01-02 21:35:52,956] Pre-condition - STEP 01: Open browser
+[INFO ] [2021-01-02 21:35:59,949] Pre-condition - STEP 02: Init Home page
+[INFO ] [2021-01-02 21:35:59,953] Pre-condition - STEP 03: Get home page title
+[INFO ] [2021-01-02 21:35:59,966] Pre-condition - STEP 02: Open login page
+[INFO ] [2021-01-02 21:36:02,399] TC_01_loginWithEmptyData - STEP 01: Click to Login button
+[INFO ] [2021-01-02 21:36:03,035] TC_01_loginWithEmptyData - STEP 02: Verify error message displayed
+[INFO ] [2021-01-02 21:36:03,080]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:36:03,096] TC_02_loginWithInvalidEmail - STEP 01: Refresh page
+[INFO ] [2021-01-02 21:36:04,239] TC_02_loginWithInvalidEmail - STEP 02: Input invalid email to email text box
+[INFO ] [2021-01-02 21:36:04,425] TC_02_loginWithInvalidEmail - STEP 03: Click to Login button
+[INFO ] [2021-01-02 21:36:04,945] TC_02_loginWithInvalidEmail - STEP 04: Verify error message displayed
+[INFO ] [2021-01-02 21:36:05,009]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:36:05,011] TC_03_LoginWithEmailNotRegistered - STEP 01: Refresh page
+[INFO ] [2021-01-02 21:36:06,356] TC_03_LoginWithEmailNotRegistered - STEP 02: Input invalid email to email text box
+[INFO ] [2021-01-02 21:36:06,590] TC_03_LoginWithEmailNotRegistered - STEP 03: Click to login button
+[INFO ] [2021-01-02 21:36:08,417] TC_03_LoginWithEmailNotRegistered - STEP 04: Verify error message displayed
+[INFO ] [2021-01-02 21:36:08,582]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:36:08,582] TC_04_loginWithEmptyPassword - STEP 01: Refresh page
+[INFO ] [2021-01-02 21:36:09,303] TC_04_loginWithEmptyPassword - STEP 02: Input valid email to email text box
+[INFO ] [2021-01-02 21:36:09,614] TC_04_loginWithEmptyPassword - STEP 03: Click to login button
+[INFO ] [2021-01-02 21:36:10,815] TC_04_loginWithEmptyPassword - STEP 04: Verify error message displayed
+[INFO ] [2021-01-02 21:36:10,919]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:36:10,920] TC_05_loginWithInvalidPassword - STEP 01: Refresh page
+[INFO ] [2021-01-02 21:36:12,232] TC_05_loginWithInvalidPassword - STEP 02: Input valid email to email text box
+[INFO ] [2021-01-02 21:36:12,534] TC_05_loginWithInvalidPassword - STEP 03: Input invalid password to password text box
+[INFO ] [2021-01-02 21:36:12,766] TC_05_loginWithInvalidPassword - STEP 04: Click to login button
+[INFO ] [2021-01-02 21:36:14,859] TC_05_loginWithInvalidPassword - STEP 05: Verify error message displayed
+[INFO ] [2021-01-02 21:36:14,942]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:36:14,943] TC_06_loginWithValidEmailAndPassword - STEP 01: Refresh page
+[INFO ] [2021-01-02 21:36:14,951] TC_06_loginWithValidEmailAndPassword - STEP 02: Input valid email to email text box
+[INFO ] [2021-01-02 21:36:16,737] TC_06_loginWithValidEmailAndPassword - STEP 03: Input valid password to password textbox
+[INFO ] [2021-01-02 21:36:16,931] TC_06_loginWithValidEmailAndPassword - STEP 04: Click to login button
+[INFO ] [2021-01-02 21:36:18,895] TC_06_loginWithValidEmailAndPassword - STEP 05: Verify success message displayed
+[INFO ] [2021-01-02 21:36:18,907]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:36:18,908] Post-condition - Close browser and driver
+[INFO ] [2021-01-02 21:36:18,908] OS name = windows 10
+[INFO ] [2021-01-02 21:36:20,102] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-01-02 21:36:20,104] Pre-condition - STEP 01: Open browser
+[INFO ] [2021-01-02 21:36:27,315] Pre-condition - STEP 02: Init home page
+[INFO ] [2021-01-02 21:36:27,316] Pre-condition - STEP 03: Get home page title
+[INFO ] [2021-01-02 21:36:27,345] Pre-condition - STEP 04: Open and Init register page
+[INFO ] [2021-01-02 21:36:31,165] Pre-condition - STEP 05: Select Gender
+[INFO ] [2021-01-02 21:36:31,737] Pre-condition - STEP 06: Input to first name
+[INFO ] [2021-01-02 21:36:32,045] Pre-condition - STEP 07: Input to last name
+[INFO ] [2021-01-02 21:36:32,226] Pre-condition - STEP 08: Select day
+[INFO ] [2021-01-02 21:36:32,401] Pre-condition - STEP 09: Select month
+[INFO ] [2021-01-02 21:36:32,578] Pre-condition - STEP 10: Select year
+[INFO ] [2021-01-02 21:36:32,722] Pre-condition - STEP 11: input to email textbox
+[INFO ] [2021-01-02 21:36:32,923] Pre-condition - STEP 12: Input company textbox
+[INFO ] [2021-01-02 21:36:33,074] Pre-condition - STEP 13: Input to password texbox
+[INFO ] [2021-01-02 21:36:33,242] Pre-condition - STEP 14: Input to confim password textbox
+[INFO ] [2021-01-02 21:36:33,401] Pre-condition - STEP 15: Click to register button
+[INFO ] [2021-01-02 21:36:35,762] Pre-condition - STEP 16: Verify register success message displayed
+[INFO ] [2021-01-02 21:36:35,824]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:36:35,824] Pre-condition - STEP 17: CLick to continue button
+[INFO ] [2021-01-02 21:36:39,681] Pre-condition - STEP 18: Verify return to Home page success
+[INFO ] [2021-01-02 21:36:39,686]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:36:39,686] Pre-condition - STEP 19: Init home page
+[INFO ] [2021-01-02 21:36:39,686] Pre-condition - STEP 20: Init my account page
+[INFO ] [2021-01-02 21:36:41,071] TC_01_updateCustomerInfo - STEP 01: Select gender
+[INFO ] [2021-01-02 21:36:41,597] TC_01_updateCustomerInfo - STEP 02: Input to first name
+[INFO ] [2021-01-02 21:36:41,942] TC_01_updateCustomerInfo - STEP 03: Input to last name textbox
+[INFO ] [2021-01-02 21:36:42,077] TC_01_updateCustomerInfo - STEP 04: Select date
+[INFO ] [2021-01-02 21:36:42,191] TC_01_updateCustomerInfo - STEP 06: Select month
+[INFO ] [2021-01-02 21:36:42,327] TC_01_updateCustomerInfo - STEP 07: Select year
+[INFO ] [2021-01-02 21:36:42,437] TC_01_updateCustomerInfo - STEP 08: Input to email textbox
+[INFO ] [2021-01-02 21:36:42,621] TC_01_updateCustomerInfo - STEP 09: Input to company textbox
+[INFO ] [2021-01-02 21:36:42,762] TC_01_updateCustomerInfo - STEP 10: Verify first name
+[INFO ] [2021-01-02 21:36:42,806]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:36:42,806] TC_01_updateCustomerInfo - STEP 11: Verify last name 
+[INFO ] [2021-01-02 21:36:42,857]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:36:42,857] TC_01_updateCustomerInfo - STEP 12: Verify Date
+[INFO ] [2021-01-02 21:36:42,972]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:36:42,972] TC_01_updateCustomerInfo - STEP 13: Verify month
+[INFO ] [2021-01-02 21:36:43,113]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:36:43,113] TC_01_updateCustomerInfo - STEP 14: Verify year
+[INFO ] [2021-01-02 21:36:44,074]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:36:44,074] TC_01_updateCustomerInfo - STEP 15: Verify email
+[INFO ] [2021-01-02 21:36:44,117]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:36:44,117] TC_01_updateCustomerInfo - STEP 16: Verify company name
+[INFO ] [2021-01-02 21:36:44,160]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:36:44,160] TC_02_addNewAddress - STEP 01: Click to Address link
+[INFO ] [2021-01-02 21:36:45,350] TC_02_addNewAddress - STEP 02: Click to Add new button
+[INFO ] [2021-01-02 21:36:46,785] TC_02_addNewAddress - STEP 03: Input to first name
+[INFO ] [2021-01-02 21:36:46,980] TC_02_addNewAddress - STEP 04: Input to last name
+[INFO ] [2021-01-02 21:36:47,127] TC_02_addNewAddress - STEP 05: Input to Email
+[INFO ] [2021-01-02 21:36:47,292] TC_02_addNewAddress - STEP 06: Input to company
+[INFO ] [2021-01-02 21:36:47,426] TC_02_addNewAddress - STEP 07: Select Country
+[INFO ] [2021-01-02 21:36:47,539] TC_02_addNewAddress - STEP 08: Select State
+[INFO ] [2021-01-02 21:36:48,009] TC_02_addNewAddress - STEP 09: input to City texbox
+[INFO ] [2021-01-02 21:36:48,152] TC_02_addNewAddress - STEP 10: Input to address 1 textbox
+[INFO ] [2021-01-02 21:36:48,313] TC_02_addNewAddress - STEP 11: Input to address 2 textbox
+[INFO ] [2021-01-02 21:36:48,470] TC_02_addNewAddress - STEP 12: Inout to Zip code
+[INFO ] [2021-01-02 21:36:48,611] TC_02_addNewAddress - STEP 13: Input to phone textbox
+[INFO ] [2021-01-02 21:36:48,754] TC_02_addNewAddress - STEP 14: Input to fax number textbox
+[INFO ] [2021-01-02 21:36:48,879] TC_02_addNewAddress - STEP 15: Click to SAVE button
+[INFO ] [2021-01-02 21:36:51,771] TC_02_addNewAddress - STEP 16: Verify name
+[INFO ] [2021-01-02 21:36:51,835]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:36:51,835] TC_02_addNewAddress - STEP 17: Verify email
+[INFO ] [2021-01-02 21:36:51,887]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:36:51,887] TC_02_addNewAddress - STEP 18: Verify phone number
+[INFO ] [2021-01-02 21:36:51,956]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:36:51,956] TC_02_addNewAddress - STEP 19: Verify fax number
+[INFO ] [2021-01-02 21:36:51,986]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:36:51,986] TC_02_addNewAddress - STEP 20: Verify company name
+[INFO ] [2021-01-02 21:36:52,068]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:36:52,068] TC_02_addNewAddress - STEP 21: Verify address 1
+[INFO ] [2021-01-02 21:36:52,123]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:36:52,124] TC_02_addNewAddress - STEP 22: Verify address 2
+[INFO ] [2021-01-02 21:36:52,182]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:36:52,182] TC_02_addNewAddress - STEP 23: Verify zip code
+[INFO ] [2021-01-02 21:36:52,237]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:36:52,237] TC_02_addNewAddress - STEP 24: Verify country
+[INFO ] [2021-01-02 21:36:52,347]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:36:52,347] TC_03_changePassword - STEP 01: Click to change password link
+[INFO ] [2021-01-02 21:36:53,637] TC_03_changePassword - STEP 02: Input to password textbox
+[INFO ] [2021-01-02 21:36:53,897] TC_03_changePassword - STEP 03: Input to new password textbox
+[INFO ] [2021-01-02 21:36:54,026] TC_03_changePassword - STEP 04: Input to confirm new password
+[INFO ] [2021-01-02 21:36:54,160] TC_03_changePassword - STEP 05: Click to change password button
+[INFO ] [2021-01-02 21:36:55,354] TC_03_changePassword - STEP 06: Verify password chang success
+[INFO ] [2021-01-02 21:36:55,446]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:36:55,446] TC_03_changePassword - STEP 07: click to Logout link
+[INFO ] [2021-01-02 21:36:57,196] TC_03_changePassword - STEP 08: Click to login link
+[INFO ] [2021-01-02 21:36:58,788] TC_03_changePassword - STEP 09: Open and Init login page
+[INFO ] [2021-01-02 21:36:58,788] TC_03_changePassword - STEP 10: Input to Email textbox
+[INFO ] [2021-01-02 21:36:59,008] TC_03_changePassword - STEP 11: Input invalid password to password textbox
+[INFO ] [2021-01-02 21:36:59,202] TC_03_changePassword - STEP 12: Click to Login button
+[INFO ] [2021-01-02 21:37:00,480] TC_03_changePassword - STEP 13: Verify login false
+[INFO ] [2021-01-02 21:37:00,546]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:37:00,546] TC_03_changePassword - STEP 14: Input valid password to password textbox
+[INFO ] [2021-01-02 21:37:00,694] TC_03_changePassword - STEP 15: Click to login button
+[INFO ] [2021-01-02 21:37:02,495] TC_03_changePassword - STEP 16: Verify login success
+[INFO ] [2021-01-02 21:37:02,501]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:37:02,502] TC_04_myProductReview - STEP 01: Open and Init computer page
+[INFO ] [2021-01-02 21:37:04,381] TC_04_myProductReview - STEP 02: Click to Desktop link
+[INFO ] [2021-01-02 21:37:06,245] TC_04_myProductReview - STEP 03: CLick to Build your own computer product link
+[INFO ] [2021-01-02 21:37:08,803] TC_04_myProductReview - STEP 04: Click to Add your review link
+[INFO ] [2021-01-02 21:37:10,036] TC_04_myProductReview - STEP 05: Input to review textbox
+[INFO ] [2021-01-02 21:37:10,231] TC_04_myProductReview - STEP 06: Input text to textarea
+[INFO ] [2021-01-02 21:37:10,406] TC_04_myProductReview - STEP 07: Select rating
+[INFO ] [2021-01-02 21:37:10,524] TC_04_myProductReview - STEP 08: Click to submit button
+[INFO ] [2021-01-02 21:37:11,682] TC_04_myProductReview - STEP 09: Verify success message displayed
+[INFO ] [2021-01-02 21:37:11,769]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:37:11,769] TC_04_myProductReview - STEP 10: Click to My account link
+[INFO ] [2021-01-02 21:37:13,208] TC_04_myProductReview - STEP 11: Click to My product reviews link
+[INFO ] [2021-01-02 21:37:14,790] TC_04_myProductReview - STEP 12: Verify review text displayed
+[INFO ] [2021-01-02 21:37:14,850]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:37:14,851] Post-condition - Close browser and driver
+[INFO ] [2021-01-02 21:37:14,851] OS name = windows 10
+[INFO ] [2021-01-02 21:37:15,856] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-01-02 21:37:15,864] Pre-condition - STEP 01: Open browser
+[INFO ] [2021-01-02 21:37:21,697] Pre-condition - STEP 02: Open and Init home page
+[INFO ] [2021-01-02 21:37:21,697] Pre-condition - STEP 03: Open and Init search page
+[INFO ] [2021-01-02 21:37:23,967] TC_01_searchWithEmptyData - STEP 01: Click to Search button
+[INFO ] [2021-01-02 21:37:26,232] TC_01_searchWithEmptyData - STEP 02: verify error message diplayed
+[INFO ] [2021-01-02 21:37:26,348]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:37:26,349] TC_02_searchWithDataNotExist - STEP 01: Input to search textbox
+[INFO ] [2021-01-02 21:37:26,539] TC_02_searchWithDataNotExist - STEP 02: CLick to search button
+[INFO ] [2021-01-02 21:37:28,600] TC_02_searchWithDataNotExist - STEP 03: Verify message displayed
+[INFO ] [2021-01-02 21:37:28,741]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:37:28,743] TC_03_searchRelative - STEP 01: Input to search textbox
+[INFO ] [2021-01-02 21:37:28,980] TC_03_searchRelative - STEP 02: Click to search button
+[INFO ] [2021-01-02 21:37:30,171] TC_03_searchRelative - STEP 03: Verify product displayed
+[INFO ] [2021-01-02 21:37:30,306]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:37:30,307] TC_04_searchAbsolute - STEP 01: Input to search textbox
+[INFO ] [2021-01-02 21:37:30,551] TC_04_searchAbsolute - STEP 02: Click to search button
+[INFO ] [2021-01-02 21:37:31,734] TC_04_searchAbsolute - STEP 03: Verify result displayed
+[INFO ] [2021-01-02 21:37:31,803]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:37:31,804] TC_05_searchWithParentCategories - STEP 01: Input to search textbox
+[INFO ] [2021-01-02 21:37:31,975] TC_05_searchWithParentCategories - STEP 02: Select advance search
+[INFO ] [2021-01-02 21:37:32,123] TC_05_searchWithParentCategories - STEP 03: Select computer
+[INFO ] [2021-01-02 21:37:32,290] TC_05_searchWithParentCategories - STEP 04: Click to search button
+[INFO ] [2021-01-02 21:37:33,872] TC_05_searchWithParentCategories - STEP 05: Verify error message displayed
+[INFO ] [2021-01-02 21:37:33,964]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:37:33,965] TC_06_searchWithSubCategories - STEP 01: Open Url search
+[INFO ] [2021-01-02 21:37:34,615] TC_06_searchWithSubCategories - STEP 02: Input to search textbox
+[INFO ] [2021-01-02 21:37:34,914] TC_06_searchWithSubCategories - STEP 03: Select advance search
+[INFO ] [2021-01-02 21:37:35,022] TC_06_searchWithSubCategories - STEP 04: Select Computer
+[INFO ] [2021-01-02 21:37:35,160] TC_06_searchWithSubCategories - STEP 05: Select Auto search sub category
+[INFO ] [2021-01-02 21:37:35,254] TC_06_searchWithSubCategories - STEP 06: Click to search button
+[INFO ] [2021-01-02 21:37:37,254] TC_06_searchWithSubCategories - STEP 07: Verify result
+[INFO ] [2021-01-02 21:37:37,331]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:37:37,331] TC_07_searchWithIncorrectManufacturer - STEP 01: Open search URL
+[INFO ] [2021-01-02 21:37:37,938] TC_07_searchWithIncorrectManufacturer - STEP 02: Input to search textbox
+[INFO ] [2021-01-02 21:37:38,146] TC_07_searchWithIncorrectManufacturer - STEP 03: Select advance search
+[INFO ] [2021-01-02 21:37:38,307] TC_07_searchWithIncorrectManufacturer - STEP 04: Select Computer
+[INFO ] [2021-01-02 21:37:38,464] TC_07_searchWithIncorrectManufacturer - STEP 05: Select auto search sub categoryes
+[INFO ] [2021-01-02 21:37:38,572] TC_07_searchWithIncorrectManufacturer - STEP 06: Select HP
+[INFO ] [2021-01-02 21:37:38,675] TC_07_searchWithIncorrectManufacturer - STEP 07: Click search button
+[INFO ] [2021-01-02 21:37:39,876] TC_07_searchWithIncorrectManufacturer - STEP 08: Verify result
+[INFO ] [2021-01-02 21:37:39,954]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:37:39,956] TC_08_searchWithCorrectManufacturer - STEP 01: Open search URL
+[INFO ] [2021-01-02 21:37:40,545] TC_08_searchWithCorrectManufacturer - STEP 02: Input to search textbox
+[INFO ] [2021-01-02 21:37:40,894] TC_08_searchWithCorrectManufacturer - STEP 03: Select advance search
+[INFO ] [2021-01-02 21:37:41,022] TC_08_searchWithCorrectManufacturer - STEP 04: Select Computer
+[INFO ] [2021-01-02 21:37:41,160] TC_08_searchWithCorrectManufacturer - STEP 05: Select auto search sub categoryes
+[INFO ] [2021-01-02 21:37:41,250] TC_08_searchWithCorrectManufacturer - STEP 06: Select Apple
+[INFO ] [2021-01-02 21:37:41,343] TC_08_searchWithCorrectManufacturer - STEP 07: Click search button
+[INFO ] [2021-01-02 21:37:42,634] TC_08_searchWithCorrectManufacturer - STEP 08: Verify result
+[INFO ] [2021-01-02 21:37:42,730]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:37:42,730] TC_09_searchInPriceRange - STEP 01: Open search URL
+[INFO ] [2021-01-02 21:37:44,068] TC_09_searchInPriceRange - STEP 02: Input to search textbox
+[INFO ] [2021-01-02 21:37:44,313] TC_09_searchInPriceRange - STEP 03: Select advance search
+[INFO ] [2021-01-02 21:37:44,466] TC_09_searchInPriceRange - STEP 04: Select Computer
+[INFO ] [2021-01-02 21:37:44,589] TC_09_searchInPriceRange - STEP 05: Select auto search sub categoryes
+[INFO ] [2021-01-02 21:37:44,716] TC_09_searchInPriceRange - STEP 06: Select Apple
+[INFO ] [2021-01-02 21:37:44,812] TC_09_searchInPriceRange - STEP 07: Input range
+[INFO ] [2021-01-02 21:37:44,961] TC_09_searchInPriceRange - STEP 08: Input range
+[INFO ] [2021-01-02 21:37:45,094] TC_09_searchInPriceRange - STEP 09: Click search button
+[INFO ] [2021-01-02 21:37:46,246] TC_09_searchInPriceRange - STEP 10: Verify result
+[INFO ] [2021-01-02 21:37:46,322]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:37:46,324] TC_10_searchOutPriceRange - STEP 01: Open search URL
+[INFO ] [2021-01-02 21:37:46,928] TC_10_searchOutPriceRange - STEP 02: Input to search textbox
+[INFO ] [2021-01-02 21:37:47,179] TC_10_searchOutPriceRange - STEP 03: Select advance search
+[INFO ] [2021-01-02 21:37:47,301] TC_10_searchOutPriceRange - STEP 04: Select Computer
+[INFO ] [2021-01-02 21:37:47,447] TC_10_searchOutPriceRange - STEP 05: Select auto search sub categoryes
+[INFO ] [2021-01-02 21:37:47,530] TC_10_searchOutPriceRange - STEP 06: Select Apple
+[INFO ] [2021-01-02 21:37:47,628] TC_10_searchOutPriceRange - STEP 07: Input range
+[INFO ] [2021-01-02 21:37:47,754] TC_10_searchOutPriceRange - STEP 08: Input range
+[INFO ] [2021-01-02 21:37:47,893] TC_10_searchOutPriceRange - STEP 09: Click search button
+[INFO ] [2021-01-02 21:37:49,161] TC_10_searchOutPriceRange - STEP 10: Verify result
+[INFO ] [2021-01-02 21:37:49,254]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:37:49,269] TC_11_searchOutPriceRange - STEP 01: Open search URL
+[INFO ] [2021-01-02 21:37:49,875] TC_11_searchOutPriceRange - STEP 02: Input to search textbox
+[INFO ] [2021-01-02 21:37:50,090] TC_11_searchOutPriceRange - STEP 03: Select advance search
+[INFO ] [2021-01-02 21:37:50,213] TC_11_searchOutPriceRange - STEP 04: Select Computer
+[INFO ] [2021-01-02 21:37:50,389] TC_11_searchOutPriceRange - STEP 05: Select auto search sub categoryes
+[INFO ] [2021-01-02 21:37:50,488] TC_11_searchOutPriceRange - STEP 06: Select Apple
+[INFO ] [2021-01-02 21:37:50,582] TC_11_searchOutPriceRange - STEP 07: Input range
+[INFO ] [2021-01-02 21:37:50,699] TC_11_searchOutPriceRange - STEP 08: Input range
+[INFO ] [2021-01-02 21:37:50,822] TC_11_searchOutPriceRange - STEP 09: Click search button
+[INFO ] [2021-01-02 21:37:51,944] TC_11_searchOutPriceRange - STEP 10: Verify result
+[INFO ] [2021-01-02 21:37:51,996]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:37:51,997] Post-condition - STEP 01: Close browser
+[INFO ] [2021-01-02 21:37:51,997] OS name = windows 10
+[INFO ] [2021-01-02 21:37:52,976] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-01-02 21:37:52,978] Pre-condition - STEP 01: Open browser
+[INFO ] [2021-01-02 21:37:58,848] Pre-condition - STEP 02: Open and Init home page
+[INFO ] [2021-01-02 21:37:58,848] Pre-condition - STEP 03: Open and Init Computer page
+[INFO ] [2021-01-02 21:38:01,127] Pre-condition - STEP 04: Click to notebooks link
+[INFO ] [2021-01-02 21:38:03,466] Pre-TC_01_sortWithNameAtoZ - STEP 01: Select sort name A to Z
+[INFO ] [2021-01-02 21:38:05,203] Pre-TC_01_sortWithNameAtoZ - STEP 02: Verify name sorted ascending
+[INFO ] [2021-01-02 21:38:05,494]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:38:05,495] Pre-TC_02_sortWithNameZtoA - STEP 01: Select sort name Z to A
+[INFO ] [2021-01-02 21:38:07,358] Pre-TC_02_sortWithNameZtoA - STEP 02: Verify name sorted descending
+[INFO ] [2021-01-02 21:38:07,738]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:38:07,738] Pre-TC_03_sortWithPriceAtoZ - STEP 01: Select price A to Z
+[INFO ] [2021-01-02 21:38:08,603] Pre-TC_03_sortWithPriceAtoZ - STEP 02: Verify price sorted ascending
+[INFO ] [2021-01-02 21:38:08,904]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:38:08,906] Pre-TC_04_sortWithPriceZtoA - STEP 01: Select price Z to A
+[INFO ] [2021-01-02 21:38:10,916] Pre-TC_04_sortWithPriceZtoA - STEP 02: Verify price sorted descending
+[INFO ] [2021-01-02 21:38:11,178]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:38:11,178] Pre-TC_05_displayProduct - STEP 01: Select product display = 3
+[INFO ] [2021-01-02 21:38:12,857] Pre-TC_05_displayProduct - STEP 02: Verify number of item
+[INFO ] [2021-01-02 21:38:12,930]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:38:12,931] Pre-TC_05_displayProduct - STEP 03: Verify next icon displayed
+[INFO ] [2021-01-02 21:38:12,974]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:38:12,974] Pre-TC_05_displayProduct - STEP 04: Click to next icon
+[INFO ] [2021-01-02 21:38:14,547] Pre-TC_05_displayProduct - STEP 05: Verify previous displayed
+[INFO ] [2021-01-02 21:38:14,616]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:38:14,617] Pre-TC_06_displayProduct - STEP 01: Select product display = 6
+[INFO ] [2021-01-02 21:38:16,305] Pre-TC_06_displayProduct - STEP 02: Verify number of product displayed
+[INFO ] [2021-01-02 21:38:16,473]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:38:16,473] Pre-TC_06_displayProduct - STEP 04: Verify next icon undisplayed
+[INFO ] [2021-01-02 21:38:19,505]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:38:19,505] Pre-TC_07_displayProduct - STEP 01: Select product display = 9
+[INFO ] [2021-01-02 21:38:20,310] Pre-TC_07_displayProduct - STEP 02: Verify product number displayed
+[INFO ] [2021-01-02 21:38:20,456]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:38:20,456] Pre-TC_07_displayProduct - STEP 03: Verify next icon undisplayed
+[INFO ] [2021-01-02 21:38:23,502]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:38:23,502] Post-condition - STEP 01: Close browser 
+[INFO ] [2021-01-02 21:38:23,502] OS name = windows 10
+[INFO ] [2021-01-02 21:38:24,410] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-01-02 21:38:36,108]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:38:46,991]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:38:48,919]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:38:51,042]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:38:54,244]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:39:02,035]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:39:02,117]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:39:03,573]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:39:03,575] OS name = windows 10
+[INFO ] [2021-01-02 21:39:04,585] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-01-02 21:39:17,751]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:39:27,639]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:39:52,290]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:39:53,377]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:39:53,459]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:39:53,552]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:39:53,634]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:39:53,708]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:39:53,815]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:39:53,894]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:39:53,988]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:39:54,035]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:39:54,082]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:39:54,129]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:39:54,175]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:39:56,378]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:40:00,268]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-02 21:40:00,270] OS name = windows 10
+[INFO ] [2021-01-02 21:40:01,316] ---------- QUIT BROWSER SUCCESS ----------

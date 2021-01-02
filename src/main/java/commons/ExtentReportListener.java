@@ -8,10 +8,7 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 import org.testng.*;
 import org.testng.xml.XmlSuite;
 
-import java.util.Calendar;
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class ExtentReportListener implements IReporter {
     private ExtentReports extent;
@@ -47,7 +44,10 @@ public class ExtentReportListener implements IReporter {
     private void buildTestNodes(IResultMap tests, Status status) {
         ExtentTest test;
         if (tests.size() > 0) {
-            for (ITestResult result : tests.getAllResults()) {
+            Set<ITestResult> setResult = tests.getAllResults();
+            List<ITestResult> listResult = new ArrayList<>(setResult);
+            Collections.sort(listResult);
+            for (ITestResult result : listResult) {
                 test = extent.createTest(result.getMethod().getMethodName());
                 for (String group : result.getMethod().getGroups())
                     test.assignCategory(group);

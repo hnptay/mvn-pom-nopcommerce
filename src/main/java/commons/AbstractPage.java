@@ -69,22 +69,22 @@ public abstract class AbstractPage {
     //Wait
     protected void waitForElementVisible(WebDriver driver, String locator) {
         wait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
-        wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOfAllElementsLocatedBy(byXpath(locator))));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(byXpath(locator)));
     }
 
     protected void waitForElementVisible(WebDriver driver, String locator, String... values) {
         wait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
-        wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOfAllElementsLocatedBy(byXpath(castToObject(locator, values)))));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(byXpath(castToObject(locator, values))));
     }
 
     protected void waitForElementsVisible(WebDriver driver, String locator) {
         wait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
-        wait.until(ExpectedConditions.visibilityOfAllElements(findElementsByXpath(driver, locator)));
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(byXpath(locator)));
     }
 
     protected void waitForElementsVisible(WebDriver driver, String locator, String... values) {
         wait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
-        wait.until(ExpectedConditions.visibilityOfAllElements(findElementsByXpath(driver, castToObject(locator, values))));
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(byXpath(castToObject(locator, values))));
     }
 
     protected void waitForElementInvisible(WebDriver driver, String locator) {
