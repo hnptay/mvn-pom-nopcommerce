@@ -1,0 +1,98 @@
+{
+  "787ca7c6f7a030fef79bde13ad95554c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f803224300eac78d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1610785016913,
+        "stop" : 1610785019159,
+        "duration" : 2246
+      }
+    } ]
+  },
+  "cb9e366d41bb06e5c8133099542bba79" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d8d195b12406eb4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1610785021471,
+        "stop" : 1610785026825,
+        "duration" : 5354
+      }
+    } ]
+  },
+  "1f6b77ba079ba22120defda92d915f9f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "38f3f56a187c6b5e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1610785019164,
+        "stop" : 1610785021466,
+        "duration" : 2302
+      }
+    } ]
+  },
+  "9957dbb236b9542657cf30da63e37638" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8b3a55304447d78b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1610785013532,
+        "stop" : 1610785014710,
+        "duration" : 1178
+      }
+    } ]
+  },
+  "a5f66cd9dfed9154d95dbc645ef7ec86" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2c07239d6f33ba31",
+      "status" : "failed",
+      "statusDetails" : "expected [Wrong] but found [Wrong email]",
+      "time" : {
+        "start" : 1610785014991,
+        "stop" : 1610785016882,
+        "duration" : 1891
+      }
+    } ]
+  }
+}

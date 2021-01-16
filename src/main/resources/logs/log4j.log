@@ -4738,3 +4738,276 @@
 [INFO ] [2021-01-02 21:40:00,268]  -------------------------- VERIFY PASSED -------------------------- 
 [INFO ] [2021-01-02 21:40:00,270] OS name = windows 10
 [INFO ] [2021-01-02 21:40:01,316] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-01-16 13:10:52,163] Pre-condition - STEP 01: Open browser
+[INFO ] [2021-01-16 13:11:03,892] Pre-condition - STEP 02: Open home Page
+[INFO ] [2021-01-16 13:11:03,901] Pre-condition - STEP 03: Open register page
+[INFO ] [2021-01-16 13:11:06,816] TC_01_registerWithEmptyData - STEP 01: Click to register button
+[INFO ] [2021-01-16 13:11:07,513] TC_01_registerWithEmptyData - STEP 02: Verify error message displayed
+[INFO ] [2021-01-16 13:11:08,273]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-16 13:11:08,429] TC_02_registerWithInvalidEmail - STEP 01: Refresh page
+[INFO ] [2021-01-16 13:11:08,447] TC_02_registerWithInvalidEmail - STEP 02: SendKey to email text box
+[INFO ] [2021-01-16 13:11:09,956] TC_02_registerWithInvalidEmail - STEP 03: Click to register button
+[INFO ] [2021-01-16 13:11:10,482] TC_02_registerWithInvalidEmail - STEP 04: Verify error message displayed
+[INFO ] [2021-01-16 13:11:10,575]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-16 13:11:10,585] TC_04_registerWithInvalidPassword - STEP 01: Refresh page
+[INFO ] [2021-01-16 13:11:11,855] TC_04_registerWithInvalidPassword - STEP 02: SendKey to password text box
+[INFO ] [2021-01-16 13:11:12,050] TC_04_registerWithInvalidPassword - STEP 03: Click to register button
+[INFO ] [2021-01-16 13:11:12,582] TC_04_registerWithInvalidPassword - STEP 04: Verify Error message displayed
+[INFO ] [2021-01-16 13:11:12,658]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-16 13:11:12,661] TC_05_registerWithInvalidConfirmPassword - STEP 01: Refresh page
+[INFO ] [2021-01-16 13:11:13,199] TC_05_registerWithInvalidConfirmPassword - STEP 02: SendKey to  password text box
+[INFO ] [2021-01-16 13:11:13,392] TC_05_registerWithInvalidConfirmPassword - STEP 03: SendKey to confirm password test box
+[INFO ] [2021-01-16 13:11:13,612] TC_05_registerWithInvalidConfirmPassword - STEP 04: Click to register button
+[INFO ] [2021-01-16 13:11:14,155] TC_05_registerWithInvalidConfirmPassword - STEP 05: Verify error message displayed
+[INFO ] [2021-01-16 13:11:14,211]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-16 13:11:14,228] TC_06_registerWithValidInfo - STEP 01: Refresh page
+[INFO ] [2021-01-16 13:11:15,436] TC_06_registerWithValidInfo - STEP 02: Select gender
+[INFO ] [2021-01-16 13:11:15,995] TC_06_registerWithValidInfo - STEP 03: Input to first name
+[INFO ] [2021-01-16 13:11:16,585] TC_06_registerWithValidInfo - STEP 04: Input to last name
+[INFO ] [2021-01-16 13:11:16,741] TC_06_registerWithValidInfo - STEP 05: select date
+[INFO ] [2021-01-16 13:11:16,884] TC_06_registerWithValidInfo - STEP 06: Select month
+[INFO ] [2021-01-16 13:11:17,035] TC_06_registerWithValidInfo - STEP 07: Select year
+[INFO ] [2021-01-16 13:11:17,194] TC_06_registerWithValidInfo - STEP 08: Input to email text box
+[INFO ] [2021-01-16 13:11:17,390] TC_06_registerWithValidInfo - STEP 09: Input to company text box
+[INFO ] [2021-01-16 13:11:17,523] TC_06_registerWithValidInfo - STEP 10: Input to password text box
+[INFO ] [2021-01-16 13:11:17,663] TC_06_registerWithValidInfo - STEP 11: Input to comfirm password text box
+[INFO ] [2021-01-16 13:11:17,788] TC_06_registerWithValidInfo - STEP 12: Click to register button
+[INFO ] [2021-01-16 13:11:19,355] TC_06_registerWithValidInfo - STEP 13: Verify register success
+[INFO ] [2021-01-16 13:11:19,501]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-16 13:11:19,504] Post-condition - Close browser and driver
+[INFO ] [2021-01-16 13:11:19,505] OS name = windows 10
+[INFO ] [2021-01-16 13:11:20,351] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-01-16 13:33:49,851] Pre-condition - STEP 01: Open browser
+[INFO ] [2021-01-16 13:33:56,913] Pre-condition - STEP 02: Open home Page
+[INFO ] [2021-01-16 13:33:56,922] Pre-condition - STEP 03: Open register page
+[INFO ] [2021-01-16 13:33:58,418] TC_01_registerWithEmptyData - STEP 01: Click to register button
+[INFO ] [2021-01-16 13:33:59,008] TC_01_registerWithEmptyData - STEP 02: Verify error message displayed
+[INFO ] [2021-01-16 13:33:59,646]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-16 13:33:59,726] TC_02_registerWithInvalidEmail - STEP 01: Refresh page
+[INFO ] [2021-01-16 13:33:59,746] TC_02_registerWithInvalidEmail - STEP 02: SendKey to email text box
+[INFO ] [2021-01-16 13:34:01,221] TC_02_registerWithInvalidEmail - STEP 03: Click to register button
+[INFO ] [2021-01-16 13:34:01,797] TC_02_registerWithInvalidEmail - STEP 04: Verify error message displayed
+[INFO ] [2021-01-16 13:34:01,838]  -------------------------- VERIFY FAILED -------------------------- 
+[INFO ] [2021-01-16 13:34:02,335] TC_04_registerWithInvalidPassword - STEP 01: Refresh page
+[INFO ] [2021-01-16 13:34:03,609] TC_04_registerWithInvalidPassword - STEP 02: SendKey to password text box
+[INFO ] [2021-01-16 13:34:03,802] TC_04_registerWithInvalidPassword - STEP 03: Click to register button
+[INFO ] [2021-01-16 13:34:04,374] TC_04_registerWithInvalidPassword - STEP 04: Verify Error message displayed
+[INFO ] [2021-01-16 13:34:04,429]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-16 13:34:04,445] TC_05_registerWithInvalidConfirmPassword - STEP 01: Refresh page
+[INFO ] [2021-01-16 13:34:04,952] TC_05_registerWithInvalidConfirmPassword - STEP 02: SendKey to  password text box
+[INFO ] [2021-01-16 13:34:05,161] TC_05_registerWithInvalidConfirmPassword - STEP 03: SendKey to confirm password test box
+[INFO ] [2021-01-16 13:34:05,359] TC_05_registerWithInvalidConfirmPassword - STEP 04: Click to register button
+[INFO ] [2021-01-16 13:34:05,896] TC_05_registerWithInvalidConfirmPassword - STEP 05: Verify error message displayed
+[INFO ] [2021-01-16 13:34:05,954]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-16 13:34:05,958] TC_06_registerWithValidInfo - STEP 01: Refresh page
+[INFO ] [2021-01-16 13:34:07,248] TC_06_registerWithValidInfo - STEP 02: Select gender
+[INFO ] [2021-01-16 13:34:07,795] TC_06_registerWithValidInfo - STEP 03: Input to first name
+[INFO ] [2021-01-16 13:34:08,213] TC_06_registerWithValidInfo - STEP 04: Input to last name
+[INFO ] [2021-01-16 13:34:08,338] TC_06_registerWithValidInfo - STEP 05: select date
+[INFO ] [2021-01-16 13:34:08,499] TC_06_registerWithValidInfo - STEP 06: Select month
+[INFO ] [2021-01-16 13:34:08,638] TC_06_registerWithValidInfo - STEP 07: Select year
+[INFO ] [2021-01-16 13:34:08,771] TC_06_registerWithValidInfo - STEP 08: Input to email text box
+[INFO ] [2021-01-16 13:34:08,938] TC_06_registerWithValidInfo - STEP 09: Input to company text box
+[INFO ] [2021-01-16 13:34:09,072] TC_06_registerWithValidInfo - STEP 10: Input to password text box
+[INFO ] [2021-01-16 13:34:09,195] TC_06_registerWithValidInfo - STEP 11: Input to comfirm password text box
+[INFO ] [2021-01-16 13:34:09,345] TC_06_registerWithValidInfo - STEP 12: Click to register button
+[INFO ] [2021-01-16 13:34:10,936] TC_06_registerWithValidInfo - STEP 13: Verify register success
+[INFO ] [2021-01-16 13:34:11,054]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-16 13:34:11,054] Post-condition - Close browser and driver
+[INFO ] [2021-01-16 13:34:11,054] OS name = windows 10
+[INFO ] [2021-01-16 13:34:12,585] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-01-16 14:52:51,398] Pre-condition - STEP 01: Open browser
+[INFO ] [2021-01-16 14:53:02,519] Pre-condition - STEP 02: Open home Page
+[INFO ] [2021-01-16 14:53:02,540] Pre-condition - STEP 03: Open register page
+[INFO ] [2021-01-16 14:53:05,188] TC_01_registerWithEmptyData - STEP 01: Click to register button
+[INFO ] [2021-01-16 14:53:05,967] TC_01_registerWithEmptyData - STEP 02: Verify error message displayed
+[INFO ] [2021-01-16 14:53:06,398]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-16 14:53:06,585] TC_02_registerWithInvalidEmail - STEP 01: Refresh page
+[INFO ] [2021-01-16 14:53:07,923] TC_02_registerWithInvalidEmail - STEP 02: SendKey to email text box
+[INFO ] [2021-01-16 14:53:08,241] TC_02_registerWithInvalidEmail - STEP 03: Click to register button
+[INFO ] [2021-01-16 14:53:08,867] TC_02_registerWithInvalidEmail - STEP 04: Verify error message displayed
+[INFO ] [2021-01-16 14:53:08,938]  -------------------------- VERIFY FAILED -------------------------- 
+[INFO ] [2021-01-16 14:53:09,413] TC_04_registerWithInvalidPassword - STEP 01: Refresh page
+[INFO ] [2021-01-16 14:53:09,975] TC_04_registerWithInvalidPassword - STEP 02: SendKey to password text box
+[INFO ] [2021-01-16 14:53:10,193] TC_04_registerWithInvalidPassword - STEP 03: Click to register button
+[INFO ] [2021-01-16 14:53:10,782] TC_04_registerWithInvalidPassword - STEP 04: Verify Error message displayed
+[INFO ] [2021-01-16 14:53:10,853]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-16 14:53:10,870] TC_05_registerWithInvalidConfirmPassword - STEP 01: Refresh page
+[INFO ] [2021-01-16 14:53:12,113] TC_05_registerWithInvalidConfirmPassword - STEP 02: SendKey to  password text box
+[INFO ] [2021-01-16 14:53:12,315] TC_05_registerWithInvalidConfirmPassword - STEP 03: SendKey to confirm password test box
+[INFO ] [2021-01-16 14:53:12,500] TC_05_registerWithInvalidConfirmPassword - STEP 04: Click to register button
+[INFO ] [2021-01-16 14:53:13,051] TC_05_registerWithInvalidConfirmPassword - STEP 05: Verify error message displayed
+[INFO ] [2021-01-16 14:53:13,144]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-16 14:53:13,150] TC_06_registerWithValidInfo - STEP 01: Refresh page
+[INFO ] [2021-01-16 14:53:13,164] TC_06_registerWithValidInfo - STEP 02: Select gender
+[INFO ] [2021-01-16 14:53:14,926] TC_06_registerWithValidInfo - STEP 03: Input to first name
+[INFO ] [2021-01-16 14:53:15,588] TC_06_registerWithValidInfo - STEP 04: Input to last name
+[INFO ] [2021-01-16 14:53:15,773] TC_06_registerWithValidInfo - STEP 05: select date
+[INFO ] [2021-01-16 14:53:15,931] TC_06_registerWithValidInfo - STEP 06: Select month
+[INFO ] [2021-01-16 14:53:16,071] TC_06_registerWithValidInfo - STEP 07: Select year
+[INFO ] [2021-01-16 14:53:16,214] TC_06_registerWithValidInfo - STEP 08: Input to email text box
+[INFO ] [2021-01-16 14:53:16,415] TC_06_registerWithValidInfo - STEP 09: Input to company text box
+[INFO ] [2021-01-16 14:53:16,554] TC_06_registerWithValidInfo - STEP 10: Input to password text box
+[INFO ] [2021-01-16 14:53:16,697] TC_06_registerWithValidInfo - STEP 11: Input to comfirm password text box
+[INFO ] [2021-01-16 14:53:16,845] TC_06_registerWithValidInfo - STEP 12: Click to register button
+[INFO ] [2021-01-16 14:53:19,442] TC_06_registerWithValidInfo - STEP 13: Verify register success
+[INFO ] [2021-01-16 14:53:19,572]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-16 14:53:19,576] Post-condition - Close browser and driver
+[INFO ] [2021-01-16 14:53:19,577] OS name = windows 10
+[INFO ] [2021-01-16 14:53:21,163] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-01-16 15:01:49,476] Pre-condition - STEP 01: Open browser
+[INFO ] [2021-01-16 15:01:58,821] Pre-condition - STEP 02: Open home Page
+[INFO ] [2021-01-16 15:01:58,839] Pre-condition - STEP 03: Open register page
+[INFO ] [2021-01-16 15:02:01,199] TC_01_registerWithEmptyData - STEP 01: Click to register button
+[INFO ] [2021-01-16 15:02:01,797] TC_01_registerWithEmptyData - STEP 02: Verify error message displayed
+[INFO ] [2021-01-16 15:02:02,163]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-16 15:02:02,386] TC_02_registerWithInvalidEmail - STEP 01: Refresh page
+[INFO ] [2021-01-16 15:02:03,662] TC_02_registerWithInvalidEmail - STEP 02: SendKey to email text box
+[INFO ] [2021-01-16 15:02:03,887] TC_02_registerWithInvalidEmail - STEP 03: Click to register button
+[INFO ] [2021-01-16 15:02:04,475] TC_02_registerWithInvalidEmail - STEP 04: Verify error message displayed
+[INFO ] [2021-01-16 15:02:04,548]  -------------------------- VERIFY FAILED -------------------------- 
+[INFO ] [2021-01-16 15:02:04,976] TC_04_registerWithInvalidPassword - STEP 01: Refresh page
+[INFO ] [2021-01-16 15:02:06,200] TC_04_registerWithInvalidPassword - STEP 02: SendKey to password text box
+[INFO ] [2021-01-16 15:02:06,405] TC_04_registerWithInvalidPassword - STEP 03: Click to register button
+[INFO ] [2021-01-16 15:02:06,976] TC_04_registerWithInvalidPassword - STEP 04: Verify Error message displayed
+[INFO ] [2021-01-16 15:02:07,062]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-16 15:02:07,069] TC_05_registerWithInvalidConfirmPassword - STEP 01: Refresh page
+[INFO ] [2021-01-16 15:02:07,680] TC_05_registerWithInvalidConfirmPassword - STEP 02: SendKey to  password text box
+[INFO ] [2021-01-16 15:02:07,893] TC_05_registerWithInvalidConfirmPassword - STEP 03: SendKey to confirm password test box
+[INFO ] [2021-01-16 15:02:08,061] TC_05_registerWithInvalidConfirmPassword - STEP 04: Click to register button
+[INFO ] [2021-01-16 15:02:08,648] TC_05_registerWithInvalidConfirmPassword - STEP 05: Verify error message displayed
+[INFO ] [2021-01-16 15:02:08,737]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-16 15:02:08,744] TC_06_registerWithValidInfo - STEP 01: Refresh page
+[INFO ] [2021-01-16 15:02:09,469] TC_06_registerWithValidInfo - STEP 02: Select gender
+[INFO ] [2021-01-16 15:02:10,000] TC_06_registerWithValidInfo - STEP 03: Input to first name
+[INFO ] [2021-01-16 15:02:10,667] TC_06_registerWithValidInfo - STEP 04: Input to last name
+[INFO ] [2021-01-16 15:02:10,822] TC_06_registerWithValidInfo - STEP 05: select date
+[INFO ] [2021-01-16 15:02:10,960] TC_06_registerWithValidInfo - STEP 06: Select month
+[INFO ] [2021-01-16 15:02:11,107] TC_06_registerWithValidInfo - STEP 07: Select year
+[INFO ] [2021-01-16 15:02:11,229] TC_06_registerWithValidInfo - STEP 08: Input to email text box
+[INFO ] [2021-01-16 15:02:11,397] TC_06_registerWithValidInfo - STEP 09: Input to company text box
+[INFO ] [2021-01-16 15:02:11,539] TC_06_registerWithValidInfo - STEP 10: Input to password text box
+[INFO ] [2021-01-16 15:02:11,664] TC_06_registerWithValidInfo - STEP 11: Input to comfirm password text box
+[INFO ] [2021-01-16 15:02:11,838] TC_06_registerWithValidInfo - STEP 12: Click to register button
+[INFO ] [2021-01-16 15:02:13,942] TC_06_registerWithValidInfo - STEP 13: Verify register success
+[INFO ] [2021-01-16 15:02:14,005]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-16 15:02:14,009] Post-condition - Close browser and driver
+[INFO ] [2021-01-16 15:02:14,009] OS name = windows 10
+[INFO ] [2021-01-16 15:02:14,835] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-01-16 15:11:32,585] Pre-condition - STEP 01: Open browser
+[INFO ] [2021-01-16 15:11:40,803] Pre-condition - STEP 02: Open home Page
+[INFO ] [2021-01-16 15:11:40,840] Pre-condition - STEP 03: Open register page
+[INFO ] [2021-01-16 15:11:43,483] TC_01_registerWithEmptyData - STEP 01: Click to register button
+[INFO ] [2021-01-16 15:11:44,276] TC_01_registerWithEmptyData - STEP 02: Verify error message displayed
+[INFO ] [2021-01-16 15:11:44,694]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-16 15:11:44,944] TC_02_registerWithInvalidEmail - STEP 01: Refresh page
+[INFO ] [2021-01-16 15:11:44,989] TC_02_registerWithInvalidEmail - STEP 02: SendKey to email text box
+[INFO ] [2021-01-16 15:11:46,415] TC_02_registerWithInvalidEmail - STEP 03: Click to register button
+[INFO ] [2021-01-16 15:11:46,951] TC_02_registerWithInvalidEmail - STEP 04: Verify error message displayed
+[INFO ] [2021-01-16 15:11:47,010]  -------------------------- VERIFY FAILED -------------------------- 
+[INFO ] [2021-01-16 15:11:47,523] TC_04_registerWithInvalidPassword - STEP 01: Refresh page
+[INFO ] [2021-01-16 15:11:48,062] TC_04_registerWithInvalidPassword - STEP 02: SendKey to password text box
+[INFO ] [2021-01-16 15:11:48,272] TC_04_registerWithInvalidPassword - STEP 03: Click to register button
+[INFO ] [2021-01-16 15:11:48,857] TC_04_registerWithInvalidPassword - STEP 04: Verify Error message displayed
+[INFO ] [2021-01-16 15:11:48,946]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-16 15:11:48,950] TC_05_registerWithInvalidConfirmPassword - STEP 01: Refresh page
+[INFO ] [2021-01-16 15:11:48,977] TC_05_registerWithInvalidConfirmPassword - STEP 02: SendKey to  password text box
+[INFO ] [2021-01-16 15:11:50,541] TC_05_registerWithInvalidConfirmPassword - STEP 03: SendKey to confirm password test box
+[INFO ] [2021-01-16 15:11:50,740] TC_05_registerWithInvalidConfirmPassword - STEP 04: Click to register button
+[INFO ] [2021-01-16 15:11:51,290] TC_05_registerWithInvalidConfirmPassword - STEP 05: Verify error message displayed
+[INFO ] [2021-01-16 15:11:51,353]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-16 15:11:51,359] TC_06_registerWithValidInfo - STEP 01: Refresh page
+[INFO ] [2021-01-16 15:11:52,766] TC_06_registerWithValidInfo - STEP 02: Select gender
+[INFO ] [2021-01-16 15:11:53,361] TC_06_registerWithValidInfo - STEP 03: Input to first name
+[INFO ] [2021-01-16 15:11:54,255] TC_06_registerWithValidInfo - STEP 04: Input to last name
+[INFO ] [2021-01-16 15:11:54,461] TC_06_registerWithValidInfo - STEP 05: select date
+[INFO ] [2021-01-16 15:11:54,624] TC_06_registerWithValidInfo - STEP 06: Select month
+[INFO ] [2021-01-16 15:11:54,745] TC_06_registerWithValidInfo - STEP 07: Select year
+[INFO ] [2021-01-16 15:11:54,856] TC_06_registerWithValidInfo - STEP 08: Input to email text box
+[INFO ] [2021-01-16 15:11:55,033] TC_06_registerWithValidInfo - STEP 09: Input to company text box
+[INFO ] [2021-01-16 15:11:55,168] TC_06_registerWithValidInfo - STEP 10: Input to password text box
+[INFO ] [2021-01-16 15:11:55,334] TC_06_registerWithValidInfo - STEP 11: Input to comfirm password text box
+[INFO ] [2021-01-16 15:11:55,528] TC_06_registerWithValidInfo - STEP 12: Click to register button
+[INFO ] [2021-01-16 15:11:56,915] TC_06_registerWithValidInfo - STEP 13: Verify register success
+[INFO ] [2021-01-16 15:11:57,021]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-16 15:11:57,028] Post-condition - Close browser and driver
+[INFO ] [2021-01-16 15:11:57,028] OS name = windows 10
+[INFO ] [2021-01-16 15:11:58,432] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-01-16 15:16:42,382] Pre-condition - STEP 01: Open browser
+[INFO ] [2021-01-16 15:16:50,699] Pre-condition - STEP 02: Open home Page
+[INFO ] [2021-01-16 15:16:50,710] Pre-condition - STEP 03: Open register page
+[INFO ] [2021-01-16 15:16:53,543] TC_01_registerWithEmptyData - STEP 01: Click to register button
+[INFO ] [2021-01-16 15:16:54,229] TC_01_registerWithEmptyData - STEP 02: Verify error message displayed
+[INFO ] [2021-01-16 15:16:54,710]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-16 15:16:54,991] TC_02_registerWithInvalidEmail - STEP 01: Refresh page
+[INFO ] [2021-01-16 15:16:55,558] TC_02_registerWithInvalidEmail - STEP 02: SendKey to email text box
+[INFO ] [2021-01-16 15:16:55,783] TC_02_registerWithInvalidEmail - STEP 03: Click to register button
+[INFO ] [2021-01-16 15:16:56,358] TC_02_registerWithInvalidEmail - STEP 04: Verify error message displayed
+[INFO ] [2021-01-16 15:16:56,452]  -------------------------- VERIFY FAILED -------------------------- 
+[INFO ] [2021-01-16 15:16:56,913] TC_04_registerWithInvalidPassword - STEP 01: Refresh page
+[INFO ] [2021-01-16 15:16:58,243] TC_04_registerWithInvalidPassword - STEP 02: SendKey to password text box
+[INFO ] [2021-01-16 15:16:58,449] TC_04_registerWithInvalidPassword - STEP 03: Click to register button
+[INFO ] [2021-01-16 15:16:59,075] TC_04_registerWithInvalidPassword - STEP 04: Verify Error message displayed
+[INFO ] [2021-01-16 15:16:59,159]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-16 15:16:59,164] TC_05_registerWithInvalidConfirmPassword - STEP 01: Refresh page
+[INFO ] [2021-01-16 15:17:00,395] TC_05_registerWithInvalidConfirmPassword - STEP 02: SendKey to  password text box
+[INFO ] [2021-01-16 15:17:00,602] TC_05_registerWithInvalidConfirmPassword - STEP 03: SendKey to confirm password test box
+[INFO ] [2021-01-16 15:17:00,830] TC_05_registerWithInvalidConfirmPassword - STEP 04: Click to register button
+[INFO ] [2021-01-16 15:17:01,389] TC_05_registerWithInvalidConfirmPassword - STEP 05: Verify error message displayed
+[INFO ] [2021-01-16 15:17:01,465]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-16 15:17:01,471] TC_06_registerWithValidInfo - STEP 01: Refresh page
+[INFO ] [2021-01-16 15:17:01,986] TC_06_registerWithValidInfo - STEP 02: Select gender
+[INFO ] [2021-01-16 15:17:02,596] TC_06_registerWithValidInfo - STEP 03: Input to first name
+[INFO ] [2021-01-16 15:17:03,340] TC_06_registerWithValidInfo - STEP 04: Input to last name
+[INFO ] [2021-01-16 15:17:03,529] TC_06_registerWithValidInfo - STEP 05: select date
+[INFO ] [2021-01-16 15:17:03,682] TC_06_registerWithValidInfo - STEP 06: Select month
+[INFO ] [2021-01-16 15:17:03,796] TC_06_registerWithValidInfo - STEP 07: Select year
+[INFO ] [2021-01-16 15:17:03,908] TC_06_registerWithValidInfo - STEP 08: Input to email text box
+[INFO ] [2021-01-16 15:17:04,079] TC_06_registerWithValidInfo - STEP 09: Input to company text box
+[INFO ] [2021-01-16 15:17:04,224] TC_06_registerWithValidInfo - STEP 10: Input to password text box
+[INFO ] [2021-01-16 15:17:04,382] TC_06_registerWithValidInfo - STEP 11: Input to comfirm password text box
+[INFO ] [2021-01-16 15:17:04,523] TC_06_registerWithValidInfo - STEP 12: Click to register button
+[INFO ] [2021-01-16 15:17:06,712] TC_06_registerWithValidInfo - STEP 13: Verify register success
+[INFO ] [2021-01-16 15:17:06,823]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-16 15:17:06,831] Post-condition - Close browser and driver
+[INFO ] [2021-01-16 15:17:06,832] OS name = windows 10
+[INFO ] [2021-01-16 15:17:08,023] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-01-16 15:53:31,788] Pre-condition - STEP 01: Open browser
+[INFO ] [2021-01-16 15:53:40,312] Pre-condition - STEP 02: Open home Page
+[INFO ] [2021-01-16 15:53:40,344] Pre-condition - STEP 03: Open register page
+[INFO ] [2021-01-16 15:53:42,273] TC_01_registerWithEmptyData - STEP 01: Click to register button
+[INFO ] [2021-01-16 15:53:43,008] TC_01_registerWithEmptyData - STEP 02: Verify error message displayed
+[INFO ] [2021-01-16 15:53:43,541]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-16 15:53:43,820] TC_02_registerWithInvalidEmail - STEP 01: Refresh page
+[INFO ] [2021-01-16 15:53:45,132] TC_02_registerWithInvalidEmail - STEP 02: SendKey to email text box
+[INFO ] [2021-01-16 15:53:45,365] TC_02_registerWithInvalidEmail - STEP 03: Click to register button
+[INFO ] [2021-01-16 15:53:45,967] TC_02_registerWithInvalidEmail - STEP 04: Verify error message displayed
+[INFO ] [2021-01-16 15:53:46,054]  -------------------------- VERIFY FAILED -------------------------- 
+[INFO ] [2021-01-16 15:53:46,523] TC_04_registerWithInvalidPassword - STEP 01: Refresh page
+[INFO ] [2021-01-16 15:53:47,759] TC_04_registerWithInvalidPassword - STEP 02: SendKey to password text box
+[INFO ] [2021-01-16 15:53:47,995] TC_04_registerWithInvalidPassword - STEP 03: Click to register button
+[INFO ] [2021-01-16 15:53:48,638] TC_04_registerWithInvalidPassword - STEP 04: Verify Error message displayed
+[INFO ] [2021-01-16 15:53:48,747]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-16 15:53:48,747] TC_05_registerWithInvalidConfirmPassword - STEP 01: Refresh page
+[INFO ] [2021-01-16 15:53:49,317] TC_05_registerWithInvalidConfirmPassword - STEP 02: SendKey to  password text box
+[INFO ] [2021-01-16 15:53:49,600] TC_05_registerWithInvalidConfirmPassword - STEP 03: SendKey to confirm password test box
+[INFO ] [2021-01-16 15:53:49,763] TC_05_registerWithInvalidConfirmPassword - STEP 04: Click to register button
+[INFO ] [2021-01-16 15:53:50,304] TC_05_registerWithInvalidConfirmPassword - STEP 05: Verify error message displayed
+[INFO ] [2021-01-16 15:53:50,366]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-16 15:53:50,366] TC_06_registerWithValidInfo - STEP 01: Refresh page
+[INFO ] [2021-01-16 15:53:50,890] TC_06_registerWithValidInfo - STEP 02: Select gender
+[INFO ] [2021-01-16 15:53:51,465] TC_06_registerWithValidInfo - STEP 03: Input to first name
+[INFO ] [2021-01-16 15:53:52,350] TC_06_registerWithValidInfo - STEP 04: Input to last name
+[INFO ] [2021-01-16 15:53:52,496] TC_06_registerWithValidInfo - STEP 05: select date
+[INFO ] [2021-01-16 15:53:52,638] TC_06_registerWithValidInfo - STEP 06: Select month
+[INFO ] [2021-01-16 15:53:52,758] TC_06_registerWithValidInfo - STEP 07: Select year
+[INFO ] [2021-01-16 15:53:52,870] TC_06_registerWithValidInfo - STEP 08: Input to email text box
+[INFO ] [2021-01-16 15:53:53,054] TC_06_registerWithValidInfo - STEP 09: Input to company text box
+[INFO ] [2021-01-16 15:53:53,254] TC_06_registerWithValidInfo - STEP 10: Input to password text box
+[INFO ] [2021-01-16 15:53:53,398] TC_06_registerWithValidInfo - STEP 11: Input to comfirm password text box
+[INFO ] [2021-01-16 15:53:53,542] TC_06_registerWithValidInfo - STEP 12: Click to register button
+[INFO ] [2021-01-16 15:53:56,534] TC_06_registerWithValidInfo - STEP 13: Verify register success
+[INFO ] [2021-01-16 15:53:56,656]  -------------------------- VERIFY PASSED -------------------------- 
+[INFO ] [2021-01-16 15:53:56,662] Post-condition - Close browser and driver
+[INFO ] [2021-01-16 15:53:56,662] OS name = windows 10
+[INFO ] [2021-01-16 15:53:58,148] ---------- QUIT BROWSER SUCCESS ----------

@@ -2,6 +2,7 @@ package pageObject;
 
 import PageUI.RegisterPageUI;
 import commons.AbstractPage;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 
 public class RegisterPageObject extends AbstractPage {
@@ -11,6 +12,7 @@ public class RegisterPageObject extends AbstractPage {
         this.driver = driver;
     }
 
+    @Step("Click to Register Button")
     public void clickToRegisterButton(String button) {
         waitForElementClickable(driver, RegisterPageUI.REGISTER_BUTTON, button);
         waitForJavascriptReady(driver);
@@ -18,7 +20,7 @@ public class RegisterPageObject extends AbstractPage {
         clickToElement(driver, RegisterPageUI.REGISTER_BUTTON, button);
     }
 
-
+    @Step("Verify all filed required displayed")
     public boolean isMessageOfAllFiledRequiredDisplayed(String firstname, String lastname, String email, String password, String confirmPassword) {
         waitForElementsVisible(driver,RegisterPageUI.DYNAMIC_MESSAGE_ERROR, firstname);
         waitForElementsVisible(driver,RegisterPageUI.DYNAMIC_MESSAGE_ERROR, lastname);
@@ -32,12 +34,13 @@ public class RegisterPageObject extends AbstractPage {
                 isElementDisplay(driver,RegisterPageUI.DYNAMIC_MESSAGE_ERROR, confirmPassword));
     }
 
-
+    @Step("Input value to textbox")
     public void sendKeyToDynamicTextBox(String value, String textBox) {
         waitForElementVisible(driver, RegisterPageUI.DYNAMIC_TEXBOX, textBox);
         sendKeyToElement(driver, RegisterPageUI.DYNAMIC_TEXBOX, value, textBox);
     }
 
+    @Step("Select Gender")
     public void selectGender(String gender) {
         waitForElementClickable(driver, RegisterPageUI.DYNAMIC_GENDER_RADIOBUTTON, gender);
         waitForJavascriptReady(driver);
@@ -45,11 +48,13 @@ public class RegisterPageObject extends AbstractPage {
         clickToElement(driver, RegisterPageUI.DYNAMIC_GENDER_RADIOBUTTON, gender);
     }
 
+    @Step("Get Error message")
     public String getErrorMessage(String email) {
         waitForElementVisible(driver, RegisterPageUI.DYNAMIC_MESSAGE_ERROR, email);
         return getElementText(driver, RegisterPageUI.DYNAMIC_MESSAGE_ERROR, email);
     }
 
+    @Step("Select Date of Birth")
     public void selectDateOfBirth(String value, String dateMonthYear) {
         waitForElementVisible(driver, RegisterPageUI.DYNAMIC_DATEOFBIRTH, dateMonthYear);
         selectItemInDropdown(driver, RegisterPageUI.DYNAMIC_DATEOFBIRTH, value, dateMonthYear);

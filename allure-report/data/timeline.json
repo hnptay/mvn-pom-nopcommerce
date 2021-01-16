@@ -1,0 +1,78 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-2PPCJHK",
+    "children" : [ {
+      "name" : "7536@DESKTOP-2PPCJHK.main(1)",
+      "children" : [ {
+        "name" : "TC_01_registerWithEmptyData",
+        "uid" : "8b3a55304447d78b",
+        "parentUid" : "8a42a734db1932bfb32e6e5db6b58403",
+        "status" : "passed",
+        "time" : {
+          "start" : 1610785013532,
+          "stop" : 1610785014710,
+          "duration" : 1178
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome", "https://demo.nopcommerce.com/" ]
+      }, {
+        "name" : "TC_06_registerWithValidInfo",
+        "uid" : "d8d195b12406eb4",
+        "parentUid" : "8a42a734db1932bfb32e6e5db6b58403",
+        "status" : "passed",
+        "time" : {
+          "start" : 1610785021471,
+          "stop" : 1610785026825,
+          "duration" : 5354
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome", "https://demo.nopcommerce.com/" ]
+      }, {
+        "name" : "TC_02_registerWithInvalidEmail",
+        "uid" : "2c07239d6f33ba31",
+        "parentUid" : "8a42a734db1932bfb32e6e5db6b58403",
+        "status" : "failed",
+        "time" : {
+          "start" : 1610785014991,
+          "stop" : 1610785016882,
+          "duration" : 1891
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome", "https://demo.nopcommerce.com/" ]
+      }, {
+        "name" : "TC_05_registerWithInvalidConfirmPassword",
+        "uid" : "38f3f56a187c6b5e",
+        "parentUid" : "8a42a734db1932bfb32e6e5db6b58403",
+        "status" : "passed",
+        "time" : {
+          "start" : 1610785019164,
+          "stop" : 1610785021466,
+          "duration" : 2302
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome", "https://demo.nopcommerce.com/" ]
+      }, {
+        "name" : "TC_04_registerWithInvalidPassword",
+        "uid" : "f803224300eac78d",
+        "parentUid" : "8a42a734db1932bfb32e6e5db6b58403",
+        "status" : "passed",
+        "time" : {
+          "start" : 1610785016913,
+          "stop" : 1610785019159,
+          "duration" : 2246
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome", "https://demo.nopcommerce.com/" ]
+      } ],
+      "uid" : "8a42a734db1932bfb32e6e5db6b58403"
+    } ],
+    "uid" : "686bbe34a965ada335f4d9d787e6c240"
+  } ]
+}

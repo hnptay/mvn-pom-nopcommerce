@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "expected [Wrong] but found [Wrong email]",
+      "children" : [ {
+        "name" : "TC_02_registerWithInvalidEmail",
+        "uid" : "2c07239d6f33ba31",
+        "parentUid" : "f072d90b4bc2e95206ebed59601e4adb",
+        "status" : "failed",
+        "time" : {
+          "start" : 1610785014991,
+          "stop" : 1610785016882,
+          "duration" : 1891
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome", "https://demo.nopcommerce.com/" ]
+      } ],
+      "uid" : "f072d90b4bc2e95206ebed59601e4adb"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

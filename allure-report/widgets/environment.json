@@ -1,0 +1,16 @@
+[ {
+  "values" : [ "Windows 10" ],
+  "name" : "OS"
+}, {
+  "values" : [ "Chrome" ],
+  "name" : "Browser"
+}, {
+  "values" : [ "87.0.4280.88" ],
+  "name" : "Browser.Version"
+}, {
+  "values" : [ "Live" ],
+  "name" : "Stand"
+}, {
+  "values" : [ "15" ],
+  "name" : "Java.Version"
+} ]

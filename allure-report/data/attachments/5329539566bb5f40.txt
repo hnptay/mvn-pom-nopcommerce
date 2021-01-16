@@ -1,0 +1,1 @@
+TC_02_registerWithInvalidEmail failed and screenshot taken!

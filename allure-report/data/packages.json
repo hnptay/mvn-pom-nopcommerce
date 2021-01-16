@@ -1,0 +1,74 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "com_register_login.Register_Login_01_RegisterAccount",
+    "children" : [ {
+      "name" : "TC_01_registerWithEmptyData",
+      "uid" : "8b3a55304447d78b",
+      "parentUid" : "e41ab74f919358bcaeceb2692e26bc52",
+      "status" : "passed",
+      "time" : {
+        "start" : 1610785013532,
+        "stop" : 1610785014710,
+        "duration" : 1178
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome", "https://demo.nopcommerce.com/" ]
+    }, {
+      "name" : "TC_02_registerWithInvalidEmail",
+      "uid" : "2c07239d6f33ba31",
+      "parentUid" : "e41ab74f919358bcaeceb2692e26bc52",
+      "status" : "failed",
+      "time" : {
+        "start" : 1610785014991,
+        "stop" : 1610785016882,
+        "duration" : 1891
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome", "https://demo.nopcommerce.com/" ]
+    }, {
+      "name" : "TC_04_registerWithInvalidPassword",
+      "uid" : "f803224300eac78d",
+      "parentUid" : "e41ab74f919358bcaeceb2692e26bc52",
+      "status" : "passed",
+      "time" : {
+        "start" : 1610785016913,
+        "stop" : 1610785019159,
+        "duration" : 2246
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome", "https://demo.nopcommerce.com/" ]
+    }, {
+      "name" : "TC_05_registerWithInvalidConfirmPassword",
+      "uid" : "38f3f56a187c6b5e",
+      "parentUid" : "e41ab74f919358bcaeceb2692e26bc52",
+      "status" : "passed",
+      "time" : {
+        "start" : 1610785019164,
+        "stop" : 1610785021466,
+        "duration" : 2302
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome", "https://demo.nopcommerce.com/" ]
+    }, {
+      "name" : "TC_06_registerWithValidInfo",
+      "uid" : "d8d195b12406eb4",
+      "parentUid" : "e41ab74f919358bcaeceb2692e26bc52",
+      "status" : "passed",
+      "time" : {
+        "start" : 1610785021471,
+        "stop" : 1610785026825,
+        "duration" : 5354
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome", "https://demo.nopcommerce.com/" ]
+    } ],
+    "uid" : "com_register_login.Register_Login_01_RegisterAccount"
+  } ]
+}

@@ -1,0 +1,82 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "NopCommerce",
+    "children" : [ {
+      "name" : "Run on CHROME",
+      "children" : [ {
+        "name" : "com_register_login.Register_Login_01_RegisterAccount",
+        "children" : [ {
+          "name" : "TC_01_registerWithEmptyData",
+          "uid" : "8b3a55304447d78b",
+          "parentUid" : "15d396e18b73b6cfb8fe47d4afc0827c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1610785013532,
+            "stop" : 1610785014710,
+            "duration" : 1178
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "chrome", "https://demo.nopcommerce.com/" ]
+        }, {
+          "name" : "TC_02_registerWithInvalidEmail",
+          "uid" : "2c07239d6f33ba31",
+          "parentUid" : "15d396e18b73b6cfb8fe47d4afc0827c",
+          "status" : "failed",
+          "time" : {
+            "start" : 1610785014991,
+            "stop" : 1610785016882,
+            "duration" : 1891
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "chrome", "https://demo.nopcommerce.com/" ]
+        }, {
+          "name" : "TC_04_registerWithInvalidPassword",
+          "uid" : "f803224300eac78d",
+          "parentUid" : "15d396e18b73b6cfb8fe47d4afc0827c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1610785016913,
+            "stop" : 1610785019159,
+            "duration" : 2246
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "chrome", "https://demo.nopcommerce.com/" ]
+        }, {
+          "name" : "TC_05_registerWithInvalidConfirmPassword",
+          "uid" : "38f3f56a187c6b5e",
+          "parentUid" : "15d396e18b73b6cfb8fe47d4afc0827c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1610785019164,
+            "stop" : 1610785021466,
+            "duration" : 2302
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "chrome", "https://demo.nopcommerce.com/" ]
+        }, {
+          "name" : "TC_06_registerWithValidInfo",
+          "uid" : "d8d195b12406eb4",
+          "parentUid" : "15d396e18b73b6cfb8fe47d4afc0827c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1610785021471,
+            "stop" : 1610785026825,
+            "duration" : 5354
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "chrome", "https://demo.nopcommerce.com/" ]
+        } ],
+        "uid" : "15d396e18b73b6cfb8fe47d4afc0827c"
+      } ],
+      "uid" : "ba692171d9c7be33ece746a8677f1a30"
+    } ],
+    "uid" : "97036e4cec1286f59c1413fcd9374b19"
+  } ]
+}

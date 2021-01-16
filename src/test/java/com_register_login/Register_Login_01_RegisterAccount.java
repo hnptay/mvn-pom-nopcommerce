@@ -1,16 +1,18 @@
 package com_register_login;
 
 import commons.AbstractTest;
+import commons.AllureListener;
 import commons.PageGeneratorManager;
+import io.qameta.allure.*;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import pageObject.HomePageObject;
 import pageObject.RegisterPageObject;
 import testdata.RegisterAndLoginModule;
 
+@Epic("Regression Tests")
+@Feature("Login Tests")
+@Listeners({AllureListener.class})
 public class Register_Login_01_RegisterAccount extends AbstractTest {
 
     private WebDriver driver;
@@ -34,6 +36,7 @@ public class Register_Login_01_RegisterAccount extends AbstractTest {
         closeBrowserAndDriver();
     }
 
+    @Description("User 01 - Register")
     @Test
     public void TC_01_registerWithEmptyData() {
         log.info("TC_01_registerWithEmptyData - STEP 01: Click to register button");
@@ -42,6 +45,8 @@ public class Register_Login_01_RegisterAccount extends AbstractTest {
         verifyTrue(registerPage.isMessageOfAllFiledRequiredDisplayed("FirstName", "LastName", "Email", "Password", "ConfirmPassword"));
     }
 
+    @Description("User 02 - Register")
+    @Severity(SeverityLevel.CRITICAL)
     @Test
     public void TC_02_registerWithInvalidEmail(){
         log.info("TC_02_registerWithInvalidEmail - STEP 01: Refresh page");
@@ -51,7 +56,7 @@ public class Register_Login_01_RegisterAccount extends AbstractTest {
         log.info("TC_02_registerWithInvalidEmail - STEP 03: Click to register button");
         registerPage.clickToRegisterButton("Register");
         log.info("TC_02_registerWithInvalidEmail - STEP 04: Verify error message displayed");
-        verifyEquals(registerPage.getErrorMessage("Email"), "Wrong email");
+        verifyEquals(registerPage.getErrorMessage("Email"), "Wrong");
     }
 
     //@Test
@@ -71,6 +76,7 @@ public class Register_Login_01_RegisterAccount extends AbstractTest {
         verifyEquals(registerPage.getSummaryErrorMessage(), "The specified email already exists");
     }
 
+    @Severity(SeverityLevel.MINOR)
     @Test
     public void TC_04_registerWithInvalidPassword(){
         log.info("TC_04_registerWithInvalidPassword - STEP 01: Refresh page");
